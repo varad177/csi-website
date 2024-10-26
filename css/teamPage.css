@@ -1,6 +1,5 @@
 /* Ensuring scroll behavior and page layout */
 
-
 .background {
   position: fixed;
   top: 0;
@@ -29,6 +28,7 @@
   flex-wrap: nowrap;
   gap: 40px;
   width: max-content;
+  color: white;
 }
 
 .team-member {
@@ -54,17 +54,15 @@
   color: #9ca3af; /* Grayish text */
 }
 
-.firstContainer,
-.lastContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #111827;
-  color: white;
-  z-index: 2;
+.member-img-box {
+  width: 60px !important;
+  height: 60px !important;
 }
 
+.member-post{
+  font-size: 18px !important;
+  margin-top: 10px !important;
+}
 .team-lead-inner {
   display: flex;
   width: 100%;
@@ -90,4 +88,53 @@
 
 .member-heading {
   color: white;
+}
+
+.leads {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.leads-outer {
+}
+
+.leads-outer {
+  padding-top: 30px;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.social-icon i {
+  color: rgb(0, 153, 255);
+  font-size: 25px;
+}
+.social-icon i:hover {
+  scale: 1.2;
+  transition: all 0.3s ease-in;
+}
+
+.member-box {
+  border: 1px solid rgba(255, 255, 255, 0.508);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.member-heading {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.skip-btn {
+  padding: 20px;
+  bottom: 10%;
+  top: 10%;
+}
+.skip-btn i {
+  color: white;
+  font-size: 30px;
 }

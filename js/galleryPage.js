@@ -37,3 +37,20 @@ showMoreButton.addEventListener('click', () => {
 if (document.querySelectorAll('.gallery-item.hidden').length > 0) {
     showMoreButton.classList.remove('hidden');
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+    // Left section animation
+    gsap.from(".gallery img", {
+      scrollTrigger: {
+        trigger: ".gallery img",
+        start: "top 90%",
+        end: "top 30%",
+        scrub: true,
+        markers: true,
+        scroller: "body",
+      },
+      scale: 0,
+      y: 0, // Move to original position
+      duration: 0.1, // Animation duration // Duration for the animation effect
+    });
+  });
