@@ -23,24 +23,70 @@
   display: none;
 }
 
-#show-more {
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #00bb00; /* Your desired color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#show-more:hover {
-  background-color: #009900; /* Darker shade on hover */
-}
-
 @media (max-width: 600px) {
   .gallery img {
     width: 150px;
   }
 }
 
+.gallery-heading {
+  color: white;
+  padding: 20px;
+}
 
+/* From Uiverse.io by Navarog21 */
+.show-more-btn {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.show-more-btn::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: black;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.show-more-btn::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.show-more-btn:hover::before,
+.show-more-btn:hover::after {
+  transform: scale(0);
+}
+
+.show-more-btn:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+}
+
+.show-more-btn-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

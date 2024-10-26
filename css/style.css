@@ -4,10 +4,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Aquire;
+  transition: all 0.5s ease-in-out;
   background-color: black;
 }
 
