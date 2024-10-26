@@ -1,0 +1,46 @@
+/* styles.css */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s all;
+}
+.gallery img {
+  width: 200px;
+}
+
+.hidden {
+  display: none;
+}
+
+#show-more {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #00bb00; /* Your desired color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#show-more:hover {
+  background-color: #009900; /* Darker shade on hover */
+}
+
+@media (max-width: 600px) {
+  .gallery img {
+    width: 150px;
+  }
+}
+
+

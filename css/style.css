@@ -262,5 +262,83 @@ nav {
   font-weight: bold;
   opacity: 0; /* Start hidden for animation */
   transform: translateY(50px); /* Initial position for animation */
-  color: #00bb00; /* Green color for hacker theme */
+  color: white;
+}
+
+@media (max-width: 600px) {
+  #page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 2vh;
+    position: relative;
+  }
+
+  #name-div {
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: auto;
+    margin-bottom: 1vh;
+    /* background-color: red; */
+    overflow-y: hidden;
+  }
+
+  #name-div::-webkit-scrollbar {
+    display: none;
+  }
+
+  #name-div h1 {
+    font-size: 14.6vw;
+    /* background-color:yellow; */
+    margin-right: 2vw;
+    display: inline-block;
+  }
+}
+
+#name-div {
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: auto;
+  margin-bottom: 13vh;
+  overflow-y: hidden;
+}
+
+#name-div::-webkit-scrollbar {
+  display: none;
+}
+
+#name-div h1 {
+  font-size: 8vw;
+  /* background-color:yellow; */
+  margin-right: 2vw;
+  display: inline-block;
+  /* animation-name: namemoving; */
+  /* animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 10vh;
+  position: relative;
+  color: white;
+}
+
+.h-text:hover {
+  color: rgb(0, 132, 255);
+}
+
+.section-outer {
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  opacity: 0; /* Start hidden */
+  transform: translateY(50px); /* Start moved down */
+  transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
+  font-size: 80px;
 }

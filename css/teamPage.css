@@ -1,16 +1,5 @@
 /* Ensuring scroll behavior and page layout */
-html,
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  overflow-y: visible;
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
 
 .background {
   position: fixed;
@@ -18,7 +7,6 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #1e3a8a; /* Dark blue */
   z-index: -1;
 }
 
@@ -44,7 +32,6 @@ body {
 }
 
 .team-member {
-  background: #1f2937; /* Dark grey */
   height: 100vh;
   text-align: center;
   width: 100vw;
@@ -60,7 +47,6 @@ body {
 .team-member h3 {
   margin: 15px 0 5px;
   font-size: 1.5rem;
-  color: #60a5fa; /* Light blue */
 }
 
 .team-member p {

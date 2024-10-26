@@ -1,4 +1,4 @@
-
+console.log("varad");
 gsap.from('.loader h1', 2, {
   x: 2000
 }, 'start')
@@ -82,10 +82,37 @@ gsap.from('.three img', 1, {
   scale: 1.5
 })
 
-// Initialize GSAP animation for the heading when the page loads
-window.addEventListener('load', () => {
-  gsap.fromTo('.heading', 
-    { opacity: 0, y: 50 }, 
-    { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
-  );
+gsap.to("#name-div h1", {
+  transform: "translateX(calc(-100% - 2vw - 4px))",
+  scrollTrigger: {
+    trigger: "#name-div h1",
+    scroller: "body",
+  //   markers:true,
+    scrub: 0.7
+  }
+})
+
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+// Animation for each heading
+gsap.utils.toArray('.heading').forEach((heading) => {
+    // Create a timeline for each heading
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: heading, // Element that triggers the animation
+            start: 'top 80%', // When the top of the heading hits 80% of the viewport height
+            end: 'bottom 20%', // When the bottom of the heading hits 20% of the viewport height
+            scrub: true, // Smooth scrubbing
+            // markers: true // Optional: Add markers for debugging
+        }
+    });
+
+    // Add animation to the timeline
+    tl.to(heading, {
+        opacity: 1, // Fade in
+        y: 0, // Move to original position
+        duration: 1 // Animation duration
+    });
 });

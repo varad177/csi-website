@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/aboutPage.css" />
     <link rel="stylesheet" href="./css/teamPage.css" />
+    <link rel="stylesheet" href="./css/galleryPage.css" />
     <script
       src="https://kit.fontawesome.com/b0a4a992bb.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
 
   <body>
@@ -91,12 +91,46 @@
       </div>
     </div>
 
+    <div data-scroll-section id="page2">
+      <div id="name-div">
+        <h1 class="h-text">CSI DMCE 2024</h1>
+        <h1 class="h-text">CSI DMCE 2024<h1>
+        <h1 class="h-text">CSI DMCE 2024</h1>
+      </div>
+    </div>
+
     <!-- about page  -->
     <section id="about">
-      <h1 class="heading">About</h1>
-    </section>
+      <div class="section-outer" >
+        <h1 class="heading about-heading" >ABOUT CSI</h1>
+    </div>
 
-    <div id="team-member" class="member-container">
+    <div class="about-outer">
+      <div class="about-left">
+        <img src="./images/HomepageImages/147408577.png" alt="" srcset="">
+
+      </div>
+      <div class="about-right">
+        <h2>Welcome to CSI DMCE</h2>
+        <p>
+          CSI DMCE is a student branch of Computer Science and Information
+          Engineering (CSCE) affiliated to the Department of Computer Science and
+          Engineering (DMCE), Pune, India. Established in the year 2012, CSI DMCE aims to
+          foster experiences, teamwork, networking, and collaboration among its
+          students.
+        </p>
+        <p>
+          Our committee continuously works for fostering experiences, teamwork,
+          networking, etc., in our college. Our vision is to create a vibrant and
+          inclusive environment where students can grow, learn, and contribute to the
+          field of computer science and information engineering.
+        </p
+
+      </div>
+
+    </div>
+    </section>
+    <section id="team-member" class="member-container">
       <div class="team-panel">
         <div class="team-container">
           <div class="team-member">
@@ -405,15 +439,51 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <section id="about">
-      <h1>about page</h1>
+    <section id="gallery">
+  
+      <h1>Gallery</h1>
+      <div class="gallery">
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 1" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 2" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 3" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 4" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 5" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 6" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 5" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 6" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 5" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG2.jpg" alt="Image 6" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 5" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG2.jpg" alt="Image 6" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 5" class="gallery-item" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 6" class="gallery-item" />
+        <!-- Initially hidden images -->
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 7" class="gallery-item hidden" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 8" class="gallery-item hidden" />
+        <img src="./images/HomepageImages/IMG3.jpg" alt="Image 9" class="gallery-item hidden" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 10" class="gallery-item hidden" />
+        <img src="./images/HomepageImages/IMG3.jpg" alt="Image 11" class="gallery-item hidden" />
+        <img src="./images/HomepageImages/IMG1.jpg" alt="Image 12" class="gallery-item hidden" />
+        <!-- Add more images as needed -->
+      </div>
+      <button id="show-more" class="hidden">Show More</button>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script src="./js/teamPage.js"></script>
     <script src="./js/aboutPage.js"></script>
+    <script src="./js/galleryPage.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
