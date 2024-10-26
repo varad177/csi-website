@@ -1,0 +1,107 @@
+/* Ensuring scroll behavior and page layout */
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: visible;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e3a8a; /* Dark blue */
+  z-index: -1;
+}
+
+.member-container {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.team-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  width: max-content;
+}
+
+.team-member {
+  background: #1f2937; /* Dark grey */
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  margin: 15px 0 5px;
+  font-size: 1.5rem;
+  color: #60a5fa; /* Light blue */
+}
+
+.team-member p {
+  margin: 0;
+  color: #9ca3af; /* Grayish text */
+}
+
+.firstContainer,
+.lastContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111827;
+  color: white;
+  z-index: 2;
+}
+
+.team-lead-inner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 10px;
+}
+
+.team-member-inner {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 20px;
+}
+.member {
+  width: 200px;
+}
+
+.member-heading {
+  color: white;
+}
