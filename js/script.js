@@ -1,4 +1,4 @@
-console.log("varad");
+
 gsap.from('.loader h1', 2, {
   x: 2000
 }, 'start')
