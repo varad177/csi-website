@@ -49,16 +49,24 @@
           </ul>
          
         </div>
-        <div id="menuToggle">
-          <input id="checkbox" type="checkbox">
-          <label class="toggle" for="checkbox">
-              <div class="bar bar--top"></div>
-              <div class="bar bar--middle"></div>
-              <div class="bar bar--bottom"></div>
-          </label>
-        </div>
+       <div id="openBtn" class="open-btn">
+        <i class="fa-solid fa-bars"></i>
+       </div>
        
+      
+      
       </nav>
+      <div id="overlay" class="overlay"></div>
+      <div id="sidebar" class="sidebar">
+        <button id="closeBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <nav class="sidebar-nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+
       <!-- wrapper -->
       <div class="wrapper">
         <!-- content -->
@@ -118,7 +126,7 @@
     <!-- about page  -->
     <!-- <section id="about">
       <div class="section-outer" >
-        <h1 class="heading" >ABOUT CSI</h1>
+        <h1 id="aboutheading" class="heading" >ABOUT CSI</h1>
     </div>
 
     <div class="about-outer">
@@ -190,205 +198,7 @@
 
  </section>
     
-    <section id="team-member" class="member-container">
-      
-      <div class="skip-btn">
-        <a href="#gallery"><i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-      <div class="team-panel">
-        <div class="team-container">
-          <div class="team-member">
-            <div class="leads-outer">
-              <h1 class="leads">Tech Heads</h1>
-              <div class="team-lead-inner">
-                <div class="member-box">
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div> 
-                <div class="member-box"> <!-- Added the missing class here -->
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h2 class="member-heading">members</h2>
-              <div class="team-member-inner">
-                
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                
-          
-              </div>
-            </div>
-          </div>
-          <div class="team-member">
-            <div class="leads-outer">
-              <h1 class="leads">Tech Heads</h1>
-              <div class="team-lead-inner">
-                <div class="member-box">
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div> 
-                <div class="member-box"> <!-- Added the missing class here -->
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h2 class="member-heading">members</h2>
-              <div class="team-member-inner">
-                
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                
-          
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    </section>
+ 
    
 
    <!-- // team  -->
@@ -597,9 +407,9 @@
       <!-- // gallery  -->
     <section id="gallery">
    
-        <div class="section-outer" >
-          <h1 class="heading gellery-heading" >OUR MOMENTS</h1>
-      </div>
+      <div class="section-outer" >
+        <h1 id="galleryheading" >OUR MOMENTS</h1>
+    </div>
       <div class="carousel">
 
         <div class="list">
@@ -669,10 +479,12 @@
 
 <!-- EVENTYS PAGE CARDS -->
 <section>
-    
+  <div class="section-outer" >
+    <h1 id="galleryheading" >OUR EVENTS</h1>
+</div>
   <div class="slider">
     Slider Items
-    <h1 style="width:150px; font-size: xx-large; color:azure;  margin-left: 3rem; font-size:4rem;">EVENTS CARDS</h1>
+   
 
     <div class="item">
       <h1>Slide 1</h1>
@@ -805,8 +617,8 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="./js/aboutPage.js"></script>
     <script src="./js/galleryPage.js"></script>
+    <script src="./js/aboutPage.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/event.js"></script>
     <script src="./js/teamPage.js"></script>

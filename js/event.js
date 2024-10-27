@@ -5,8 +5,8 @@ var nextBtn = document.querySelector('.next'),
     item = document.querySelectorAll('.item'),
     runningTime = document.querySelector('.carousel .timeRunning')
 
-let timeRunning = 3000
-let timeAutoNext = 7000
+let timeRunning = 2000
+let timeAutoNext = 4000
 
 nextBtn.onclick = function(){
     showSlider('next')
@@ -56,71 +56,3 @@ function showSlider(type) {
 
 resetTimeAnimation()
 
-// var carousel = document.querySelector(".carousel"),
-//   list = document.querySelector(".list"),
-//   item = document.querySelectorAll(".item"),
-//   runningTime = document.querySelector(".carousel .timeRunning");
-
-// let timeRunning = 3000;
-// let timeAutoNext = 7000;
-// let currentIndex = 0; // Track the current index of the item displayed
-
-// // Set up the scroll event listener
-// window.addEventListener("wheel", function (event) {
-//   if (event.deltaY > 0) {
-//     showSlider("next");
-//   } else {
-//     showSlider("prev");
-//   }
-// });
-
-// // Handle touch scrolling on mobile devices
-// let touchStartX = 0;
-
-// carousel.addEventListener("touchstart", function (event) {
-//   touchStartX = event.touches[0].clientX; // Store the initial touch position
-// });
-
-// carousel.addEventListener("touchmove", function (event) {
-//   const touchEndX = event.touches[0].clientX;
-//   if (touchEndX < touchStartX) {
-//     showSlider("next"); // Swipe left to go to the next slide
-//   } else if (touchEndX > touchStartX) {
-//     showSlider("prev"); // Swipe right to go to the previous slide
-//   }
-// });
-
-// // Timer to automatically move to the next slide
-// let runNextAuto = setTimeout(() => {
-//   showSlider("next");
-// }, timeAutoNext);
-
-// function resetTimeAnimation() {
-//   runningTime.style.animation = "none";
-//   runningTime.offsetHeight; // Trigger reflow
-//   runningTime.style.animation = null;
-//   runningTime.style.animation = "runningTime 7s linear 1 forwards";
-// }
-
-// function showSlider(type) {
-//   let sliderItemsDom = list.querySelectorAll(".carousel .list .item");
-
-//   if (type === "next") {
-//     list.appendChild(sliderItemsDom[0]);
-//     currentIndex = (currentIndex + 1) % sliderItemsDom.length; // Update current index
-//   } else {
-//     list.prepend(sliderItemsDom[sliderItemsDom.length - 1]);
-//     currentIndex =
-//       (currentIndex - 1 + sliderItemsDom.length) % sliderItemsDom.length; // Update current index
-//   }
-
-//   clearTimeout(runNextAuto);
-//   runNextAuto = setTimeout(() => {
-//     showSlider("next");
-//   }, timeAutoNext);
-
-//   resetTimeAnimation(); // Reset the running time animation
-// }
-
-// // Start the initial animation
-// resetTimeAnimation();
