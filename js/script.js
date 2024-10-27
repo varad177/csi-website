@@ -97,15 +97,15 @@ gsap.to("#name-div h1", {
 gsap.registerPlugin(ScrollTrigger);
 
 // Animation for each heading
-gsap.utils.toArray('.heading').forEach((heading) => {
+gsap.utils.toArray('#aboutheading').forEach((heading) => {
     // Create a timeline for each heading
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: heading, // Element that triggers the animation
             start: 'top 80%', // When the top of the heading hits 80% of the viewport height
             end: 'bottom 20%', // When the bottom of the heading hits 20% of the viewport height
-            scrub: true, // Smooth scrubbing
-            // markers: true // Optional: Add markers for debugging
+            scrub: true, 
+            scroller: "body",
         }
     });
 
@@ -115,4 +115,47 @@ gsap.utils.toArray('.heading').forEach((heading) => {
         y: 0, // Move to original position
         duration: 1 // Animation duration
     });
+});
+
+
+// Get elements
+const sidebar = document.getElementById("sidebar");
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
+const overlay = document.getElementById("overlay");
+
+// GSAP timeline for sidebar animation
+const tl = gsap.timeline({ paused: true, reversed: true });
+
+tl.to(overlay, {
+  duration: 0.1,
+  opacity: 1,
+  pointerEvents: "auto",
+  ease: "power2.out",
+})
+.to(sidebar, {
+  duration: 0.2,
+  x: "100vw", // Slide sidebar to cover the full width
+  ease: "power2.out",
+}, "<") // Start at the same time as overlay
+
+.from(".nav-link", {
+  duration: 0.1,
+  opacity: 0,
+  x: -50,
+  stagger: 0.1,
+});
+
+// Open and close functions
+openBtn.addEventListener("click", () => {
+  tl.reversed() ? tl.play() : tl.reverse();
+});
+
+closeBtn.addEventListener("click", () => {
+  tl.reversed() ? tl.play() : tl.reverse();
+});
+
+// Close sidebar when overlay is clicked
+overlay.addEventListener("click", () => {
+  if (!tl.reversed()) tl.reverse();
 });

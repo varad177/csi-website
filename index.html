@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/aboutPage.css" />
-    <link rel="stylesheet" href="./css/teamPage.css" />
-    <link rel="stylesheet" href="./css/galleryPage.css" />
-    <link rel="stylesheet" href="./css/event.css" />
-    <link rel="stylesheet" href="./css/Eventpage.css" />
 
-    <link rel="stylesheet" href="./css/NewAbout.css" />
-    <link rel="stylesheet" href="./css/contactus.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing page</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/aboutPage.css" />
+  <link rel="stylesheet" href="./css/teamPage.css" />
+  <link rel="stylesheet" href="./css/galleryPage.css" />
+  <link rel="stylesheet" href="./css/event.css" />
+  <link rel="stylesheet" href="./css/Eventpage.css" />
+
+  <link rel="stylesheet" href="./css/NewAbout.css" />
+  <link rel="stylesheet" href="./css/contactus.css">
 
 
 
 
-    <script
-      src="https://kit.fontawesome.com/b0a4a992bb.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <script src="https://kit.fontawesome.com/b0a4a992bb.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
-    <div class="container">
-      <!-- LOADER -->
+<body>
+  <div class="container">
+    <!-- LOADER -->
 
-      <div class="loader">
-        <h1>CSI</h1>
-        <h2>DMCE</h2>
+    <div class="loader">
+      <h1>CSI</h1>
+      <h2>DMCE</h2>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <span><img id="logo" src="./images/HomepageImages/147408577.png" alt="logo" /></span>
       </div>
-   
-      <!-- navbar -->
-      <nav>
-        <div class="logo">
-          <span
-            ><img
-              id="logo"
-              src="./images/HomepageImages/147408577.png"
-              alt="logo"
-          /></span>
-        </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-         
-        </div>
-        <div id="menuToggle">
-          <input id="checkbox" type="checkbox">
-          <label class="toggle" for="checkbox">
-              <div class="bar bar--top"></div>
-              <div class="bar bar--middle"></div>
-              <div class="bar bar--bottom"></div>
-          </label>
-        </div>
-       
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+
+      </div>
+      <div id="openBtn" class="open-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+
+
+    </nav>
+    <div id="overlay" class="overlay"></div>
+    <div id="sidebar" class="sidebar">
+      <button id="closeBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+      <nav class="sidebar-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <!-- wrapper -->
-      <div class="wrapper">
-        <!-- content -->
-        <div class="content">
-          <div class="h1">
-            <h1>CSI-DMCE</h1>
-          </div>
-          <div class="h1">
-            <h1>2024</h1>
-          </div>
-          <p >
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quidem odit accusantium blanditiis, saepe nulla.</p>
-          <!-- <p >
+    </div>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- content -->
+      <div class="content">
+        <div class="h1">
+          <h1>CSI-DMCE</h1>
+        </div>
+        <div class="h1">
+          <h1>2024</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quidem odit accusantium blanditiis, saepe
+          nulla.</p>
+        <!-- <p >
             सर्वे भवन्तु सुखिनः
           </p> -->
-          <div class="social">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-              </li>
-            </ul>
-          </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- img section -->
-        <div class="img">
-          <div class="subimg one">
-            <img src="./images/HomepageImages/IMG1.jpg" alt="" />
-            <div class="bg"></div>
-          </div>
-          <div class="subimg two">
-            <img src="./images/HomepageImages/IMG2.jpg" alt="" />
-            <div class="bg2"></div>
-          </div>
-          <div class="subimg three">
-            <img src="./images/HomepageImages/IMG3.jpg" alt="" />
-            <div class="bg3"></div>
-          </div>
+      <!-- img section -->
+      <div class="img">
+        <div class="subimg one">
+          <img src="./images/HomepageImages/IMG1.jpg" alt="" />
+          <div class="bg"></div>
+        </div>
+        <div class="subimg two">
+          <img src="./images/HomepageImages/IMG2.jpg" alt="" />
+          <div class="bg2"></div>
+        </div>
+        <div class="subimg three">
+          <img src="./images/HomepageImages/IMG3.jpg" alt="" />
+          <div class="bg3"></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div data-scroll-section id="page2">
-      <div id="name-div">
-        <h1 class="h-text">CSI DMCE 2024</h1>
-        <h1 class="h-text">CSI DMCE 2024<h1>
-        <h1 class="h-text">CSI DMCE 2024</h1>
-      </div>
+  <div data-scroll-section id="page2">
+    <div id="name-div">
+      <h1 class="h-text">CSI DMCE 2024</h1>
+      <h1 class="h-text">CSI DMCE 2024<h1>
+          <h1 class="h-text">CSI DMCE 2024</h1>
     </div>
+  </div>
 
-    <!-- about page  -->
-    <!-- <section id="about">
+  <!-- about page  -->
+  <!-- <section id="about">
       <div class="section-outer" >
-        <h1 class="heading" >ABOUT CSI</h1>
+        <h1 id="aboutheading" class="heading" >ABOUT CSI</h1>
     </div>
 
     <div class="about-outer">
@@ -144,254 +146,58 @@
 
     </div>
     </section> -->
-    
-    <!-- about page -->
- <section class="newAbout_main">
-  <!-- 1st box -->
-  <div class="firstBox">
 
-    <div class="first_child" >
-      <p>
-        सर्वे भवन्तु सुखंन्ति
-      </p>
-    </div>
-    <div class="first_second_child">
-      <p>
-        CSI DMCE is a student branch of Computer Science and Information Engineering (CSCE) affiliated to the Department of Computer Science and Engineering (DMCE), Pune, India. Established in the year 2012, CSI DMCE aims to foster experiences, teamwork, networking, and collaboration among its students.
-      </p>
-    </div>
-  </div>
-  <!-- second box -->
-  <div class="second_box">
-    <div class="abouImg">
-      <img src="./images/HomepageImages/IMG3.jpg" alt="">
-    </div>
-    <div class="aboutContent">
-      <div class="content_child">
-        <p>2012</p>
-        <p>Year Of Establishment</p>
-      </div>
-      <div class="content_child">
-        <p>1000</p>
-        <p>Total Members</p>
-      </div>
-      <div class="content_child">
-        <p>1000</p>
-        <p>Total Events</p>
-      </div>
-      <div class="content_child">
-        <p>1000</p>
-        <p>Total Events</p>
-      </div>
-    </div>
-    
-  </div>
- </section>
-    
-    <section id="team-member" class="member-container">
-      
-      <div class="skip-btn">
-        <a href="#gallery"><i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-      <div class="team-panel">
-        <div class="team-container">
-          <div class="team-member">
-            <div class="leads-outer">
-              <h1 class="leads">Tech Heads</h1>
-              <div class="team-lead-inner">
-                <div class="member-box">
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div> 
-                <div class="member-box"> <!-- Added the missing class here -->
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h2 class="member-heading">members</h2>
-              <div class="team-member-inner">
-                
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                
-          
-              </div>
-            </div>
-          </div>
-          <div class="team-member">
-            <div class="leads-outer">
-              <h1 class="leads">Tech Heads</h1>
-              <div class="team-lead-inner">
-                <div class="member-box">
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div> 
-                <div class="member-box"> <!-- Added the missing class here -->
-                  <img
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3>Varad Dhumale</h3>
-                  <p>Team Leader</p>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h2 class="member-heading">members</h2>
-              <div class="team-member-inner">
-                
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-box"> 
-                  <img
-                  class="member-img-box"
-                    src="./images/team-members/varad_dhumale.jpg"
-                    alt="Team Member 1"
-                  />
-                  <h3 class="member-post">Varad Dhumale</h3>
-                  <div class="social-icon">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                </div>
-                
-          
-              </div>
-            </div>
-          </div>
+  <!-- about page -->
+  <section class="newAbout_main">
+    <!-- 1st box -->
+    <div class="firstBox">
 
+      <div class="first_child">
+        <p>
+          सर्वे भवन्तु सुखंन्ति
+        </p>
+      </div>
+      <div class="first_second_child">
+        <p>
+          CSI DMCE is a student branch of Computer Science and Information Engineering (CSCE) affiliated to the
+          Department of Computer Science and Engineering (DMCE), Pune, India. Established in the year 2012, CSI DMCE
+          aims to foster experiences, teamwork, networking, and collaboration among its students.
+        </p>
+      </div>
+    </div>
+    <!-- second box -->
+    <div class="second_box">
+      <div class="abouImg">
+        <img src="./images/HomepageImages/IMG3.jpg" alt="">
+      </div>
+      <div class="aboutContent">
+        <div class="content_child">
+          <p>2012</p>
+          <p>Year Of Establishment</p>
+        </div>
+        <div class="content_child">
+          <p>1000</p>
+          <p>Total Members</p>
+        </div>
+        <div class="content_child">
+          <p>1000</p>
+          <p>Total Events</p>
+        </div>
+        <div class="content_child">
+          <p>1000</p>
+          <p>Total Events</p>
         </div>
       </div>
-    </section>
 
-    </section>
-   
+    </div>
+  </section>
 
-   <!-- // team  -->
-   <section id="team-member" class="member-container">
-      
+
+
+
+  <!-- // team  -->
+  <section id="team-member" class="member-container">
+
     <div class="skip-btn">
       <a href="#gallery"><i class="fa-solid fa-arrow-right"></i></a>
     </div>
@@ -402,21 +208,15 @@
             <h1 class="leads">Tech Heads</h1>
             <div class="team-lead-inner">
               <div class="member-box">
-                <img
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+                <img src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3>Varad Dhumale</h3>
                 <p>Team Leader</p>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-              </div> 
+              </div>
               <div class="member-box"> <!-- Added the missing class here -->
-                <img
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+                <img src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3>Varad Dhumale</h3>
                 <p>Team Leader</p>
                 <div class="social-icon">
@@ -425,68 +225,48 @@
               </div>
             </div>
           </div>
-          
+
           <div>
             <h2 class="member-heading">members</h2>
             <div class="team-member-inner">
-              
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              
-        
+
+
             </div>
           </div>
         </div>
@@ -495,21 +275,15 @@
             <h1 class="leads">Tech Heads</h1>
             <div class="team-lead-inner">
               <div class="member-box">
-                <img
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+                <img src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3>Varad Dhumale</h3>
                 <p>Team Leader</p>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-              </div> 
+              </div>
               <div class="member-box"> <!-- Added the missing class here -->
-                <img
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+                <img src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3>Varad Dhumale</h3>
                 <p>Team Leader</p>
                 <div class="social-icon">
@@ -518,68 +292,48 @@
               </div>
             </div>
           </div>
-          
+
           <div>
             <h2 class="member-heading">members</h2>
             <div class="team-member-inner">
-              
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box"> 
-                <img
-                class="member-img-box"
-                  src="./images/team-members/varad_dhumale.jpg"
-                  alt="Team Member 1"
-                />
+              <div class="member-box">
+                <img class="member-img-box" src="./images/team-members/varad_dhumale.jpg" alt="Team Member 1" />
                 <h3 class="member-post">Varad Dhumale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              
-        
+
+
             </div>
           </div>
         </div>
@@ -589,209 +343,146 @@
   </section>
 
 
-    
 
 
-      <!-- // gallery  -->
-    <section id="gallery">
-   
-        <div class="section-outer" >
-          <h1 class="heading gellery-heading" >OUR MOMENTS</h1>
+
+  <!-- // gallery  -->
+
+
+
+  <!-- EVENTYS PAGE CARDS -->
+  <section>
+    <div class="section-outer">
+      <h1 id="galleryheading">OUR EVENTS</h1>
+    </div>
+    <div class="slider">
+      Slider Items
+
+
+      <div class="item">
+        <h1>Slide 1</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Butterfly image">
       </div>
-      <div class="carousel">
+      <div class="item">
+        <h1>Slide 2</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 1">
+      </div>
+      <div class="item">
+        <h1>Slide 3</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 2">
+      </div>
+      <div class="item">
+        <h1>Slide 4</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 3">
+      </div>
+      <div class="item">
+        <h1>Slide 5</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 4">
+      </div>
+      <div class="item">
+        <h1>Slide 6</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 5">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
+      <div class="item">
+        <h1>Slide 7</h1>
+        <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
+      </div>
 
-        <div class="list">
-
-            <div class="item" style="background-image: url(image/eagel1.jpg);">
-                <div class="content">
-                    <div class="title">SLIDER</div>
-                    <div class="name">EAGLE</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
-                    <!-- <div class="btn">
-                        <button>See More</button>
-                        <button>Subscribe</button>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="item" style="background-image: url(image/owl1.jpg);">
-                
-                <div class="content">
-                    <div class="title">SLIDER</div>
-                    <div class="name">OWL</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
-                    <!-- <div class="btn">
-                        <button>See More</button>
-                        <button>Subscribe</button>
-                    </div> -->
-                </div>
-
-            </div>
-
-            <div class="item" style="background-image: url(image/crow.jpg);">
-
-                <div class="content">
-                    <div class="title">SLIDER</div>
-                    <div class="name">CROW</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
-                    <!-- <div class="btn">
-                        <button>See More</button>
-                        <button>Subscribe</button>
-                    </div> -->
-                </div>
-
-            </div>
-
-
-           
-
-
-           
-
-        </div>
-
-        <!--next prev button-->
-        <div class="arrows">
-            <button class="prev"><</button>
-            <button class="next">></button>
-        </div>
-
-
-        <!-- time running -->
-        <!-- <div class="timeRunning"></div> -->
-
+      Navigation Buttons
+      <button id="next" aria-label="Next slide">></button>
+      <button id="prev" aria-label="Previous slide">
+        << /button>
     </div>
-    </section>
+  </section>
 
+  <!--contact us page-->
+  <div class="container-contact">
+    <h1>Contact Us</h1>
 
-
-<!-- EVENTYS PAGE CARDS -->
-<section>
-    
-  <div class="slider">
-    Slider Items
-    <h1 style="width:150px; font-size: xx-large; color:azure;  margin-left: 3rem; font-size:4rem;">EVENTS CARDS</h1>
-
-    <div class="item">
-      <h1>Slide 1</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Butterfly image">
-    </div>
-    <div class="item">
-      <h1>Slide 2</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 1">
-    </div>
-    <div class="item">
-      <h1>Slide 3</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 2">
-    </div>
-    <div class="item">
-      <h1>Slide 4</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 3">
-    </div>
-    <div class="item">
-      <h1>Slide 5</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 4">
-    </div>
-    <div class="item">
-      <h1>Slide 6</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 5">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-    <div class="item">
-      <h1>Slide 7</h1>
-      <img src="./Eventsimg/IMG1.jpeg" alt="Event image 6">
-    </div>
-
-    Navigation Buttons
-    <button id="next" aria-label="Next slide">></button>
-    <button id="prev" aria-label="Previous slide"><</button>
-  </div>
-</section>
-
-<!--contact us page-->
-<div class="container-contact">
-  <h1>Contact Us</h1>
-
-  <div class="contact-section">
+    <div class="contact-section">
       <!-- Contact Information Section -->
       <div class="contact-info">
-          <div class="contact-box">
-              <h2>GET IN TOUCH WITH US</h2>
-              <p>We welcome your inquiries and feedback. Feel free to reach out to us using the following contact information:</p>
+        <div class="contact-box">
+          <h2>GET IN TOUCH WITH US</h2>
+          <p>We welcome your inquiries and feedback. Feel free to reach out to us using the following contact
+            information:</p>
 
-              <div class="contact-item">
-                  <img src="./image/home (1).png" alt="Location Icon">
-                  <span class="info-title">Our Location</span>
-              </div>
-              <div class="info-text">
-                  <p>Datta Meghe College of Engineering,<br> Sector-3, Airoli, Navi Mumbai, Maharashtra</p>
-              </div>
-
-              <div class="contact-item">
-                  <img src="./image/telephone.png" alt="Phone Icon">
-                  <span class="info-title">Phone Number</span>
-              </div>
-              <div class="info-text">
-                  <p>Aditya Parab - <a href="tel:+919372348202">+91 93723 48202</a></p>
-                  <p>Viraj Sawant - <a href="tel:+919136835165">+91 91368 35165</a></p>
-              </div>
-
-              <div class="contact-item">
-                  <img src="./image/email.png" alt="Email Icon">
-                  <span class="info-title">Email Address</span>
-              </div>
-              <div class="info-text">
-                  <p>Aditya Parab - <a href="mailto:adityaparab212@gmail.com">adityaparab212@gmail.com</a></p>
-                  <p>Viraj Sawant - <a href="mailto:virajsawant3107@gmail.com">virajsawant3107@gmail.com</a></p>
-              </div>
+          <div class="contact-item">
+            <img src="./image/home (1).png" alt="Location Icon">
+            <span class="info-title">Our Location</span>
           </div>
+          <div class="info-text">
+            <p>Datta Meghe College of Engineering,<br> Sector-3, Airoli, Navi Mumbai, Maharashtra</p>
+          </div>
+
+          <div class="contact-item">
+            <img src="./image/telephone.png" alt="Phone Icon">
+            <span class="info-title">Phone Number</span>
+          </div>
+          <div class="info-text">
+            <p>Aditya Parab - <a href="tel:+919372348202">+91 93723 48202</a></p>
+            <p>Viraj Sawant - <a href="tel:+919136835165">+91 91368 35165</a></p>
+          </div>
+
+          <div class="contact-item">
+            <img src="./image/email.png" alt="Email Icon">
+            <span class="info-title">Email Address</span>
+          </div>
+          <div class="info-text">
+            <p>Aditya Parab - <a href="mailto:adityaparab212@gmail.com">adityaparab212@gmail.com</a></p>
+            <p>Viraj Sawant - <a href="mailto:virajsawant3107@gmail.com">virajsawant3107@gmail.com</a></p>
+          </div>
+        </div>
       </div>
 
       <!-- Map Section -->
       <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.79972652446!2d72.99319562466722!3d19.160241949323506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf4b7a73c0ab%3A0xcfeb8b94503749f3!2sDatta%20Meghe%20College%20Of%20Engineering%2C%20Sector%203%2C%20Airoli%2C%20Navi%20Mumbai%2C%20Maharashtra%20400708!5e0!3m2!1sen!2sin!4v1730011736055!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.79972652446!2d72.99319562466722!3d19.160241949323506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf4b7a73c0ab%3A0xcfeb8b94503749f3!2sDatta%20Meghe%20College%20Of%20Engineering%2C%20Sector%203%2C%20Airoli%2C%20Navi%20Mumbai%2C%20Maharashtra%20400708!5e0!3m2!1sen!2sin!4v1730011736055!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy"></iframe>
       </div>
+    </div>
   </div>
-</div>
 
 
 
@@ -800,23 +491,23 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
-      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+    integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./js/aboutPage.js"></script>
-    <script src="./js/galleryPage.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/event.js"></script>
-    <script src="./js/teamPage.js"></script>
-    <script src="./js/Eventpage.js"></script>
-    <script src="./js/contactus.js"></script>
 
-  </body>
+  <script src="./js/aboutPage.js"></script>
+  <script src="./js/galleryPage.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/event.js"></script>
+  <script src="./js/teamPage.js"></script>
+  <script src="./js/Eventpage.js"></script>
+  <script src="./js/contactus.js"></script>
+
+
+</body>
+
 </html>
