@@ -437,9 +437,7 @@ nav {
   transition-delay: calc(0s + 0.35s * 1.3), calc(0s + 0.35s * 1.3);
 }
 
-nav {
-  border: 2px solid red;
-}
+
 /* // Home page and nav bar source code  */
 .linkedin {
   color: rgb(0, 182, 243);
@@ -450,7 +448,7 @@ nav {
 }
 
 .container .wrapper .content .social ul li a i {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 @media (max-width: 768px) {
@@ -467,20 +465,20 @@ nav {
   }
 
   .container .loader h1 {
-    font-size: 200px;
+    font-size: 145px;
     font-family: Cosi Azure;
     position: fixed;
-    top: 0px;
+    top: 51px;
     left: 0px;
-  }
+}
 
-  .container .loader h2 {
-    font-size: 200px;
-    font-family: Cosi Azure;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-  }
+.container .loader h2 {
+  font-size: 112px;
+  font-family: Cosi Azure;
+  position: fixed;
+  bottom: 77px;
+  right: 15px;
+}
 
   .loader {
     max-width: 100vw !important;
@@ -497,13 +495,13 @@ nav {
   }
 
   .container .wrapper .content .h1 h1 {
-    font-size: 55px;
+    font-size: 60px;
     line-height: 90%;
   }
 
   .container .wrapper .content p {
     font-size: 22px !important;
-    line-height: 130%;
+    line-height: 155%;
     width: 100%;
   }
 
@@ -515,7 +513,7 @@ nav {
     height: 60px;
   }
   .container nav {
-    padding: 4px 0px;
+    padding: 8px 0px;
   }
 
   .container nav .logo {
