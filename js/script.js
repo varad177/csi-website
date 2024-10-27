@@ -135,7 +135,7 @@ tl.to(overlay, {
 })
 .to(sidebar, {
   duration: 0.2,
-  x: "100%", // Slide sidebar to cover the full width
+  x: "100vw", // Slide sidebar to cover the full width
   ease: "power2.out",
 }, "<") // Start at the same time as overlay
 
