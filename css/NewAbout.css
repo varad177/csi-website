@@ -1,0 +1,99 @@
+.newAbout_main {
+  width: 100vw;
+  height: 100vh;
+  /* border: 3px solid rgb(255, 217, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  color: white;
+}
+
+.firstBox {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(234, 6, 6); */
+}
+
+.first_child {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto;
+  font-size: 6rem;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* border: 1px solid rgb(173, 235, 5); */
+  padding-left: 3rem;
+}
+
+.first_second_child {
+  width: 100%;
+  height: 50%;
+  font-size: 1.3rem;
+  padding:2rem;
+  text-align: justify;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 248, 255);
+  /* border: 3px solid rgb(6, 234, 215); */
+}
+/* .first_second_child p{
+    width: 90%;
+  height: 50%;
+} */
+.second_box {
+  width: 50%;
+  height: 80%;
+  /* border: 4px solid rgb(234, 6, 6); */
+  gap:2rem;
+}
+.abouImg {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(255, 166, 0); */
+}
+.second_box div img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  /* border: 8px solid rgb(17, 189, 32); */
+}
+
+.aboutContent {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid rgb(255, 166, 0); */
+}
+
+.content_child {
+  width: 45%;
+  height: 40%;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  font-weight:900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 1rem;
+  background-color: rgba(240, 248, 255, 0.378);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:1px solid rgb(255, 255, 255);
+}
