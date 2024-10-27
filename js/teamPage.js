@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
       start: "top 80%",
       end: "top 40%",
       scrub: true,
-      markers: true,
+      // markers: true,
       scroller: "body",
     },
     scale: 0,
