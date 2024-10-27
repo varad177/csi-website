@@ -28,17 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
     y: 0, // Move to original position
     duration: 0.5, // Animation duration
   });
-  gsap.to("#about", {
-    backgroundColor: "#FFFFFF",  // Change to green or any color you prefer
-    duration: 0.1,                 // Duration for smooth color transition
-    scrollTrigger: {
-      trigger: "#about",
-      start: "top 90%",          // Start color change when about-outer enters viewport
-      end: "bottom 80%",       // End color change when about-outer leaves viewport
-      scrub: true,               // Smooth transition while scrolling
-      toggleActions: "play none none none"
-    }
-  });
+
 });
 // Right section animation
 

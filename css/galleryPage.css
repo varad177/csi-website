@@ -7,6 +7,7 @@
   left: 0;
   top: 0;
   animation: runningTime 7s linear 1;
+  border-radius: 20px;
 }
 
 .content .title {
