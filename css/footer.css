@@ -1,0 +1,90 @@
+
+  
+  .footer {
+   
+    backdrop-filter: blur(px); /* Apply background blur */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    opacity: 0; /* Hidden initially for animation */
+  }
+  
+  .social-links {
+    list-style-type: none;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0; /* Hidden initially for animation */
+  }
+  
+  .social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+ 
+  .footer-text {
+    font-size: 0.9em;
+    opacity: 0; /* Hidden initially for animation */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-title {
+      font-size: 1.5em;
+    }
+  
+    .social-links {
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-text {
+      font-size: 0.8em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 15px 10px;
+    }
+  
+    .footer-title {
+      font-size: 1.3em;
+    }
+  
+    .social-icon {
+      font-size: 1em;
+    }
+  
+    .footer-text {
+      font-size: 0.75em;
+    }
+  }
+  
+  .fa-instagram{
+    color: #e4405f !important;
+  }
+
+  .fa-github{
+    color: #FFFFFF !important;
+  }
+
+  .fa-linkedin{
+    color: #007bb5 !important;
+  }
+
+  

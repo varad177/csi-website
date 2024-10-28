@@ -49,7 +49,7 @@ body a {
   color: #272626;
 }
 .loader {
-  border: 2px solid green;
+
   width: 100vw !important;
   height: 100vh !important;
   position: absolute;
@@ -285,7 +285,7 @@ nav {
 
 @media (max-width: 600px) {
   #page2 {
-    min-height: 100vh;
+    height: auto;
     width: 100%;
     padding-top: 2vh;
     position: relative;
@@ -338,7 +338,7 @@ nav {
 }
 
 #page2 {
-  min-height: 100vh;
+  height: auto;
   width: 100%;
   padding-top: 10vh;
   position: relative;
@@ -469,7 +469,7 @@ nav {
     display: block;
   }
   nav{
-    margin-top: 80px !important;
+    margin-top:3px !important;
   }
 
   .container .loader h1 {
