@@ -1,49 +1,28 @@
-let items = document.querySelectorAll('.slider .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
+let currentIndex = 0;
 
-let active = 3;
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
 
-function loadShow() {
-    let stt = 0;
-    items[active].style.transform = `none`;
-    items[active].style.zIndex = 1;
-    items[active].style.filter = 'none';
-    items[active].style.opacity = 1;
-
-    for (let i = active + 1; i < items.length; i++) {
-        stt++;
-        items[i].style.transform = `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
-        items[i].style.zIndex = -stt;
-        items[i].style.filter = 'blur(5px)';
-        items[i].style.opacity = stt > 2 ? 0 : 0.6;
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
     }
 
-    stt = 0;
-    for (let i = active - 1; i >= 0; i--) {
-        stt++;
-        items[i].style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
-        items[i].style.zIndex = -stt;
-        items[i].style.filter = 'blur(5px)';
-        items[i].style.opacity = stt > 2 ? 0 : 0.6;
-    }
+    const carouselWrapper = document.querySelector('.carousel-wrapper');
+    gsap.to(carouselWrapper, { x: -currentIndex * 100 + '%', duration: 0.5 });
 }
 
 function nextSlide() {
-    active = active + 1 < items.length ? active + 1 : 0; // Reset to first item if at end
-    loadShow();
+    showSlide(currentIndex + 1);
 }
 
 function prevSlide() {
-    active = active - 1 >= 0 ? active - 1 : items.length - 1; // Reset to last item if at beginning
-    loadShow();
+    showSlide(currentIndex - 1);
 }
 
-next.onclick = nextSlide;
-prev.onclick = prevSlide;
-
-// Set interval for automatic slide movement every 3 seconds
+// Auto Slide
 setInterval(nextSlide, 5000);
-
-// Initial load
-loadShow();

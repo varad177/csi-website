@@ -8,7 +8,7 @@ gsap.to(teamContainer, {
   scrollTrigger: {
     trigger: ".member-container",
     start: "top top",
-    end: () => "+=" + teamContainer.scrollWidth,
+    // end: () => "+=" + teamContainer.scrollWidth,
     scrub: true,
     pin: ".member-container",
   },

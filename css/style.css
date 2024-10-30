@@ -124,7 +124,7 @@ nav {
 
 .container .wrapper {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 90vh;
 
   overflow: hidden !important;
 
@@ -155,21 +155,23 @@ nav {
   font-size: 30px !important;
 }
 .container .wrapper .content .h1 h1 {
+  text-align: left !important;
   font-size: 110px;
   line-height: 90%;
   color: white;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
-    2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-    2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-    2px 2px 3px rgba(0, 0, 0, 0.6);
+  2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
+  2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
+  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+  2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .container .wrapper .content p {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
+  text-align: left !important;
   line-height: 109%;
   width: 70%;
 }
@@ -337,10 +339,11 @@ nav {
   animation-iteration-count: infinite; */
 }
 
+
+
 #page2 {
   height: auto;
   width: 100%;
-  padding-top: 10vh;
   position: relative;
   color: white;
 }
@@ -531,3 +534,16 @@ nav {
     align-items: center;
   }
 }
+
+
+.face-effect {
+  display: inline-block;
+  padding: 20px;
+  font-size: 24px;
+  background-color: #00BB00; /* Your preferred color */
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+}
+

@@ -161,3 +161,28 @@ overlay.addEventListener("click", () => {
 });
 
 
+// Initialize GSAP
+
+const faceElements = document.querySelectorAll('.face-effect');
+
+faceElements.forEach((element) => {
+  element.addEventListener('mouseenter', () => {
+    gsap.to(element, {
+      scale: 1.1,
+      rotation: 10,
+      duration: 0.3,
+      ease: 'power1.out'
+    });
+  });
+
+  element.addEventListener('mouseleave', () => {
+    gsap.to(element, {
+      scale: 1,
+      rotation: 0,
+      duration: 0.3,
+      ease: 'power1.out'
+    });
+  });
+});
+
+

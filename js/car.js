@@ -1,29 +1,19 @@
-// JAVASCIRPT
-const carPath = {
-    curviness: 1,
-    autoRotate: true,
-    values: [
-        { x: 0, y: 0 },
-        { x: window.innerWidth, y: 0 }
-    ]
-}
+const element = document.getElementsByClassName('fd');
 
+// Function to handle scroll animations
+const handleScroll = () => {
+    const elementPosition = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
 
-const tween = new TimelineLite();
-tween.add(
-    TweenLite.to('.car', 1, {
-        bezier: carPath,
-        ease: Power1.easeInOut
-    })
-)
+    // Check if the element is in view
+    if (elementPosition < windowHeight && elementPosition > 0) {
+        // Element is in view - fade in
+        gsap.to(element, { opacity: 1, duration: 0.5 });
+    } else {
+        // Element is out of view - fade out
+        gsap.to(element, { opacity: 0, duration: 0.5 });
+    }
+};
 
-
-const controller = new ScrollMagic.Controller();
-const scene = new ScrollMagic.Scene({
-    triggerElement: ".animation-section",
-    duration: 5000,
-    triggerHook: 0
-})
-.setTween(tween)
-.setPin('.animation-section')
-.addTo(controller);
+// Listen for scroll events
+window.addEventListener('scroll', handleScroll);

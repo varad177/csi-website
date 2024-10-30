@@ -1,52 +1,61 @@
-.carousel .timeRunning {
-  position: absolute;
-  z-index: 1000;
-  width: 0%;
-  height: 4px;
-  background-color: rgb(0, 136, 255) !important;
-  left: 0;
-  top: 0;
-  animation: runningTime 7s linear 1;
+#gallery {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: fit-content !important;
   border-radius: 20px;
 }
 
-.content .title {
-  font-size: 100px;
-  text-transform: uppercase;
-  color: rgb(0, 136, 255) !important;
-  font-weight: bold;
-  line-height: 1;
-  opacity: 0;
-  animation: animate 1s ease-in-out 0.3s 1 forwards;
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s, filter 0.3s; /* Added filter transition */
 }
 
-.arrows button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgb(0, 136, 255) !important;
-  color: #fff;
-  border: none;
-  outline: none;
+.gallery-item:hover img {
+  transform: scale(1.05);
+  filter: blur(3px); /* Blurs the image on hover */
 }
 
-#gallery {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.carousel {
-  width: 80% !important;
-  height: 60% !important;
-}
-
-#galleryheading {
-  font-size: 3rem;
-  font-weight: bold;
+.description {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center align */
+  padding: 10px;
   color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .description {
+  opacity: 1; /* Show description on hover */
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 15px); /* Two items per row */
+  }
 }

@@ -1,13 +1,21 @@
-gsap.from("#galleryheading", {
-  opacity: 0, // Fade in
-  y: 50, // Start 50px below its original position
-  duration: 1, // Animation duration
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('mouseover', () => {
+      const description = item.getAttribute('data-description');
+      const descriptionBox = document.getElementById('description');
+      descriptionBox.textContent = description;
 
-  scrollTrigger: {
-    trigger: "#galleryheading", // Element that triggers the animation
-    start: "top 80%", // When the top of the heading hits 80% of the viewport height
-    end: "bottom 20%", // When the bottom of the heading hits 20% of the viewport height
-    scrub: true, // Smooth animation as you scroll
-    scroller: "body", // Specify the scrolling container
-  },
+      // Position the description box at the bottom of the image
+      const rect = item.getBoundingClientRect();
+      descriptionBox.style.left = `${rect.left}px`;
+      descriptionBox.style.top = `${rect.bottom + window.scrollY}px`;
+      descriptionBox.style.width = `${rect.width}px`;
+
+      // GSAP animation for description
+      gsap.to(descriptionBox, { opacity: 1, duration: 0.3 });
+  });
+
+  item.addEventListener('mouseout', () => {
+      const descriptionBox = document.getElementById('description');
+      gsap.to(descriptionBox, { opacity: 0, duration: 0.3 });
+  });
 });

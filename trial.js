@@ -1,26 +1,24 @@
+// Importing the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-const images = gsap.utils.toArray('img');
-const loader = document.querySelector('.loader--text');
-const updateProgress = (instance) => 
-  loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
+// Select all elements with the fade-effect class
+const fadeElements = document.querySelectorAll('.fade-effect');
 
-const showDemo = () => {
-  document.body.style.overflow = 'auto';
-  document.scrollingElement.scrollTo(0, 0);
-  gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
-  
-  gsap.utils.toArray('section').forEach((section, index) => {
-    const w = section.querySelector('.wrapper');
-    const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
-    gsap.fromTo(w, {  x  }, {
-      x: xEnd,
-      scrollTrigger: { 
-        trigger: section, 
-        scrub: 0.5 
+// Function to trigger animations when elements come into view
+fadeElements.forEach((element) => {
+  gsap.fromTo(
+    element,
+    { opacity: 0, y: 30 }, // Initial state (hidden and slightly down)
+    {
+      opacity: 1, // Final state (visible)
+      y: 0, // Final position (original)
+      duration: 1,
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 80%', // Trigger animation when the top of the element is 80% from the top of the viewport
+        toggleActions: 'play none none reverse', // Play animation on enter, reverse on exit
+        markers: false // Set to true to see markers for debugging
       }
-    });
-  });
-}
-
-imagesLoaded(images).on('progress', updateProgress).on('always', showDemo);
+    }
+  );
+});
