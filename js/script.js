@@ -159,3 +159,5 @@ closeBtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   if (!tl.reversed()) tl.reverse();
 });
+
+
