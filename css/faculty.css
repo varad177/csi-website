@@ -21,16 +21,11 @@
   color: white;
 }
 
-.faculty_coordinator {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row-reverse; /* Stack heading and content vertically */
-  justify-content: center;
-  align-items: center;
-  gap:0.5rem;
-  color: white;
+.faculty_main.reverse {
+  flex-direction: row-reverse;
 }
+
+
 
 .faculty-head {
   font-size: 3rem;
@@ -46,6 +41,12 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.faculty_main.reverse .faculty_firstBox p,
+.faculty_main.reverse .faculty_second_box img,
+.faculty_main.reverse .faculty_second_box p {
+  align-self: flex-end; /* End alignment for reversed layout */
 }
 
 .facultyImg {
