@@ -1,21 +1,26 @@
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('mouseover', () => {
-      const description = item.getAttribute('data-description');
-      const descriptionBox = document.getElementById('description');
-      descriptionBox.textContent = description;
+const button = document.querySelector(".toggle-gallery");
+const hiddenItems = document.querySelectorAll(".gallery-item.hidden");
 
-      // Position the description box at the bottom of the image
-      const rect = item.getBoundingClientRect();
-      descriptionBox.style.left = `${rect.left}px`;
-      descriptionBox.style.top = `${rect.bottom + window.scrollY}px`;
-      descriptionBox.style.width = `${rect.width}px`;
+let isExpanded = false;
 
-      // GSAP animation for description
-      gsap.to(descriptionBox, { opacity: 1, duration: 0.3 });
-  });
+button.addEventListener("click", function () {
+  if (isExpanded) {
+    // Collapse the gallery
+    hiddenItems.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.add("hidden");
+      }, index * 100); // Staggered animation
+    });
+    button.textContent = "See More";
+  } else {
+    // Expand the gallery
+    hiddenItems.forEach((item, index) => {
+      setTimeout(() => {
+        item.classList.remove("hidden");
+      }, index * 100); // Staggered animation
+    });
+    button.textContent = "See Less";
+  }
 
-  item.addEventListener('mouseout', () => {
-      const descriptionBox = document.getElementById('description');
-      gsap.to(descriptionBox, { opacity: 0, duration: 0.3 });
-  });
+  isExpanded = !isExpanded;
 });
