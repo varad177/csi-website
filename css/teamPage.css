@@ -16,6 +16,7 @@
 
 .team-container {
   display: flex;
+  align-items: center;
   flex-wrap: nowrap;
   gap: 40px;
   width: max-content;
@@ -27,13 +28,16 @@
   text-align: center;
   width: 100vw;
   height: auto;
+  display: flex;
+  gap: 2rem;
+  /* align-items: center; */
 }
 
 .team-member img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .team-member h3 {
@@ -61,19 +65,19 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-
+  flex-direction: column;
   padding: 10px;
 }
 
-.team-member-inner {
+/* .team-member-inner {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-
   padding: 20px;
-}
+} */
+
 .member {
   width: 200px;
 }
@@ -84,13 +88,9 @@
 
 .leads {
   font-size: 35px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
-
-.leads-outer {
-  padding-top: 30px;
-}
 .social-icon {
   display: flex;
   align-items: center;
@@ -111,6 +111,13 @@
   border: 1px solid rgba(255, 255, 255, 0.508);
   padding: 10px;
   border-radius: 20px;
+  width: 100%;
+}
+
+.member-box-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .member-heading {
