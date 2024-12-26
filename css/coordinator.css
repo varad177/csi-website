@@ -1,23 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-.faculty_main {
+.coordinator_main {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row; /* Stack heading and content vertically */
+  flex-direction: row-reverse; /* Stack heading and content vertically */
   justify-content: center;
   align-items: center;
   gap:0.5rem;
   color: white;
 }
 
-.faculty-head {
+
+.coordinator-head {
   font-size: 3rem;
   font-weight: bold;
   color: aliceblue;
 }
 
-.faculty_second_box {
+.coordinator_second_box {
   width: 50%;
   height: 80%;
   display: flex;
@@ -27,23 +28,25 @@
   gap: 2rem;
 }
 
-.facultyImg {
+
+.coordinator_Img {
   width: 57%;
   height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
+  margin-right:250px;
 }
 
-.facultyImg img {
+.coordinator_Img img {
   width: 70%;
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-.faculty_content_child {
+.coordinator_content_child {
   width: 40%;
   height: 10%;
   font-size: 1.5rem;
@@ -57,9 +60,10 @@
   align-items: center;
   justify-content: center;
   border: 1px solid rgb(255, 255, 255);
+  margin-right: 250px;
 }
 
-.faculty_info {
+.coordinator_info {
   width: 100%;
   height: auto;
   font-size: 1.8rem;
@@ -70,12 +74,12 @@
   justify-content: center;
   align-items: center;
   color: rgb(240, 248, 255);
-  margin-left: 120px;
+  margin-right: 400px;
 }
 
 
 
-.faculty_firstBox {
+.coordinator_firstBox {
   width: 50%;
   height: 80%;
   display: flex;
@@ -86,38 +90,48 @@
 
 /* Responsive Styles */
 @media (max-width: 480px) {
-  .faculty_main {
+  .coordinator_main {
     flex-direction: column-reverse;
     gap:0.5rem; /* Stack elements vertically on small screens */
   }
   
-  .faculty_firstBox {
+  .coordinator_firstBox {
     width: 100%;
     display: flex;
     flex-direction: column-reverse; /* Reverse order for small screens */
   }
 
-  .faculty_second_box {
+  .coordinator_second_box {
     width: 100%;
     flex-direction: column; /* Stack image and text vertically */
     margin-top: 1rem;
+    margin-right: 0px;
   }
 
-  .facultyImg {
+  .coordinator_Img {
     width: 100%;
+    margin-right: 0;
   }
 
-  .faculty_content_child {
+  .coordinator_content_child {
     width: 90%;
     height: auto; /* Adjust height to auto for responsive design */
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: 200;
+    margin-right: 0;
   }
 
-  .faculty_info {
+  .coordinator_info {
     width: 100%;
     font-size: 1rem;
-    margin-left: 0;
+    padding: 2rem;
+  text-align: justify;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 248, 255);
+  margin-right: 0;
   }
 }
