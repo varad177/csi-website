@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
   gsap.from(".team-member", {
     scrollTrigger: {
       trigger: ".team-member",
-      start: "top 80%",
+      start: "top 90%",
       end: "top 40%",
       scrub: true,
       // markers: true,
