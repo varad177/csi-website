@@ -1,101 +1,72 @@
-.carousel-section {
+
+#events{
+    height: 100vh;
     width: 100%;
+    height: auto;
+}
+.carousel {
+    position: relative;
+    width: fit-content;
+    max-width: 800px;
+    margin: auto;
     overflow: hidden;
-    position: relative;
-    padding: 20px 0;
+    height: 70vh !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-container {
-    display: flex;
-    position: relative;
-}
 
-.carousel-slide {
+.carousel-wrapper {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
 }
 
 .carousel-item {
-    width: 350px;
-    /* Increased width */
-    height: 450px;
-    /* Increased height */
-    margin: 0 15px;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.9;
-    transition: transform 0.3s ease;
-    overflow: hidden;
+
+    min-width: 100%;
+    height: 70vh !important ;
+    transition: opacity 0.5s ease;
 }
 
-.carousel-item:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+.carousel img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100% ;
+    object-fit: contain !important;
+ ;
 }
 
-.event-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+
+
+@media (max-width: 600px) {
+    button {
+        padding: 8px;
+    }
+
+    .carousel{
+        display: flex;
+        gap: 20px;
+    }
 }
 
-.event-details {
-    text-align: center;
-    margin-top: 10px;
+.btn{
+    height: 50px;
+    border-radius: 10px;
+    width: 50px;
+    background-color: #000000af;
+    border: 2px solid #FFFFFF;
+    color: rgb(21, 119, 255);
 }
 
-.event-name {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.event-date,
-.event-venue {
-    font-size: 1rem;
-    margin: 5px 0;
-}
-
-.prev-btn,
-.next-btn {
+.btns{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    z-index: 10;
-}
+    margin: 10px;
+    bottom: 20px;
+    right: 20px;
 
-.prev-btn {
-    left: 10px;
-}
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
 
-.next-btn {
-    right: 10px;
-}
-
-@media (max-width: 768px) {
-    .carousel-item {
-        width: 280px;
-        /* Reduced width for smaller screens */
-        height: 380px;
-        /* Reduced height */
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-item {
-        width: 220px;
-        /* Further reduced width for mobile */
-        height: 320px;
-        /* Further reduced height */
-    }
 }

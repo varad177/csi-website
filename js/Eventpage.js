@@ -1,44 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const carouselSlide = document.querySelector('.carousel-slide');
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+let currentIndex = 0;
 
-    let counter = 0;
-    const size = carouselItems[0].clientWidth + 30; // Adjust for margins
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
 
-    // Function to slide to next event
-    function nextSlide() {
-        if (counter >= carouselItems.length - 1) {
-            counter = 0;
-        } else {
-            counter++;
-        }
-        carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
     }
 
-    // Function to slide to previous event
-    function prevSlide() {
-        if (counter <= 0) {
-            counter = carouselItems.length - 1;
-        } else {
-            counter--;
-        }
-        carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-    }
+    const carouselWrapper = document.querySelector('.carousel-wrapper');
+    gsap.to(carouselWrapper, { x: -currentIndex * 100 + '%', duration: 0.5 });
+}
 
-    // Automatically slide every 5 seconds
-    setInterval(nextSlide, 5000);
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
 
-    // GSAP animation for hover effect
-    gsap.from(".carousel-item", {
-        scale: 0.95,
-        duration: 1,
-        opacity: 0,
-        stagger: 0.2
-    });
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
 
-    // Event listeners for buttons
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-});
+// Auto Slide
+setInterval(nextSlide, 5000);
