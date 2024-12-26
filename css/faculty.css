@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.faculty_main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row; /* Stack heading and content vertically */
+  justify-content: center;
+  align-items: center;
+  gap:0.5rem;
+  color: white;
+}
+
+.faculty-head {
+  font-size: 3rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.faculty_second_box {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column; /* Align image and text side by side */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.facultyImg {
+  width: 57%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.facultyImg img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.faculty_content_child {
+  width: 40%;
+  height: 10%;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 1rem;
+  background-color: rgba(240, 248, 255, 0.378);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.faculty_info {
+  width: 100%;
+  height: auto;
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-align: justify;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 248, 255);
+  margin-left: 120px;
+}
+
+
+
+.faculty_firstBox {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .faculty_main {
+    flex-direction: column-reverse;
+    gap:0.5rem; /* Stack elements vertically on small screens */
+  }
+  
+  .faculty_firstBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse; /* Reverse order for small screens */
+  }
+
+  .faculty_second_box {
+    width: 100%;
+    flex-direction: column; /* Stack image and text vertically */
+    margin-top: 1rem;
+  }
+
+  .facultyImg {
+    width: 100%;
+  }
+
+  .faculty_content_child {
+    width: 90%;
+    height: auto; /* Adjust height to auto for responsive design */
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  .faculty_info {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+}
