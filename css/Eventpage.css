@@ -1,72 +1,82 @@
-
-#events{
-    height: 100vh;
-    width: 100%;
-    height: auto;
+#events {
+    padding: 40px 20px;
+    /* Added padding to separate the heading */
+    text-align: center;
 }
+
 .carousel {
     position: relative;
-    width: fit-content;
-    max-width: 800px;
-    margin: auto;
+    margin: 20px auto;
+    /* Added margin to ensure space from the heading */
+    width: 80%;
+    /* Carousel width */
     overflow: hidden;
-    height: 70vh !important;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    height: 300px;
 }
-
 
 .carousel-wrapper {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.8s ease-in-out;
+    /* Smooth sliding animation */
 }
 
 .carousel-item {
-
-    min-width: 100%;
-    height: 70vh !important ;
-    transition: opacity 0.5s ease;
+    flex: 0 0 300px;
+    /* Set each card width */
+    height: 300px;
+    margin: 0 10px;
 }
 
-.carousel img {
-    border-radius: 10px;
+.event-card {
+    width: 300px;
+    height: 300px;
+    background: #d8dbdf;
+    border-radius: 15px;
+    border: white solid;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-card img {
+    width: 100%;
     height: 100%;
-    width: 100% ;
-    object-fit: contain !important;
- ;
+    object-fit: cover;
 }
 
-
-
-@media (max-width: 600px) {
-    button {
-        padding: 8px;
-    }
-
-    .carousel{
-        display: flex;
-        gap: 20px;
-    }
-}
-
-.btn{
-    height: 50px;
-    border-radius: 10px;
-    width: 50px;
-    background-color: #000000af;
-    border: 2px solid #FFFFFF;
-    color: rgb(21, 119, 255);
-}
-
-.btns{
+.event-details {
     position: absolute;
-    margin: 10px;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
 
+.event-card:hover .event-details {
+    transform: translateY(0);
+}
+
+.btns {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-100%);
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 10px;
+    justify-content: space-between;
+}
 
+.btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: white solid;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
