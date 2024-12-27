@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/contactus.css">
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/Car.css" />
+  <link rel="stylesheet" href="./css/carousel.css" />
 
 
 
@@ -31,8 +32,19 @@
 
 
   <script src="https://kit.fontawesome.com/b0a4a992bb.js" crossorigin="anonymous"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   
+  <style>
+    .span-blue {
+      color: rgb(0, 132, 255);
+    }
+    .about-head {
+      font-size: 3rem !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -139,7 +151,7 @@
 
   <!-- about page -->
   <section class="container">
-    <h1 class="about-head">ABOUT CSI-CATT</h1>
+    <h1 class="about-head">ABOUT <span class="span-blue">CSI-CATT</span></h1>
     <div class="newAbout_main">
       <!-- 1st box -->
       <div class="firstBox">
@@ -181,66 +193,43 @@
           </div>
         </div>
 
-      </div>
-  </section>
+      </div>  </section>  
+
   <!-- hod page -->
-  <section class="container">
-    <h1 class="faculty-head">Head of Department</h1>
-    <div class="faculty_main">
-
-      <div class="faculty_firstBox">
-        <div class="faculty_info">
-          <p>
-            CSI DMCE is a student branch of Computer Science and Information Engineering (CSCE) affiliated to the
-            Department of Computer Science and Engineering (DMCE), Pune, India. Established in the year 2012, CSI DMCE
-            aims to foster experiences, teamwork, networking, and collaboration among its students.
-          </p>
-        </div>
-      </div>
-
-      <div class="faculty_second_box">
-
-        <div class="facultyImg">
-          <img src="./images/faculty/hod.jpg" alt="">
-        </div>
-
-        <div class="faculty_content_child">
-          <p>Dr. Amol Pande</p>
-          <p>Professor & HOD</p>
-        </div>
-      </div>
+  <section class="hod-faculty-section">
+    <div class="overflow-hidden">
+        <h1 class="hod-faculty-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            Meet The Pillars of <br>
+        </h1>
+    </div>
+    <div class="overflow-hidden">
+        <h1 class="hod-faculty-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            <span class="highlight span-blue">CSI-CATT DMCE!</span>
+        </h1>
     </div>
 
-  </section>
-
-
-  <!-- coordinator page -->
-  <section class="container">
-    <h1 class="coordinator-head">CSI Coordinator</h1>
-    <div class="coordinator_main">
-      <div class="coordinator_firstBox">
-        <div class="coordinator_info">
-          <p>
-            CSI DMCE is a student branch of Computer Science and Information Engineering (CSCE) affiliated to the
-            Department of Computer Science and Engineering (DMCE), Pune, India. Established in the year 2012, CSI DMCE
-            aims to foster experiences, teamwork, networking, and collaboration among its students.
-          </p>
+    <div class="hod-faculty-container">
+        <div class="faculty-card">
+          <div>
+            <img src="images/faculty/hod.jpg" alt="Dr. Amol Pande">
+            <p class="faculty-name">Dr. Amol Pande</p>
+            <p class="faculty-designation">Head of Department</p>
+          </div>
+            <p class="faculty-content">CSI DMCE - Student branch, established in the year 2012, conducts various workshops, seminars, technical competitions and also Technical fest in association with Computer Association for Technological Trends (CATT).</p>
         </div>
-      </div>
-
-      <div class="coordinator_second_box">
-
-        <div class="coordinator_Img">
-          <img src="./images/faculty/coordinator.jpg" alt="">
+        <div class="faculty-card">
+          <div>
+            <img src="images/faculty/coordinator.jpg" alt="Prof. Vaishali Gaidhane">
+            <p class="faculty-name">Prof. Vaishali Gaidhane</p>
+            <p class="faculty-designation">CSI-CATT Coordinator</p>
+          </div>
+          <p class="faculty-content">CSI DMCE - Student branch, established in the year 2012, conducts various workshops, seminars, technical competitions and also Technical fest in association with Computer Association for Technological Trends (CATT).</p>
         </div>
-
-        <div class="coordinator_content_child">
-          <p>Mrs.Vaishali Gaidhane </p>
-          <p>Asst. Professor</p>
-        </div>
-      </div>
     </div>
   </section>
+
+  
+
 
 
   <!-- Core Team Section -->
@@ -1515,7 +1504,7 @@
 
 
   <!-- EVENTYS PAGE CARDS -->
-  <section id="events">
+  <!-- <section id="events">
     <h1 class="about-head">OUR EVENTS</h1>
     <div class="carousel">
       <div class="carousel-wrapper">
@@ -1565,8 +1554,44 @@
         <button class="btn right" onclick="nextSlide()">&#10095;</button>
       </div>
     </div>
+  </section> -->
+
+
+  <!-- Carousel Section -->
+  <section id="swiper-section">
+    <h1 class="about-head">OUR EVENTS</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">]
+            <div class="swiper-slide">
+                <img src="./Eventsimg/IMG1.jpeg" alt="Event Image 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./Eventsimg/img2.jpeg" alt="Event Image 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="./Eventsimg/img3.jpeg" alt="Event Image 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="./Eventsimg/IMG1.jpeg" alt="Event Image 5">
+            </div>
+            <div class="swiper-slide">
+                <img src="./Eventsimg/img2.jpeg" alt="Event Image 6">
+            </div>
+            <div class="swiper-slide">
+                <img src="./Eventsimg/img3.jpeg" alt="Event Image 7">
+            </div>
+        </div>
+        <!-- Removed the pagination div to disable pagination bullets -->
+        <!-- Optional Navigation Buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
   </section>
 
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 882e077346b19f5d2348160c74ef146bae264e85
   <!--Contact us --->
   <div class="container-contact">
     <h1>Contact Us</h1>
@@ -1656,7 +1681,35 @@
   <script src="./js/Eventpage.js"></script>
   <script src="./js/footerPage.js"></script>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var swiper = new Swiper(".mySwiper", {
+              loop: true, // Enable loop for seamless transition
+              effect: "coverflow", // Retaining the coverflow effect
+              grabCursor: true, // Allowing grabbing of slides
+              centeredSlides: true, // Centering the active slide
+              slidesPerView: "auto", // Dynamic number of slides per view
+              coverflowEffect: {
+                  rotate: 50, // Rotate effect on slides
+                  stretch: 0, // No stretch between slides
+                  depth: 100, // Depth of the 3D effect
+                  modifier: 1, // Modifier for the coverflow effect
+                  slideShadows: true, // Enable shadows for the 3D effect
+              },
+              autoplay: {
+                  delay: 1000, // Transition every 3 seconds
+                  disableOnInteraction: false, // Keep autoplay running after user interaction
+              },
+              speed: 1000, // Set smooth transition speed (1000ms = 1 second)
+              easing: "ease-in-out", // Smooth transition easing
+              navigation: {
+                  nextEl: ".swiper-button-next", // Next button
+                  prevEl: ".swiper-button-prev", // Previous button
+              }
+          });
+      });
+  </script>
 
 </body>
 

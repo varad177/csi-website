@@ -1,137 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-.coordinator_main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row-reverse; /* Stack heading and content vertically */
-  justify-content: center;
-  align-items: center;
-  gap:0.5rem;
+/* Styling for the Faculty Section */
+.hod-faculty-section {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
   color: white;
+  padding: 2rem 1rem;
 }
 
-
-.coordinator-head {
-  font-size: 3rem;
-  font-weight: bold;
-  color: aliceblue;
+.hod-faculty-heading {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1;
 }
-
-.coordinator_second_box {
-  width: 50%;
-  height: 80%;
+.hod-faculty-container {
   display: flex;
-  flex-direction: column; /* Align image and text side by side */
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-top: 1.5rem;
 }
 
-
-.coordinator_Img {
-  width: 57%;
-  height: 70%;
+.faculty-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
-  margin-right:250px;
+
+  padding: 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Slightly lighter dark for cards */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.coordinator_Img img {
-  width: 70%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
+.faculty-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.coordinator_content_child {
-  width: 40%;
-  height: 10%;
-  font-size: 1.5rem;
-  color: rgb(255, 255, 255);
-  font-weight: 900;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 1rem;
-  background-color: rgba(240, 248, 255, 0.378);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(255, 255, 255);
-  margin-right: 250px;
+.faculty-card img {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.coordinator_info {
-  width: 100%;
-  height: auto;
-  font-size: 1.8rem;
-  padding: 2rem;
-  text-align: justify;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(240, 248, 255);
-  margin-right: 400px;
+.faculty-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
-
-
-.coordinator_firstBox {
-  width: 50%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.faculty-designation {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #bbbbbb;
 }
 
-/* Responsive Styles */
-@media (max-width: 480px) {
-  .coordinator_main {
-    flex-direction: column-reverse;
-    gap:0.5rem; /* Stack elements vertically on small screens */
-  }
-  
-  .coordinator_firstBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse; /* Reverse order for small screens */
-  }
-
-  .coordinator_second_box {
-    width: 100%;
-    flex-direction: column; /* Stack image and text vertically */
-    margin-top: 1rem;
-    margin-right: 0px;
-  }
-
-  .coordinator_Img {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .coordinator_content_child {
-    width: 90%;
-    height: auto; /* Adjust height to auto for responsive design */
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 200;
-    margin-right: 0;
-  }
-
-  .coordinator_info {
-    width: 100%;
-    font-size: 1rem;
-    padding: 2rem;
-  text-align: justify;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(240, 248, 255);
-  margin-right: 0;
-  }
+.faculty-content {
+  max-width: 50%;
+  text-align: left;
+  padding: 1rem;
 }
