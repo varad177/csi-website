@@ -57,16 +57,19 @@
     </div>
 
     <!-- navbar -->
-    <nav>
+    <nav class="">
       <div class="logo">
         <span><img id="logo" src="./images/HomepageImages/147408577.png" alt="logo" /></span>
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#core-team">Core Team</a></li>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#moments">Moments</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
 
       </div>
@@ -82,8 +85,10 @@
       <button id="closeBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
       <nav class="sidebar-nav">
         <a href="#home" class="nav-link">Home</a>
-        <a href="#services" class="nav-link">Services</a>
         <a href="#about" class="nav-link">About</a>
+        <a href="#core-team" class="nav-link">Core Team</a>
+        <a href="#members" class="nav-link">Members</a>
+        <a href="#moments" class="nav-link">Events</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
@@ -92,11 +97,8 @@
     <div class="wrapper">
       <!-- content -->
       <div class="content">
-        <div class="h1">
-          <h1>CSI-CATT</h1>
-        </div>
-        <div class="h1">
-          <h1>DMCE</h1>
+        <div class="typing-container">
+          <span id="text"></span><span class="caret"></span>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quidem odit accusantium blanditiis, saepe
@@ -234,131 +236,132 @@
   <section class="core-container">
     <h2 class="about-head" style="margin-bottom: 1rem;">Core Team</h2>
     <div class="row-1">
-        <div id="extraSneha" class="core-member">
-            <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
-            <div class="core-member-content">
-                <h3>Sneha Deshmukh</h3>
-                <p>General Secretary</p>
-                <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      <div id="extraSneha" class="core-member">
+        <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
+        <div class="core-member-content">
+          <h3>Sneha Deshmukh</h3>
+          <p>General Secretary</p>
+          <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member" style="margin-top: 7rem;">
-            <img src="./images/team-members/Vaibhav.PNG" alt="Vaibhav Ghale">
-            <div class="core-member-content">
-                <h3>Vaibhav Ghale</h3>
-                <p>Treasurer & Sponsorship Head</p>
-                <a href="https://www.linkedin.com/in/vaibhavghale07/" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member" style="margin-top: 7rem;">
+        <img src="./images/team-members/Vaibhav.PNG" alt="Vaibhav Ghale">
+        <div class="core-member-content">
+          <h3>Vaibhav Ghale</h3>
+          <p>Treasurer & Sponsorship Head</p>
+          <a href="https://www.linkedin.com/in/vaibhavghale07/" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member" style="margin-top: 4rem;">
-            <img src="./images/team-members/Prathmesh.PNG" alt="Prathmesh Kamble">
-            <div class="core-member-content">
-                <h3>Prathmesh Kamble</h3>
-                <p>Technical Head</p>
-                <a href="https://www.linkedin.com/in/prathamesh-kamble19/" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member" style="margin-top: 4rem;">
+        <img src="./images/team-members/Prathmesh.PNG" alt="Prathmesh Kamble">
+        <div class="core-member-content">
+          <h3>Prathmesh Kamble</h3>
+          <p>Technical Head</p>
+          <a href="https://www.linkedin.com/in/prathamesh-kamble19/" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div id="reduntSneha" class="core-member">
-            <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
-            <div class="core-member-content">
-                <h3>Sneha Deshmukh</h3>
-                <p>General Secretary</p>
-                <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div id="reduntSneha" class="core-member">
+        <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
+        <div class="core-member-content">
+          <h3>Sneha Deshmukh</h3>
+          <p>General Secretary</p>
+          <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member" style="margin-top: 4rem;">
-            <img src="./images/team-members/varad.PNG" alt="Varad Dhumale">
-            <div class="core-member-content">
-                <h3>Varad Dhumale</h3>
-                <p>Technical Head</p>
-                <a href="https://www.linkedin.com/in/varad177/" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member" style="margin-top: 4rem;">
+        <img src="./images/team-members/varad.PNG" alt="Varad Dhumale">
+        <div class="core-member-content">
+          <h3>Varad Dhumale</h3>
+          <p>Technical Head</p>
+          <a href="https://www.linkedin.com/in/varad177/" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member" style="margin-top: 7rem;">
-            <img src="./images/team-members/Rutuja.png" alt="Rutuja Dighe">
-            <div class="core-member-content">
-                <h3>Rutuja Dighe</h3>
-                <p>Convenor</p>
-                <a href=" https://www.linkedin.com/in/rutuja-dighe-14ap03/" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member" style="margin-top: 7rem;">
+        <img src="./images/team-members/Rutuja.png" alt="Rutuja Dighe">
+        <div class="core-member-content">
+          <h3>Rutuja Dighe</h3>
+          <p>Convenor</p>
+          <a href=" https://www.linkedin.com/in/rutuja-dighe-14ap03/" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
+      </div>
     </div>
 
     <div class="row-2">
-        <div class="core-member" style="margin-top: 7rem;">
-            <img src="./images/team-members/Aditya.PNG" alt="Aditya Dinde">
-            <div class="core-member-content">
-                <h3>Aditya Dinde</h3>
-                <p>Graphics Head</p>
-                <a href="https://www.linkedin.com/in/aditya-dinde-3b894629b" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      <div class="core-member" style="margin-top: 7rem;">
+        <img src="./images/team-members/Aditya.PNG" alt="Aditya Dinde">
+        <div class="core-member-content">
+          <h3>Aditya Dinde</h3>
+          <p>Graphics Head</p>
+          <a href="https://www.linkedin.com/in/aditya-dinde-3b894629b" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member" style="margin-top: 4rem;">
-            <img src="./images/team-members/Jivhesh.PNG" alt="Jivhesh Chaudhari">
-            <div class="core-member-content">
-                <h3>Jivhesh Chaudhari</h3>
-                <p>Planning Head</p>
-                <a href="https://www.linkedin.com/in/jivhesh-choudhari-339588216" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member" style="margin-top: 4rem;">
+        <img src="./images/team-members/Jivhesh.PNG" alt="Jivhesh Chaudhari">
+        <div class="core-member-content">
+          <h3>Jivhesh Chaudhari</h3>
+          <p>Planning Head</p>
+          <a href="https://www.linkedin.com/in/jivhesh-choudhari-339588216" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member">
-            <img src="./images/team-members/Saniya.PNG" alt="Saniya Chopade">
-            <div class="core-member-content">
-                <h3>Saniya Chopade</h3>
-                <p>Planning Head</p>
-                <a href="https://www.linkedin.com/in/saniyachopade" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member">
+        <img src="./images/team-members/Saniya.PNG" alt="Saniya Chopade">
+        <div class="core-member-content">
+          <h3>Saniya Chopade</h3>
+          <p>Planning Head</p>
+          <a href="https://www.linkedin.com/in/saniyachopade" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member">
-            <img src="./images/team-members/Isha.PNG" alt="Isha Gaikwad">
-            <div class="core-member-content">
-                <h3>Isha Gaikwad</h3>
-                <p>Publicity Head</p>
-                <a href="https://www.linkedin.com/in/isha-gaikwad-a37040285/" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member">
+        <img src="./images/team-members/Isha.PNG" alt="Isha Gaikwad">
+        <div class="core-member-content">
+          <h3>Isha Gaikwad</h3>
+          <p>Publicity Head</p>
+          <a href="https://www.linkedin.com/in/isha-gaikwad-a37040285/" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member" style="margin-top: 4rem;">
-            <img src="./images/team-members/Mirlekar.PNG" alt="Chinmay Mirlekar">
-            <div class="core-member-content">
-                <h3>Chinmay Mirlekar</h3>
-                <p>Publicity Head</p>
-                <a href="https://www.linkedin.com/in/chinmay-Mirlekar-203210266" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member" style="margin-top: 4rem;">
+        <img src="./images/team-members/Mirlekar.PNG" alt="Chinmay Mirlekar">
+        <div class="core-member-content">
+          <h3>Chinmay Mirlekar</h3>
+          <p>Publicity Head</p>
+          <a href="https://www.linkedin.com/in/chinmay-Mirlekar-203210266" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-        <div class="core-member" style="margin-top: 7rem;">
-            <img src="./images/team-members/Sammit.PNG" alt="Sammit Deshmukh">
-            <div class="core-member-content">
-                <h3>Sammit Deshmukh</h3>
-                <p>Media & Creative Head</p>
-                <a href="https://www.linkedin.com/in/sammit-dashpute-a7264820b" class="linkedin-icon">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
+      </div>
+      <div class="core-member" style="margin-top: 7rem;">
+        <img src="./images/team-members/Sammit.PNG" alt="Sammit Deshmukh">
+        <div class="core-member-content">
+          <h3>Sammit Deshmukh</h3>
+          <p>Media & Creative Head</p>
+          <a href="https://www.linkedin.com/in/sammit-dashpute-a7264820b" class="linkedin-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
         </div>
-    </div></section>
-   
+      </div>
+    </div>
+  </section>
+
 
 
   <!---team  -->
@@ -367,12 +370,12 @@
     <div class="skip-btn">
       <a href="#gallery"><i class="fa-solid fa-arrow-right"></i></a>
     </div>
-    
+
     <div class="team-panel">
 
       <div class="team-container">
 
-        
+
         <!-- Tech Team -->
 
         <div style="height: 100%;" class="team-member">
@@ -417,21 +420,21 @@
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Bhoomi Singh</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Farhaan Shaikh</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Kaustubh Anerao</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -453,21 +456,21 @@
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Mehnaz Ali</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Minal Chikane</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Namrata Dalvi</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -484,19 +487,19 @@
               <div class="member-box">
                 <h3 class="member-post">Omkar Patil
                   /h3>
-                <div class="social-icon">
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
+                  <div class="social-icon">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Parth Nandwalkar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Piyush Dalvi
                 </h3>
                 <div class="social-icon">
@@ -504,7 +507,7 @@
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Raj Bhosle</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -527,7 +530,7 @@
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Roshan Nikam
                 </h3>
                 <div class="social-icon">
@@ -535,14 +538,14 @@
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sarthak Dudhe</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Varad Dhoke</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -586,126 +589,126 @@
             <h1 class="leads" style="margin-bottom: 10px;">Members</h1>
             <div class="team-member-inner member-box-grid">
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Aniket Salvi</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Asish Panigrahy</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Atharva Khond</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Gaurav Girkar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Ishika Jain</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Kartik Babar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Kshitija More</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Manali Tayshete</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Nikhil Gosavi</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Paras Nehate</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Priyesh Mohite</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Raj Takle</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shirish Dolse</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shivani Jare</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Tamasi Ghosh</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Tanmay Jogdande</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Tejas Gholap</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Tushar Rasal</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Vaibhav Sargar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Vaidehi Sonar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-              </div>              
+              </div>
 
             </div>
           </div>
@@ -736,7 +739,7 @@
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              
+
             </div>
           </div>
 
@@ -744,108 +747,108 @@
             <h1 class="leads" style="margin-bottom: 10px;">Members</h1>
             <div class="team-member-inner member-box-grid">
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Aditya Acharya</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Anannya Gudi</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Devesh Chaudhari</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Dnyanesh Chaudhari</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Jatin Bhosale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Meera Chothe</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Parth Bambere</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Prajwal Jadhav</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Pooja Baviskar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Prashik Patil</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sahil Dalvi</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sahil Gange</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Satyam Pandey</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Siddhi Karangutkar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Soham Gadhave</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Yash Bawari</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Yash Shinde</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-              </div>              
+              </div>
 
 
             </div>
@@ -884,126 +887,126 @@
             <h1 class="leads" style="margin-bottom: 10px;">Members</h1>
             <div class="team-member-inner member-box-grid">
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Abhijeet Landge</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Adit Chaudhari</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Aditya Thanage</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Akshat Mundas</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Atharv Kotwal</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Chaitanya Bote</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Diksha Tamhankar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Harshali Salve</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Himani Ingale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Hriday Kunnath</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Paras Gulve</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sangramsinha</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Rahul Sahu</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Rahul Kadam</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sarvesh Mondkar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shreyash Jadhav</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Soham More</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sujal Jadhav</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Tanvi Waman</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Vaishnavi Palve</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-              </div>            
+              </div>
 
             </div>
           </div>
@@ -1041,108 +1044,108 @@
             <h1 class="leads" style="margin-bottom: 10px;">Members</h1>
             <div class="team-member-inner member-box-grid">
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Abhinay Shinde</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Ansh Chandane</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Atharva Sawant</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Gaurang Gadhari</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Isha Jadhav</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Krushal Telawane</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Mayur Narkhede</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Nikhil Palvi</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Piyush Bhojane</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Riya Raut</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sahil Nigade</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sahil Nikam</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sanskruti Vispute</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sarthak Karkare</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shardula Kharge</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Soham Bobade</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Suraj Prasad</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-              </div>              
+              </div>
 
             </div>
           </div>
@@ -1180,102 +1183,102 @@
             <h1 class="leads" style="margin-bottom: 10px;">Members</h1>
             <div class="team-member-inner member-box-grid">
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Aastha Oswal</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Gaurav Balade</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Harshani Patil</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Khushi Nehete</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Kunal Patil</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Mansi Jadhav</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Payal Bombe</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Riya Tiwari</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Rupesh Yadav</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sampatti Shinde</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sanika Shinde</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shravani Kamble</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shraddha Zalte</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shreya Sarmalkar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Siddhesh Auti</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Uday Thakare</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-              </div>             
+              </div>
 
             </div>
           </div>
@@ -1313,97 +1316,97 @@
             <h1 class="leads" style="margin-bottom: 10px;">Members</h1>
             <div class="team-member-inner member-box-grid">
 
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Aditya Wattamwar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Anish Kadam</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Anuja Mane</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Atharva Ghorpade</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Hemant Jawale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Nikhil Purohit</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Partha Rane</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sakshi More</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Samiksha Mhatre</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shreya Fulwane</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shreya Singh</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shriya Avhad</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Sneha Ghadge</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Shruti Gaonkar</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Swayam Hunge</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-box">  
+              <div class="member-box">
                 <h3 class="member-post">Yash Yewale</h3>
                 <div class="social-icon">
                   <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -1449,8 +1452,8 @@
           <div class="overlay">This is Image 4</div>
         </div>
       </div>
-      
-  
+
+
       <!-- Hidden Images -->
       <div class="gallery-item hidden">
         <div class="card">
@@ -1497,7 +1500,7 @@
     </div>
     <button class="toggle-gallery">See More</button>
   </section>
-  
+
 
 
   <!-- EVENTYS PAGE CARDS -->
@@ -1585,7 +1588,10 @@
       </div>
   </section>
 
+<<<<<<< HEAD
+=======
   
+>>>>>>> 882e077346b19f5d2348160c74ef146bae264e85
   <!--Contact us --->
   <div class="container-contact">
     <h1>Contact Us</h1>
@@ -1665,7 +1671,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
- 
+
 
   <!-- <script src="./js/car.js"></script> -->
   <script src="./js/galleryPage.js"></script>
