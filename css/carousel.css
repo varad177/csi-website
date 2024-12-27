@@ -28,7 +28,7 @@
 .swiper-slide img {
     display: block;
     width: 25rem;
-    height: auto;    ;
+    height: auto;    
     object-fit: cover; 
 }
 
