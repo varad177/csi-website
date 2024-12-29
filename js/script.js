@@ -220,3 +220,5 @@ const texts = ["CSI-CATT DMCE"];
     }
 
     typeText(); // Start the typing effect
+
+    

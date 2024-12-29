@@ -13,6 +13,12 @@ body {
   background-color: black;
   min-width: 100vw;
   overflow-x: hidden;
+
+  /* Merged canvas-container and canvas styles */
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 body ul li {
