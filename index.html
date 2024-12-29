@@ -44,6 +44,28 @@
     .about-head {
       font-size: 3rem !important;
     }
+    .bg-gradient-to-r {
+      background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    }
+
+    .from-cyan-600 {
+      --tw-gradient-from: #0891b2; /* Cyan 600 */
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 145, 178, 0));
+    }
+
+    .to-purple-400 {
+      --tw-gradient-to: #a78bfa; /* Purple 400 */
+    }
+
+    .bg-clip-text {
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .text-transparent {
+      color: transparent;
+    }
+
   </style>
 </head>
 
@@ -96,7 +118,7 @@
           <h1>CSI-CATT</h1>
         </div>
         <div class="h1">
-          <h1>DMCE</h1>
+          <h1 class="bg-gradient-to-r from-cyan-600 to-purple-400 bg-clip-text text-transparent">DMCE</h1>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quidem odit accusantium blanditiis, saepe
