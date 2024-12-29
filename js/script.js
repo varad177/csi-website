@@ -22,6 +22,11 @@ gsap.from('.h1 h1', 1.4, {
   skewY: 20,
   stagger: .8
 })
+gsap.from('.content .typing-container', 1, {
+  delay: 2.5,
+  opacity: 0,
+  
+})
 gsap.from('.content p', 1, {
   delay: 2.5,
   y: -30,
@@ -185,4 +190,35 @@ faceElements.forEach((element) => {
   });
 });
 
+const texts = ["CSI-CATT DMCE"];
+    const typingSpeed = 100; // Milliseconds per character
+    const delayBetweenTexts = 1000; // Milliseconds between each text
 
+    let textIndex = 0;
+    let charIndex = 0;
+    const textElement = document.getElementById('text');
+
+    function typeText() {
+      if (charIndex < texts[textIndex].length) {
+        textElement.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, typingSpeed);
+      } else {
+        setTimeout(deleteText, delayBetweenTexts);
+      }
+    }
+
+    function deleteText() {
+      if (charIndex > 0) {
+        textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(deleteText, typingSpeed);
+      } else {
+        textIndex = (textIndex + 1) % texts.length; // Loop back to first text
+        setTimeout(typeText, delayBetweenTexts);
+      }
+    }
+
+    typeText(); // Start the typing effect
+
+    

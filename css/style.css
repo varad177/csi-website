@@ -13,6 +13,12 @@ body {
   background-color: black;
   min-width: 100vw;
   overflow-x: hidden;
+
+  /* Merged canvas-container and canvas styles */
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 body ul li {
@@ -78,7 +84,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 
 .container nav {
@@ -92,12 +98,14 @@ nav {
 
 .container nav .logo {
   padding: 0px 25px;
+  margin-left: 30px;
+  
 }
 
 .container nav .logo span {
   display: inline-block;
   font-size: 45px;
-  font-family: Infected;
+
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
     2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
     2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -107,19 +115,22 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: absolute;
+  margin-left: 680px;
+  
 }
 .container nav .menu ul li {
   display: inline-block;
 }
 
 .container nav .menu ul li a {
-  padding: 10px 20px;
+  padding: 10px 10px;
   color: white;
   font-size: 20px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
     2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
     2px 2px 5px rgba(0, 0, 0, 0.6);
+    
 }
 
 .container .wrapper {
@@ -145,10 +156,28 @@ nav {
 }
 
 .content {
-  padding: 0 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  
+  padding: 0px 50px;
+  color:white !important;
+  
+    
+}
+
+.typing-container {
+  display: inline-block;
+  width: 50%;
+  height: 150px;
+  font-size: 70px;
+ font-weight: 600;
+ margin-bottom: 30px;
+ line-height: 1;
+  
+}
+.caret {
+  width: 2px;
+  height: 100rem;
+  margin-left: 5px;
+  animation: blink 0.7s steps(2, start) infinite;
 }
 .content p {
   color: white;
@@ -503,6 +532,13 @@ nav {
     width: 100%;
     padding: 0 12px;
     margin-top: 65px;
+    
+  }
+  .typing-container{
+    height: 150px;
+    margin-bottom: 20px;
+    width: 85%;
+    font-size: 60px;
   }
 
   .container .wrapper .content .h1 h1 {
@@ -522,6 +558,7 @@ nav {
   #logo {
     width: 60px;
     height: 60px;
+    margin-left: 0px;
   }
   .container nav {
     padding: 8px 0px;
@@ -532,6 +569,7 @@ nav {
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    margin-left: 0px;
   }
 }
 
