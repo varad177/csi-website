@@ -102,7 +102,7 @@ gsap.to("#name-div h1", {
 gsap.registerPlugin(ScrollTrigger);
 
 
-const sectionIds = ["aboutSection", "hodSection", "coreSection", "gallery", "swiper-section", "contactSection"];
+const sectionIds = ["know", "support", "foundation", "gallery", "swiper-section", "reachus"];
 
 // Loop through each section and apply the animation
 sectionIds.forEach((id) => {

@@ -206,11 +206,6 @@ a:hover{
     left: calc(67% + 800px);
     opacity: 0;
 }
-
-
-
-
-
 .list .item .content{
     position: absolute;
     top: 50%;
@@ -229,7 +224,7 @@ a:hover{
 .content .title{
     font-size: 100px;
     text-transform: uppercase;
-    color: #14ff72cb;
+    color: #19a0d6cb;
     font-weight: bold;
     line-height: 1;
 
