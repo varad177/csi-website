@@ -28,7 +28,8 @@
     text-align: center;
     overflow: hidden;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1); /* Subtle background */
+    background: rgba(255, 255, 255, 0.1);
+    /* Subtle background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -37,6 +38,7 @@
     height: 12rem;
     /* width: auto; */
 }
+
 .core-member img {
     padding: 0.5rem;
     height: 100%;
@@ -45,8 +47,6 @@
     /* filter: drop-shadow(0 0 1px #6a6af3) drop-shadow(0 0 0px #6a6af3); */
     transition: opacity 0.3s ease-in-out;
 }
-
-
 
 .core-member:hover img {
     filter: grayscale(100%);
@@ -58,20 +58,25 @@
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    bottom: -100%; /* Initially hidden below the card */
+    bottom: -100%;
+    /* Initially hidden below the card */
     width: 100%;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.7);
     height: 100%;
     text-align: center;
     /* padding: 1rem; */
-    opacity: 0; /* Hidden initially */
-    transition: bottom 0.4s ease, opacity 0.4s ease; /* Smooth upward motion and fade-in */
+    opacity: 0;
+    /* Hidden initially */
+    transition: bottom 0.4s ease, opacity 0.4s ease;
+    /* Smooth upward motion and fade-in */
 }
 
 .core-member:hover .core-member-content {
-    bottom: 0%; /* Moves content to the center */
-    opacity: 1; /* Makes the content visible */
+    bottom: 0%;
+    /* Moves content to the center */
+    opacity: 1;
+    /* Makes the content visible */
 }
 
 .core-member-content h3 {
@@ -111,7 +116,8 @@
 
 #extraSneha {
     display: none;
-} 
+}
+
 #reduntSneha {
     display: block;
 }
@@ -144,6 +150,7 @@
 .grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
+
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -168,33 +175,40 @@
 
 /* Styling the scrollbar */
 .member-box-grid::-webkit-scrollbar {
-    width: 4px; /* Width of the scrollbar */
-    height: 8px; /* Height of the horizontal scrollbar */
-  }
-  
-  /* Styling the scrollbar track */
+    width: 4px;
+    /* Width of the scrollbar */
+    height: 8px;
+    /* Height of the horizontal scrollbar */
+}
+
+/* Styling the scrollbar track */
 .member-box-grid::-webkit-scrollbar-track {
-    background: transparent; /* Track color */
-    border-radius: 10px; /* Round corners */
-  }
-  
-  /* Styling the scrollbar thumb */
+    background: transparent;
+    /* Track color */
+    border-radius: 10px;
+    /* Round corners */
+}
+
+/* Styling the scrollbar thumb */
 .member-box-grid::-webkit-scrollbar-thumb {
-    background: #015f8f; /* Color of the thumb (scroll part) */
-    border-radius: 10px; /* Round corners */
-  }
-  
-  /* Styling the thumb when hovered */
+    background: #015f8f;
+    /* Color of the thumb (scroll part) */
+    border-radius: 10px;
+    /* Round corners */
+}
+
+/* Styling the thumb when hovered */
 .member-box-grid::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Darker thumb color on hover */
-  }
+    background: #555;
+    /* Darker thumb color on hover */
+}
 
 @media (max-width: 768px) {
 
     .core-member {
         height: 13rem;
     }
-    
+
     #reduntSneha {
         display: none;
     }
@@ -202,6 +216,7 @@
     .core-container {
         width: 90vw;
     }
+
     .showTeamBtn {
         display: none;
     }
@@ -216,25 +231,34 @@
     }
 
     .core-member-content {
-        position: static; /* No absolute positioning */
-        background-color: transparent; /* Transparent background */
-        opacity: 1; /* Always visible */
-        padding-top: 0; /* Adjust padding if needed */
+        position: static;
+        /* No absolute positioning */
+        background-color: transparent;
+        /* Transparent background */
+        opacity: 1;
+        /* Always visible */
+        padding-top: 0;
+        /* Adjust padding if needed */
         height: auto;
     }
 
     .core-member img {
-        height: auto; /* Adjust to the natural size */
-        width: 100%; /* Full width of the container */
+        height: auto;
+        /* Adjust to the natural size */
+        width: 100%;
+        /* Full width of the container */
     }
 
     .core-member {
-        height: auto; /* Adjust the height dynamically */
+        height: auto;
+        /* Adjust the height dynamically */
     }
 
     .core-member:hover .core-member-content {
-        bottom: auto; /* Reset the hover effect */
-        opacity: 1; /* Always visible */
+        bottom: auto;
+        /* Reset the hover effect */
+        opacity: 1;
+        /* Always visible */
     }
 
     .core-member {

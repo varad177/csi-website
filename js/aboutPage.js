@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".about-outer",
       start: "top 120%", // Animation starts when top of the about-outer is 80% of viewport height
-      end: "bottom 80%",  
+      end: "bottom 80%",
       scrub: true, // Smoothens the scroll with scrub effect
       // markers: true,
       scroller: "body",
@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".about-outer",
       start: "top 120%",
-      end: "bottom 80%",  
+      end: "bottom 80%",
       scrub: true,
       // markers: true,
       scroller: "body",

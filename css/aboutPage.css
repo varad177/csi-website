@@ -29,6 +29,7 @@
   border-radius: 50%;
   padding: 20px;
 }
+
 .about-right {
   width: 50%;
   display: flex;
@@ -37,13 +38,14 @@
   flex-direction: column;
   padding: 20px;
   gap: 20px;
- 
+
 }
 
 .about-right h2 {
   font-weight: bolder;
   font-size: 50px;
 }
+
 .about-right p {
   font-weight: 800;
   font-size: 20px;
@@ -55,21 +57,24 @@
   .about-outer {
     flex-direction: column;
   }
+
   .about-right h2 {
     font-size: 30px;
   }
+
   .about-right p {
     font-size: 20px;
   }
+
   .about-heading {
     padding-top: 20px !important;
     font-size: 35px;
   }
-  
-.about-left {
+
+  .about-left {
     width: 100%;
   }
-  
+
   .about-left img {
     width: 80%;
     aspect-ratio: 1;
@@ -77,10 +82,8 @@
     border-radius: 50%;
     padding: 20px;
   }
+
   .about-right {
     width: 100%;
   }
 }
-
-
-

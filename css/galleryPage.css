@@ -8,7 +8,7 @@
 section#gallery {
   text-align: center;
   padding: 20px;
-  
+
 }
 
 h1.about-head {
@@ -22,7 +22,8 @@ h1.about-head {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-gap: 20px; /* Removes gaps between images */
+  gap: 20px;
+  /* Removes gaps between images */
 }
 
 .gallery-item {
@@ -38,7 +39,7 @@ gap: 20px; /* Removes gaps between images */
 .card img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 /* Overlay Styling */
@@ -81,7 +82,7 @@ button.toggle-gallery:hover {
   background-color: #d8dbdf;
   color: #101111;
   border-color: black;
-  
+
 }
 
 button.toggle-gallery:active {
@@ -95,4 +96,3 @@ button.toggle-gallery:active {
     height: auto;
   }
 }
-
