@@ -101,6 +101,25 @@ gsap.to("#name-div h1", {
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
+
+const sectionIds = ["aboutSection", "hodSection", "coreSection", "gallery", "swiper-section", "contactSection"];
+
+// Loop through each section and apply the animation
+sectionIds.forEach((id) => {
+  gsap.from(`#${id}`, {
+    opacity: 0, // Start with opacity 0
+    y: 50, // Start slightly below
+    duration: 2, // Animation duration
+    ease: "power2.out", // Smooth easing
+    scrollTrigger: {
+      trigger: `#${id}`, // Element that triggers the animation
+      start: "top 80%", // Start animation when the top of the section is 80% down the viewport
+      toggleActions: "play none none none", // Play animation once
+    },
+  });
+});
+
+
 // Animation for each heading
 gsap.utils.toArray('#aboutheading').forEach((heading) => {
     // Create a timeline for each heading
