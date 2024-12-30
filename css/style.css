@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -78,12 +79,13 @@ body a {
   z-index: -1;
   color: #fafef6;
   opacity: 0.3;
-  text-shadow: 
-  2px 2px 0 rgb(228, 216, 216), 
- -2px 2px 0 rgb(233, 228, 228), 
-  2px -2px 0 rgb(244, 244, 244), 
- -2px -2px 0 rgb(234, 228, 228);
+  text-shadow:
+    2px 2px 0 rgb(228, 216, 216),
+    -2px 2px 0 rgb(233, 228, 228),
+    2px -2px 0 rgb(244, 244, 244),
+    -2px -2px 0 rgb(234, 228, 228);
 }
+
 .loader {
 
   width: 100vw !important;
@@ -110,6 +112,7 @@ body a {
 .container img {
   width: 200px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -132,7 +135,7 @@ nav {
 .container nav .logo {
   padding: 0px 25px;
   margin-left: 30px;
-  
+
 }
 
 .container nav .logo span {
@@ -150,8 +153,9 @@ nav {
   align-items: center;
   position: absolute;
   margin-left: 680px;
-  
+
 }
+
 .container nav .menu ul li {
   display: inline-block;
 }
@@ -161,14 +165,15 @@ nav {
   color: rgb(215, 218, 213);
   font-weight: bold;
   font-size: 20px;
-  font-family:Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
     2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
     2px 2px 5px rgba(0, 0, 0, 0.6);
-    
+
 }
-.container nav .menu ul li a:hover{
-  color:  #2f88e8;
+
+.container nav .menu ul li a:hover {
+  color: #2f88e8;
 }
 
 .container .wrapper {
@@ -185,59 +190,65 @@ nav {
 .content {
   /* width: 50%; */
 }
+
 .img {
   width: 50%;
 }
+
 .container .wrapper .content .h1 {
   width: 100%;
   overflow: hidden;
 }
 
 .content {
-  
+
   padding: 0px 50px;
-  color:rgb(240, 247, 253) !important;
-  
-    
+  color: rgb(240, 247, 253) !important;
+
+
 }
 
 .typing-container {
   display: inline-block;
   width: 60%;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 150px;
   font-size: 70px;
- font-weight: 600;
- margin-bottom: 30px;
- line-height: 1;
-  
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 1;
+
 }
+
 .caret {
   width: 2px;
   height: 100rem;
   margin-left: 5px;
   animation: blink 0.7s steps(2, start) infinite;
 }
+
 .content p {
   color: rgb(224, 228, 224);
   font-size: 30px !important;
 
 }
-.content p:hover{
+
+.content p:hover {
   color: #2f88e8;
 }
+
 .container .wrapper .content .h1 h1 {
   text-align: left !important;
   font-size: 110px;
   line-height: 90%;
   color: white;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
-  2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-  2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-  2px 2px 3px rgba(0, 0, 0, 0.6);
+    2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
+    2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
+    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+    2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .container .wrapper .content p {
@@ -285,7 +296,7 @@ nav {
   width: 100%;
   position: relative;
   margin-left: 35px;
-  
+
 }
 
 .container .wrapper .img .subimg {
@@ -348,13 +359,16 @@ nav {
   z-index: 9;
   top: 0;
 }
+
 /*# sourceMappingURL=style.css.map */
 
 .heading {
   font-size: 3rem;
   font-weight: bold;
-  opacity: 0; /* Start hidden for animation */
-  transform: translateY(50px); /* Initial position for animation */
+  opacity: 0;
+  /* Start hidden for animation */
+  transform: translateY(50px);
+  /* Initial position for animation */
   color: rgb(33, 119, 189);
 }
 
@@ -432,9 +446,12 @@ nav {
 }
 
 .heading {
-  opacity: 0; /* Start hidden */
-  transform: translateY(50px); /* Start moved down */
-  transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
+  opacity: 0;
+  /* Start hidden */
+  transform: translateY(50px);
+  /* Start moved down */
+  transition: opacity 0.5s, transform 0.5s;
+  /* Smooth transition */
   font-size: 80px;
 }
 
@@ -448,9 +465,11 @@ nav {
 /* Sidebar styling */
 .sidebar {
   position: fixed;
-  left: -100%; /* Hidden off-screen */
+  left: -100%;
+  /* Hidden off-screen */
   top: 0;
-  width: 100%; /* Full width */
+  width: 100%;
+  /* Full width */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -459,6 +478,7 @@ nav {
   z-index: 2;
   transition: transform 0.5s ease;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -479,6 +499,7 @@ nav {
   gap: 15px;
   padding: 0 20px;
 }
+
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -510,15 +531,19 @@ nav {
   right: 30px;
   top: 23px;
 }
+
 .open-btn i {
   font-size: 30px;
 }
+
 .close-btn {
   color: white;
 }
+
 .close-btn i {
   font-size: 30px;
 }
+
 /* Main content styling */
 
 /* // Home page and nav bar source code  */
@@ -538,6 +563,7 @@ nav {
   .heading {
     font-size: 40px;
   }
+
   .menu {
     display: none;
   }
@@ -545,8 +571,9 @@ nav {
   .open-btn {
     display: block;
   }
-  nav{
-    margin-top:3px !important;
+
+  nav {
+    margin-top: 3px !important;
   }
 
   .container .loader h1 {
@@ -573,13 +600,15 @@ nav {
     flex-direction: column;
     height: auto !important;
   }
+
   .content {
     width: 100%;
     padding: 0 12px;
     margin-top: 65px;
-    
+
   }
-  .typing-container{
+
+  .typing-container {
     height: 150px;
     margin-bottom: 20px;
     width: 85%;
@@ -600,11 +629,13 @@ nav {
   .img {
     display: none !important;
   }
+
   #logo {
     width: 60px;
     height: 60px;
     margin-left: 0px;
   }
+
   .container nav {
     padding: 8px 0px;
   }
@@ -623,10 +654,11 @@ nav {
   display: inline-block;
   padding: 20px;
   font-size: 24px;
-  background-color: #00BB00; /* Your preferred color */
+  background-color: #00BB00;
+  /* Your preferred color */
   color: white;
   border-radius: 10px;
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
   cursor: pointer;
 }
-

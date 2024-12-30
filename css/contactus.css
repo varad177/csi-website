@@ -86,7 +86,7 @@ iframe {
         max-width: 100%;
     }
 
-    .map-container{
+    .map-container {
         width: 50%;
     }
 
@@ -114,9 +114,10 @@ iframe {
 }
 
 @media (max-width: 480px) {
-    .contact-section{
+    .contact-section {
         flex-direction: column-reverse;
     }
+
     h1 {
         font-size: 2rem;
     }
@@ -135,13 +136,13 @@ iframe {
     }
 
     .map-container {
-        width:300px;
+        width: 300px;
     }
 
     .map-container iframe {
         height: 300px;
         width: 350px;
         align-items: center;
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
