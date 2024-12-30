@@ -25,7 +25,7 @@ gsap.from('.h1 h1', 1.4, {
 gsap.from('.content .typing-container', 1, {
   delay: 2.5,
   opacity: 0,
-  
+
 })
 gsap.from('.content p', 1, {
   delay: 2.5,
@@ -92,7 +92,7 @@ gsap.to("#name-div h1", {
   scrollTrigger: {
     trigger: "#name-div h1",
     scroller: "body",
-  //   markers:true,
+    //   markers:true,
     scrub: 0.7
   }
 })
@@ -103,23 +103,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Animation for each heading
 gsap.utils.toArray('#aboutheading').forEach((heading) => {
-    // Create a timeline for each heading
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: heading, // Element that triggers the animation
-            start: 'top 80%', // When the top of the heading hits 80% of the viewport height
-            end: 'bottom 20%', // When the bottom of the heading hits 20% of the viewport height
-            scrub: true, 
-            scroller: "body",
-        }
-    });
+  // Create a timeline for each heading
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: heading, // Element that triggers the animation
+      start: 'top 80%', // When the top of the heading hits 80% of the viewport height
+      end: 'bottom 20%', // When the bottom of the heading hits 20% of the viewport height
+      scrub: true,
+      scroller: "body",
+    }
+  });
 
-    // Add animation to the timeline
-    tl.to(heading, {
-        opacity: 1, // Fade in
-        y: 0, // Move to original position
-        duration: 1 // Animation duration
-    });
+  // Add animation to the timeline
+  tl.to(heading, {
+    opacity: 1, // Fade in
+    y: 0, // Move to original position
+    duration: 1 // Animation duration
+  });
 });
 
 
@@ -138,18 +138,18 @@ tl.to(overlay, {
   pointerEvents: "auto",
   ease: "power2.out",
 })
-.to(sidebar, {
-  duration: 0.2,
-  x: "100vw", // Slide sidebar to cover the full width
-  ease: "power2.out",
-}, "<") // Start at the same time as overlay
+  .to(sidebar, {
+    duration: 0.2,
+    x: "100vw", // Slide sidebar to cover the full width
+    ease: "power2.out",
+  }, "<") // Start at the same time as overlay
 
-.from(".nav-link", {
-  duration: 0.1,
-  opacity: 0,
-  x: -50,
-  stagger: 0.1,
-});
+  .from(".nav-link", {
+    duration: 0.1,
+    opacity: 0,
+    x: -50,
+    stagger: 0.1,
+  });
 
 // Open and close functions
 openBtn.addEventListener("click", () => {
@@ -191,34 +191,33 @@ faceElements.forEach((element) => {
 });
 
 const texts = ["CSI-CATT DMCE"];
-    const typingSpeed = 100; // Milliseconds per character
-    const delayBetweenTexts = 1000; // Milliseconds between each text
+const typingSpeed = 100; // Milliseconds per character
+const delayBetweenTexts = 1000; // Milliseconds between each text
 
-    let textIndex = 0;
-    let charIndex = 0;
-    const textElement = document.getElementById('text');
+let textIndex = 0;
+let charIndex = 0;
+const textElement = document.getElementById('text');
 
-    function typeText() {
-      if (charIndex < texts[textIndex].length) {
-        textElement.textContent += texts[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeText, typingSpeed);
-      } else {
-        setTimeout(deleteText, delayBetweenTexts);
-      }
-    }
+function typeText() {
+  if (charIndex < texts[textIndex].length) {
+    textElement.textContent += texts[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeText, typingSpeed);
+  } else {
+    setTimeout(deleteText, delayBetweenTexts);
+  }
+}
 
-    function deleteText() {
-      if (charIndex > 0) {
-        textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(deleteText, typingSpeed);
-      } else {
-        textIndex = (textIndex + 1) % texts.length; // Loop back to first text
-        setTimeout(typeText, delayBetweenTexts);
-      }
-    }
+function deleteText() {
+  if (charIndex > 0) {
+    textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(deleteText, typingSpeed);
+  } else {
+    textIndex = (textIndex + 1) % texts.length; // Loop back to first text
+    setTimeout(typeText, delayBetweenTexts);
+  }
+}
 
-    typeText(); // Start the typing effect
+typeText(); // Start the typing effect
 
-    
