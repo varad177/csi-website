@@ -10,9 +10,39 @@
 body {
   font-family: Aquire;
   transition: all 0.5s ease-in-out;
-  background-color: black;
+  
   min-width: 100vw;
   overflow-x: hidden;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,49,47,1) 100%, rgba(53,92,74,1) 100%);
+}
+
+
+
+/* Styling the scrollbar */
+body::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 5px; /* Height of the horizontal scrollbar */
+}
+
+/* Styling the scrollbar track */
+body::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+  border-radius: 10px; /* Round corners */
+  background-color: #041515;
+  
+}
+
+/* Styling the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background: #f1f1f1; /* Color of the thumb (scroll part) */
+  border-radius: 10px; /* Round corners */
+
+}
+
+/* Styling the thumb when hovered */
+body::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Darker thumb color on hover */
 }
 
 body ul li {
