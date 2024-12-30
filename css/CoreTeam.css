@@ -1,5 +1,5 @@
 .core-container {
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
     text-align: center;
 }
@@ -24,8 +24,7 @@
 .core-member {
     position: relative;
     width: 100%;
-    height: fit-content;
-    
+    height: 15rem;
     text-align: center;
     overflow: hidden;
     border-radius: 10px;
@@ -34,14 +33,20 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.h-12 {
+    height: 12rem;
+    /* width: auto; */
+}
 .core-member img {
     padding: 0.5rem;
-    width: 100%;
+    height: 100%;
     border-radius: 10px;
     object-fit: cover;
     /* filter: drop-shadow(0 0 1px #6a6af3) drop-shadow(0 0 0px #6a6af3); */
     transition: opacity 0.3s ease-in-out;
 }
+
+
 
 .core-member:hover img {
     filter: grayscale(100%);
@@ -111,22 +116,99 @@
     display: block;
 }
 
+.leads-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.member-cover {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.member-box-grid {
+    display: none;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    margin: 1rem 0;
+    height: 10rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hideMembers {
+    display: grid;
+}
+
+.showTeamBtn {
+    background: #0179bd;
+    color: white;
+    padding: .4rem 2rem;
+    border-radius: 20px;
+    margin: .5rem auto;
+    border: 0;
+    cursor: pointer;
+}
+
+.showTeamBtn:hover {
+    background: #015f8f;
+}
+
+/* Styling the scrollbar */
+.member-box-grid::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+    height: 8px; /* Height of the horizontal scrollbar */
+  }
+  
+  /* Styling the scrollbar track */
+.member-box-grid::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+    border-radius: 10px; /* Round corners */
+  }
+  
+  /* Styling the scrollbar thumb */
+.member-box-grid::-webkit-scrollbar-thumb {
+    background: #015f8f; /* Color of the thumb (scroll part) */
+    border-radius: 10px; /* Round corners */
+  }
+  
+  /* Styling the thumb when hovered */
+.member-box-grid::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker thumb color on hover */
+  }
+
 @media (max-width: 768px) {
 
-    #extraSneha {
-        display: block;
+    .core-member {
+        height: 13rem;
     }
+    
     #reduntSneha {
         display: none;
     }
 
     .core-container {
-        width: 80vw;
+        width: 90vw;
+    }
+    .showTeamBtn {
+        display: none;
     }
 
     .core-container .row-1,
     .core-container .row-2 {
-        grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .core-member:hover img {
@@ -134,14 +216,43 @@
     }
 
     .core-member-content {
-        opacity: 1;
-        position: relative;
-        background-color: transparent;
-        padding-top: 0;
+        position: static; /* No absolute positioning */
+        background-color: transparent; /* Transparent background */
+        opacity: 1; /* Always visible */
+        padding-top: 0; /* Adjust padding if needed */
+        height: auto;
+    }
+
+    .core-member img {
+        height: auto; /* Adjust to the natural size */
+        width: 100%; /* Full width of the container */
+    }
+
+    .core-member {
+        height: auto; /* Adjust the height dynamically */
+    }
+
+    .core-member:hover .core-member-content {
+        bottom: auto; /* Reset the hover effect */
+        opacity: 1; /* Always visible */
     }
 
     .core-member {
         margin-top: 1rem !important;
         /* height: 100% !important; */
+    }
+
+    .h-12 img {
+        width: 100%;
+    }
+
+    #extraSneha {
+        display: block;
+        grid-column: span 2;
+    }
+
+    #extraSneha img {
+        height: 15rem;
+        width: auto;
     }
 }
