@@ -56,7 +56,7 @@
 }
 
 .member-post {
-  font-size: 18px !important;
+  font-size: .7rem !important;
   margin-top: 10px !important;
 }
 .team-lead-inner {
@@ -96,11 +96,10 @@
   align-items: center;
   gap: 10px;
   justify-content: center;
-  padding-top: 10px;
 }
 .social-icon i {
   color: rgb(0, 153, 255);
-  font-size: 25px;
+  font-size: 15px;
 }
 .social-icon i:hover {
   scale: 1.2;
