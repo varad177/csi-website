@@ -22,7 +22,7 @@
 
 .faculty-card {
   display: flex;
-  width:30rem;
+  width: 25rem;
   padding: 1rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.1); /* Slightly lighter dark for cards */
@@ -94,7 +94,9 @@
 @media (max-width: 480px) {
   .hod-faculty-section {
     padding: 1rem 0.5rem;
+    width: 90vw;
   }
+  
 
   .faculty-card {
     width: 100%; /* Use full width for very small screens */
