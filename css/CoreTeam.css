@@ -1,5 +1,5 @@
 .core-container {
-    width: 90vw;
+    width: 80vw;
     margin: 0 auto;
     text-align: center;
 }
@@ -23,25 +23,33 @@
 
 .core-member {
     position: relative;
-    width: 100%;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
     text-align: center;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     /* Subtle background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid white;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .h-12 {
     height: 12rem;
+    width: 12rem;
     /* width: auto; */
 }
 
 .core-member img {
     padding: 0.5rem;
-    height: 100%;
+    width: 100%;
     border-radius: 10px;
     object-fit: cover;
     /* filter: drop-shadow(0 0 1px #6a6af3) drop-shadow(0 0 0px #6a6af3); */
@@ -54,9 +62,9 @@
 
 .core-member-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: .5rem;
     position: absolute;
     bottom: -100%;
     /* Initially hidden below the card */
@@ -91,9 +99,9 @@
     color: #ccc;
 }
 
-.linkedin-icon {
-    width: 25px;
-    height: 25px;
+.fa-icon {
+    width: 1.5rem;
+    height: 1.5rem;
     background: transparent;
     border-radius: 50%;
     display: flex;
@@ -103,13 +111,12 @@
     transition: transform 0.3s;
 }
 
-.linkedin-icon i {
-    font-size: 20px;
-    color: green;
+.fa-icon i {
+    font-size: 1.5rem;
     border-radius: 50%;
 }
 
-.linkedin-icon:hover {
+.fa-icon:hover {
     transform: scale(1.2);
     text-decoration: none;
 }
@@ -119,7 +126,9 @@
 }
 
 #reduntSneha {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .leads-div {
@@ -203,14 +212,68 @@
     /* Darker thumb color on hover */
 }
 
+.core-team-content {
+    margin-top: .5rem;
+    color: white;
+}
+
+.core-team-content p {
+    font-size: .7rem;
+    opacity: .7;
+}
+
+.mob-member-content {
+    display: none;
+    gap: .5rem;
+    justify-content: center;
+    margin-top: .2rem;
+}
+
+.mob-member-content .fa-icon {
+    width: 1rem;
+    height: 1rem;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.mob-member-content .fa-icon i {
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+
 @media (max-width: 768px) {
 
+
+    .mob-member-content {
+        display: flex;
+    }
+
     .core-member {
-        height: 13rem;
+        height: 9rem;
+        width: 9rem;
     }
 
     #reduntSneha {
         display: none;
+    }
+
+    #extraSneha {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #extraSneha img {
+        height: auto;
+        width: 100%;
     }
 
     .core-container {
@@ -223,7 +286,7 @@
 
     .core-container .row-1,
     .core-container .row-2 {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .core-member:hover img {
@@ -249,11 +312,6 @@
         /* Full width of the container */
     }
 
-    .core-member {
-        height: auto;
-        /* Adjust the height dynamically */
-    }
-
     .core-member:hover .core-member-content {
         bottom: auto;
         /* Reset the hover effect */
@@ -270,13 +328,10 @@
         width: 100%;
     }
 
-    #extraSneha {
-        display: block;
-        grid-column: span 2;
+    #extraSneha .core-member {
+        width: 15rem;
+        height: 15rem;
     }
 
-    #extraSneha img {
-        height: 15rem;
-        width: auto;
-    }
+    
 }
