@@ -24,13 +24,13 @@ body {
 .underline {
   width: 50px;
   height: 4px;
-  background-color: #22c55e;
+  background-color: #ffffff;
   margin: 0.5rem auto;
 }
 
 .description {
   color: #d1d5db;
-  max-width: 800px;
+  max-width:1000px;
   margin: 0 auto 2rem;
   font-size: 1.5rem;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .card {
-  background: #1f2937;
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid #374151;
   border-radius: 10px;
   padding: 1.5rem;
@@ -56,6 +56,7 @@ body {
 
 .card h3 {
   color: #0891b2;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 
@@ -63,7 +64,7 @@ body {
   color: #d1d5db;
 }
 
-.mission, .impact {
+.vision, .mission {
   grid-column: span 2;
   text-align: left;
 }
@@ -76,6 +77,13 @@ blockquote {
   font-style: italic;
 }
 
+blockquote.marathi {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
 .blockquote-author {
   margin-top: 1rem;
   font-weight: bold;
@@ -86,48 +94,77 @@ blockquote {
   color: #9ca3af;
 }
 
-.author-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #0891b2;
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.count {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.stat-text {
+  font-size: 1.5rem;
+  color: #d1d5db;
 }
 
 @media (max-width: 768px) {
   .title {
-      font-size: 1.5rem;
- }
+      font-size: 2.5rem;
+  }
   .description {
-      font-size: 0.9rem;
- }
+      font-size: 1.2rem;
+  }
   .grid {
       grid-template-columns: 1fr;
- }
-  .mission, .impact {
+  }
+  .vision, .mission {
       grid-column: span 1;
- }
+  }
   .card {
       padding: 1rem;
- }
+  }
   blockquote {
       padding: 0.5rem;
- }
+  }
+  .stats {
+      flex-direction: column;
+      gap: 2rem;
+  }
 }
+
 @media (max-width: 480px) {
   .title {
-      font-size: 1.2rem;
- }
+      font-size: 1.8rem;
+  }
   .description {
-      font-size: 0.8rem;
- }
-  .card h3 {
       font-size: 1rem;
- }
+  }
+
+  blockquote.marathi {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+  }
+
+  .card h3 {
+      font-size: 1.4rem;
+  }
   .card p {
-      font-size: 0.8rem;
- }
-  .author-image {
-      width: 40px;
-      height: 40px;
- }
+      font-size: 0.9rem;
+  }
+  .count {
+      font-size: 3rem;
+  }
+  .stat-text {
+      font-size: 1.2rem;
+  }
 }
