@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=roboto:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -11,11 +11,10 @@
 body {
   font-family: Aquire;
   transition: all 0.5s ease-in-out;
-  
   min-width: 100vw;
   overflow-x: hidden;
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(5 39 38) 100%, rgba(53, 92, 74, 1) 100%)
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(5 39 38) 100%, rgba(53, 92, 74, 1) 100%)
 }
 
 
@@ -78,7 +77,7 @@ body a {
   height: 100vh;
   z-index: -1;
   color: #fafef6;
-  opacity: 0.3;
+  opacity: 0.2;
   text-shadow:
     2px 2px 0 rgb(228, 216, 216),
     -2px 2px 0 rgb(233, 228, 228),
@@ -118,7 +117,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 70px;
-
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0px;
+  
 }
 
 
@@ -129,7 +132,7 @@ nav {
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
   padding: 10px 0px;
-
+  position:relative;
 }
 
 .container nav .logo {
@@ -141,7 +144,6 @@ nav {
 .container nav .logo span {
   display: inline-block;
   font-size: 45px;
-
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
     2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
     2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -153,7 +155,6 @@ nav {
   align-items: center;
   position: absolute;
   margin-left: 680px;
-
 }
 
 .container nav .menu ul li {
@@ -166,29 +167,22 @@ nav {
   font-weight: bold;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
-    2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-    2px 2px 5px rgba(0, 0, 0, 0.6);
-
+  
 }
 
 .container nav .menu ul li a:hover {
-  color: #2f88e8;
+  background: linear-gradient( #0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container .wrapper {
   width: 100vw;
   min-height: 90vh;
-
   overflow: hidden !important;
-
   display: flex;
-
   padding-top: 30px;
-}
-
-.content {
-  /* width: 50%; */
 }
 
 .img {
@@ -201,40 +195,38 @@ nav {
 }
 
 .content {
-
   padding: 0px 50px;
   color: rgb(240, 247, 253) !important;
-
-
 }
 
 .typing-container {
   display: inline-block;
-  width: 60%;
+  width: 55%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 150px;
-  font-size: 70px;
-  font-weight: 600;
-  margin-bottom: 30px;
+  height: 165px;
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 50px;
+ 
   line-height: 1;
-
 }
-
 .caret {
   width: 2px;
   height: 100rem;
   margin-left: 5px;
   animation: blink 0.7s steps(2, start) infinite;
 }
-
 .content p {
   color: rgb(224, 228, 224);
   font-size: 30px !important;
-
+  margin-top: 40px;
 }
 
 .content p:hover {
-  color: #2f88e8;
+  background: linear-gradient(to right, #0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container .wrapper .content .h1 h1 {
@@ -253,10 +245,11 @@ nav {
 
 .container .wrapper .content p {
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   text-align: left !important;
-  line-height: 109%;
-  width: 70%;
+  line-height: 1.2;
+  width: 65%;
+  word-spacing: 7px;
 }
 
 .container .wrapper .content a {
@@ -395,7 +388,7 @@ nav {
   }
 
   #name-div h1 {
-    font-size: 14.6vw;
+    font-size: 5vw;
     /* background-color:yellow; */
     margin-right: 2vw;
     display: inline-block;
@@ -416,7 +409,7 @@ nav {
 }
 
 #name-div h1 {
-  font-size: 8vw;
+  font-size: 7vw;
   /* background-color:yellow; */
   margin-right: 2vw;
   display: inline-block;
@@ -426,10 +419,8 @@ nav {
   animation-iteration-count: infinite; */
 }
 
-
-
 #page2 {
-  height: 10vh;
+  height: 5vh;
   margin-bottom: 150px;
   width: 100%;
   position: relative;
@@ -437,7 +428,10 @@ nav {
 }
 
 .h-text:hover {
-  color: #2f88e8;
+  background: linear-gradient(to right, #0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-outer {
