@@ -8,7 +8,6 @@
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -45,7 +44,14 @@ h1 {
     height: 25px;
     margin-right: 15px;
 }
-
+.underline-contact{
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
 .info-title {
     font-weight: bold;
 }
@@ -98,8 +104,11 @@ iframe {
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
+        
     }
-
+    .underline-contact{
+        margin-bottom: 2rem;
+    }
     .contact-box h2 {
         font-size: 1.8rem;
     }
@@ -117,7 +126,9 @@ iframe {
     .contact-section {
         flex-direction: column-reverse;
     }
-
+    .underline-contact{
+        margin-bottom: 1rem;
+    }
     h1 {
         font-size: 2rem;
     }

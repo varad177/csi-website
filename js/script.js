@@ -102,7 +102,7 @@ gsap.to("#name-div h1", {
 gsap.registerPlugin(ScrollTrigger);
 
 
-const sectionIds = ["know", "support", "foundation", "gallery", "swiper-section", "reachus"];
+const sectionIds = ["about", "pillars", "foundation", "gallery", "swiper-section", "reachus"];
 
 // Loop through each section and apply the animation
 sectionIds.forEach((id) => {
@@ -147,6 +147,7 @@ const sidebar = document.getElementById("sidebar");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
 const overlay = document.getElementById("overlay");
+const navLinks = document.querySelectorAll(".nav-link"); // Select all nav links
 
 // GSAP timeline for sidebar animation
 const tl = gsap.timeline({ paused: true, reversed: true });
@@ -157,12 +158,15 @@ tl.to(overlay, {
   pointerEvents: "auto",
   ease: "power2.out",
 })
-  .to(sidebar, {
-    duration: 0.2,
-    x: "100vw", // Slide sidebar to cover the full width
-    ease: "power2.out",
-  }, "<") // Start at the same time as overlay
-
+  .to(
+    sidebar,
+    {
+      duration: 0.2,
+      x: "100vw", // Slide sidebar to cover the full width
+      ease: "power2.out",
+    },
+    "<" // Start at the same time as overlay
+  )
   .from(".nav-link", {
     duration: 0.1,
     opacity: 0,
@@ -183,6 +187,14 @@ closeBtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   if (!tl.reversed()) tl.reverse();
 });
+
+// Close sidebar when any nav link is clicked
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    if (!tl.reversed()) tl.reverse();
+  });
+});
+
 
 
 // Initialize GSAP
@@ -239,4 +251,16 @@ function deleteText() {
 }
 
 typeText(); // Start the typing effect
+// Add event listener to manage the active class
+const homelinks = document.querySelectorAll('.underline-nav');
+
+homelinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove 'active' class from all links
+    homelinks.forEach(link => link.classList.remove('active'));
+    
+    // Add 'active' class to the clicked link
+    this.classList.add('active');
+  });
+});
 

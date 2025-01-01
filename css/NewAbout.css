@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  
   background-color: #121212;
   color: #ffffff;
 }
@@ -15,23 +15,21 @@ body {
   margin: 0 auto;
 }
 
-.title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
 
-.underline {
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  margin: 0.5rem auto;
+
+.underline-about {
+  width: 200px;
+  height: 2px;
+  background-color:white;
+  color: whitesmoke;
+  margin: 0 auto;
+  margin-bottom: 14px;
 }
 
 .description {
   color: #d1d5db;
   max-width:1000px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
   font-size: 1.5rem;
 }
 
@@ -41,26 +39,26 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.card {
+.cards {
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #374151;
+  border: 3px solid #6e7887;
   border-radius: 10px;
   padding: 1.5rem;
-  transition: 0.3s;
 }
 
-.card:hover {
-  border-color: #0891b2;
+.cards:hover {
+  border-color: #dfe3e4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  
 }
 
-.card h3 {
+.cards h3 {
   color: #0891b2;
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 
-.card p {
+.cards p {
   color: #d1d5db;
 }
 
@@ -95,9 +93,11 @@ blockquote.marathi {
 }
 
 .stats {
+  gap: 28rem;
   display: flex;
   justify-content: space-around;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-right: 2px;
 }
 
 .stat {
@@ -114,6 +114,12 @@ blockquote.marathi {
   font-size: 1.5rem;
   color: #d1d5db;
 }
+.stat:hover{
+  background: linear-gradient( #0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media (max-width: 768px) {
   .title {
@@ -128,7 +134,7 @@ blockquote.marathi {
   .vision, .mission {
       grid-column: span 1;
   }
-  .card {
+  .cards {
       padding: 1rem;
   }
   blockquote {
@@ -138,9 +144,18 @@ blockquote.marathi {
       flex-direction: column;
       gap: 2rem;
   }
+  
 }
 
 @media (max-width: 480px) {
+
+  .stats{
+    display: flex;
+    flex-direction: row;
+    gap: 4.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
   .title {
       font-size: 1.8rem;
   }
@@ -155,10 +170,10 @@ blockquote.marathi {
       text-align: center;
   }
 
-  .card h3 {
+  .cards h3 {
       font-size: 1.4rem;
   }
-  .card p {
+  .cards p {
       font-size: 0.9rem;
   }
   .count {
