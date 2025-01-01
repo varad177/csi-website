@@ -99,6 +99,15 @@
     color: #ccc;
 }
 
+.underline-core {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    color: whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
 .fa-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -333,5 +342,5 @@
         height: 15rem;
     }
 
-    
+
 }

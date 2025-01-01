@@ -3,21 +3,48 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0" />
+
+<meta name="keywords" 
+content=" CSI,CSI-CATT DMCE, CSI-CATT Computer, computer , Computer engineering CSI DMCE Tech, Computer Society of India, DMCE, CSI Technology, CSI Coding,CSI Programming, CSI Web Development, Machine Learning, CSI Data Science, Competitive Programming, Software Development, Hackathons, Tech Workshops, Tech Events, Tech Talks, Artificial Intelligence, Student Chapter, Engineering, Tech Community, Innovations" />
+
+<meta name="description" 
+content="Inspiring Innovation, Connecting Minds. CSI-CATT DMCE empowers tech enthusiasts to learn, grow, and shape the
+future together. />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0D6EFD" />
+
+<!-- Favicon and App Icons -->
+<link rel="icon" type="image/png" href="/images/HomepageImages/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/images/HomepageImages/favicon.svg" />
+<link rel="shortcut icon" href="/images/HomepageImages/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/HomepageImages/apple-touch-icon.png" />
+<link rel="manifest" href="/images/HomepageImages/site.webmanifest" />
+
+<!-- Instagram Meta Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="CSI DMCE" />
+<meta property="og:description" content="Discover technology with CSI DMCE Tech. Join us for coding events, hackathons, workshops, and more at Datta Meghe College of Engineering." />
+<meta property="og:image" content="/images/HomepageImages/favicon-96x96.png" />
+<meta property="og:url" content="https://www.instagram.com/csidmce/" />
+<meta property="og:site_name" content="CSI DMCE" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing page</title>
+  <title>CSI-CATT DMCE 2024</title>
+  <link rel="stylesheet" href="./css/scrolltotop.css">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/aboutPage.css" />
   <link rel="stylesheet" href="./css/teamPage.css" />
   <link rel="stylesheet" href="./css/galleryPage.css" />
-  <link rel="stylesheet" href="./css/event.css" />
   <link rel="stylesheet" href="./css/Eventpage.css" />
   <link rel="stylesheet" href="./css/NewAbout.css" />
-  <link rel="stylesheet" href="./css/NewAbout1.css" />
   <link rel="stylesheet" href="./css/contactus.css">
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/Car.css" />
-  <link rel="stylesheet" href="./css/carousel.css" />
+  <link rel="stylesheet" href="./css/Events.css" />
   <link rel="stylesheet" href="./css/CoreTeam.css" />
   <link rel="stylesheet" href="./css/faculty.css" />
   <link rel="stylesheet" href="./css/coordinator.css" />
@@ -33,7 +60,8 @@
     }
 
     .about-head {
-      font-size: 3rem !important;
+font-family: 'Roboto Mono', monospace;      
+font-size: 3rem !important;
     }
 
     .bg-gradient-to-r {
@@ -77,13 +105,13 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#know">About</a></li>
-          <li><a href="#foundation">Team</a></li>
-          <li><a href="#support">Supporters</a></li>
-          <li><a href="#gallery">Moments</a></li>
-          <li><a href="#swiper-section">Events</a></li>
-          <li><a href="#reachus">Contact us</a></li>
+          <li><a href="#" class="underline-nav">Home</a></li>
+          <li><a href="#about" class="underline-nav active">About</a></li>
+          <li><a href="#pillars" class="underline-nav active">Faculties</a></li>
+          <li><a href="#foundation" class="underline-nav active">Team</a></li>
+          <li><a href="#gallery" class="underline-nav active">Moments</a></li>
+          <li><a href="#swiper-section" class="underline-nav active">Events</a></li>
+          <li><a href="#reachus" class="underline-nav active">Contact us</a></li>
         </ul>
       </div>
       <div id="openBtn" class="open-btn">
@@ -95,9 +123,9 @@
       <button id="closeBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
       <nav class="sidebar-nav">
         <a href="#" class="nav-link">Home</a>
-        <a href="#know" class="nav-link">About</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#pillars" class="nav-link">Faculties</a>
         <a href="#foundation" class="nav-link">Team</a>
-        <a href="#support" class="nav-link">Supporters</a>
         <a href="#gallery" class="nav-link">Moments</a>
         <a href="#swiper-section" class="nav-link">Events</a>
         <a href="#reachus " class="nav-link">Contact</a>
@@ -111,8 +139,9 @@
         <div class="typing-container">
           <span id="text"></span><span class="caret"></span>
         </div>
-        <p>
-          Inspiring Innovation, Connecting Minds. CSI-CATT DMCE empowers tech enthusiasts to learn, grow, and shape the future together. </p>
+        <div class="para"><p>
+          Inspiring Innovation, Connecting Minds. CSI-CATT DMCE empowers tech enthusiasts to learn, grow, and shape the
+          future together. </p></div>
         <!-- <p >
                 सर्वे भवन्तु सुखिनः
               </p> -->
@@ -158,77 +187,92 @@
   </div>
 
   <!-- about page -->
-  <section class="section">
+  <section class="section" id="about">
     <div class="about-container">
-        <h2 class="title">About <span class="highlight span-blue">CSI-CATT-DMCE</span></h2>
-        <div class="underline"></div>
-        <p class="description">Established in 2012, we are the Computer Society of India's Student Branch at DMCE, dedicated to fostering technical excellence and innovation.</p>
+      <h2 class="about-head">ABOUT <span class="highlight span-blue">CSI-CATT DMCE</span></h2>
+      <div class="underline-about"></div>
+      <p class="description">Established in 2012, we are the Computer Society of India's Student Branch at DMCE,
+        dedicated to fostering technical excellence and innovation.</p>
 
-        <div class="grid">
-            <div class="card vision">
-                <h3>Our Vision</h3>
-                <p>To provide an intellectually stimulating environment for education, technological excellence in Computer Engineering field, and professional training along with human values.</p>
-            </div>
-
-            <div class="card marathi-quote">
-                <blockquote class="marathi">
-                    " सर्वे भवन्तु सुखंन्ति "
-                </blockquote>
-            </div>
-
-            <div class="card quote">
-                <blockquote>
-                    "We strive to create an environment where students can collaborate, innovate, and lead within a vibrant technological community, preparing for impactful careers."
-                </blockquote>
-                <p class="blockquote-author">Prof. Vaishali.k.Gaidhane</p>
-                <p class="author-title">Faculty Co-ordinator</p>
-            </div>
-
-            <div class="card mission">
-                <h3>Our Mission</h3>
-                <p>To promote an educational environment that combines academics with intellectual curiosity.<br>
-                   To develop human resources with sound knowledge of theory and practical in the discipline of Computer Engineering and the ability to apply the knowledge to the benefit of society at large.<br>
-                   To assimilate creative research and new technologies in order to facilitate students to be lifelong learners who will contribute positively to the economic well-being of the nation.</p>
-            </div>
+      <div class="grid">
+        <div class="cards vision">
+          <h3>Our Vision</h3>
+          <p>To provide an intellectually stimulating environment for education, technological excellence in Computer
+            Engineering field, and professional training along with human values.</p>
         </div>
-        <div class="stats">
-          <div class="stat">
-              <span class="count">137</span>
-              <p class="stat-text">Members</p>
-          </div>
-          <div class="stat">
-              <span class="count">1000</span>
-              <p class="stat-text">Events</p>
-          </div>
+
+        <div class="cards marathi-quote">
+          <blockquote class="marathi">
+            " सर्वे भवन्तु सुखंन्ति "
+          </blockquote>
+        </div>
+
+        <div class="cards quote">
+          <blockquote>
+            "We strive to create an environment where students can collaborate, innovate, and lead within a vibrant
+            technological community, preparing for impactful careers."
+          </blockquote>
+          <p class="blockquote-author">Prof. Vaishali.k.Gaidhane</p>
+          <p class="author-title">Faculty Co-ordinator</p>
+        </div>
+
+        <div class="cards mission">
+          <h3>Our Mission</h3>
+          <p>To promote an educational environment that combines academics with intellectual curiosity.<br>
+            To develop human resources with sound knowledge of theory and practical in the discipline of Computer
+            Engineering and the ability to apply the knowledge to the benefit of society at large.<br>
+            To assimilate creative research and new technologies in order to facilitate students to be lifelong learners
+            who will contribute positively to the economic well-being of the nation.</p>
+        </div>
+      </div>
+      <div class="stats">
+      <div class="stats">
+        <div class="stat">
+          <span class="count" data-count="7">0</span>
+          <p class="stat-text">Teams</p>
+        </div>
+        <div class="stat">
+          <span class="count" data-count="120">0</span>
+          <p class="stat-text">Events</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="count" data-count="137">0</span>
+          <p class="stat-text">Members</p>
+        </div>
       </div>
     </div>
-</section>
+  </div>
+  </section>
 
   <!-- hod page -->
-  <section class="container">
-    
+  <section class="container" id="pillars">
+
     <div class="overflow-hidden ">
       <h1 class="hod-faculty-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-        <span class="hod-faculty-heading text-3xl text-4xl md:text-5xl lg:text-6xl">PILLARS OF<br></span>
+        <span class="hod-faculty-heading text-3xl text-4xl md:text-5xl lg:text-6xl" style="gap: 1;">PILLARS OF<br></span>
         <span class="highlight span-blue">CSI-CATT DMCE!</span>
+        <div class="underline-support" style="height: 2.5px; width: 200px; color:whitesmoke; margin: 0 auto; margin-top: 2px;"></div>
       </h1>
+      
     </div>
-    
+
     <div class="faculty_main">
       <div class="faculty_firstBox">
+        <h2 class="head">Head of Department</h2>
         <div class="faculty_info">
+         
           <p>
-            CSI DMCE is a student branch of Computer Science and Information Engineering (CSCE) affiliated to the
-            Department of Computer Science and Engineering (DMCE), Pune, India. Established in the year 2012, CSI DMCE
-            aims to foster experiences, teamwork, networking, and collaboration among its students.
+            Welcome to DMCE's Computer Engineering Department, dedicated to quality education and equipped with cutting-edge infrastructure. Our experienced faculty, averaging 12 years of expertise, are encouraged to pursue higher degrees, research, and innovative teaching methods. We prioritize interaction between students, parents, staff, and provide a Training and Placement Cell for a bright future. We promote innovation in research, teaching, and service. Join us in advancing Computer Engineering to new heights. CSI DMCE student chapter started in 2012-13, and CATT organizes various technical and non-technical events. Join us in this journey of excellence.
           </p>
         </div>
       </div>
       <div class="faculty_second_box">
-        <div class="facultyImg" >
+        <div class="facultyImg">
           <img src="./images/faculty/hod.jpg" alt="">
         </div>
-        <div class="faculty_content_child" >
+        <div class="faculty_content_child">
           <p>Dr. Amol Pande</p>
           <p>Professor & HOD</p>
         </div>
@@ -237,22 +281,21 @@
   </section>
   <!-- coordinator page -->
   <section class="container">
-    <h1 class="coordinator-head">CSI COORDINATOR</h1>
+    
     <div class="coordinator_main">
       <div class="coordinator_firstBox">
+        <h2>CSI COORDINATIOR</h2>
         <div class="coordinator_info">
           <p>
-            CSI DMCE is a student branch of Computer Science and Information Engineering (CSCE) affiliated to the
-            Department of Computer Science and Engineering (DMCE), Pune, India. Established in the year 2012, CSI DMCE
-            aims to foster experiences, teamwork, networking, and collaboration among its students.
+            CSI DMCE - Student Branch, established in 2012, is a student-driven committee that plays a vital role in organizing workshops, seminars, technical competitions, and the annual Technical Fest in collaboration with the Computer Association for Technological Trends (CATT). The committee focuses on creating opportunities for students to enhance their skills, work in teams, and build strong networks within the college. By providing a platform for peer learning and collaboration, CSI DMCE encourages students to engage in hands-on projects, explore new technologies, and develop leadership qualities. The initiatives promote a spirit of innovation and problem-solving, helping students grow both technically and personally.
           </p>
         </div>
       </div>
       <div class="coordinator_second_box">
-        <div class="coordinator_Img" >
+        <div class="coordinator_Img">
           <img src="./images/faculty/coordinator.jpg" alt="">
         </div>
-        <div class="coordinator_content_child" >
+        <div class="coordinator_content_child">
           <p>Mrs.Vaishali Gaidhane </p>
           <p>Asst. Professor</p>
         </div>
@@ -263,7 +306,8 @@
 
   <!-- Core Team Section -->
   <section class="core-container" id="foundation">
-    <h2 class="about-head" style="margin-bottom: 1rem;">Core <span class="span-blue">Team</span></h2>
+    <h1 class="about-head">CORE <span class="span-blue">TEAM</span></h1>
+    <div class="underline-core"></div>
 
     <script>
       const toggleMembers = (button, memberDiv) => {
@@ -274,440 +318,439 @@
 
     <div class="row-1">
 
-          <div id="extraSneha" class="member-card">
-            <div  class="core-member">
-              <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+      <div id="extraSneha" class="member-card">
+        <div class="core-member">
+          <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Sneha Deshmukh</h3>
-              <p>General Secretary</p>
-
-              <div class="mob-member-content">
-                <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
-
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Sneha Deshmukh</h3>
+          <p>General Secretary</p>
 
-          <div class="member-card">
-            <div class="core-member" style="margin-top: 6rem;">
-              <img src="./images/team-members/varad.PNG" alt="Varad Dhumale">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/varad177/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Varad Dhumale</h3>
-              <p>Technical Head</p>
-
-              <div class="mob-member-content">
-                <a href="https://www.linkedin.com/in/varad177/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
-
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
+        </div>
+      </div>
 
-          <div class="member-card">
-            <div class="core-member" style="margin-top: 3rem;">
-              <img src="./images/team-members/Vaibhav.PNG" alt="Vaibhav Ghale">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/vaibhavghale07/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+      <div class="member-card">
+        <div class="core-member" style="margin-top: 6rem;">
+          <img src="./images/team-members/varad.PNG" alt="Varad Dhumale">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/varad177/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Vaibhav Ghale</h3>
-                <p>Treasurer & Sponsorship Head</p>
-
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/vaibhavghale07/" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Varad Dhumale</h3>
+          <p>Technical Head</p>
 
-          <div id="reduntSneha" class="member-card">
-            <div  class="core-member">
-              <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/varad177/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Sneha Deshmukh</h3>
-                <p>General Secretary</p>
-
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
+        </div>
+      </div>
 
-          <div class="member-card">
-            <div class="core-member" style="margin-top: 3rem;">
-              <img src="./images/team-members/Rutuja.png" alt="Rutuja Dighe">
-              <div class="core-member-content">
-                <a href=" https://www.linkedin.com/in/rutuja-dighe-14ap03/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+      <div class="member-card">
+        <div class="core-member" style="margin-top: 3rem;">
+          <img src="./images/team-members/Vaibhav.PNG" alt="Vaibhav Ghale">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/vaibhavghale07/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Rutuja Dighe</h3>
-                <p>Convenor</p>
-
-                <div class="mob-member-content">
-                  <a href=" https://www.linkedin.com/in/rutuja-dighe-14ap03/" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Vaibhav Ghale</h3>
+          <p>Treasurer & Sponsorship Head</p>
 
-          <div class="member-card">
-            <div class="core-member" style="margin-top: 6rem;">
-              <img src="./images/team-members/Prathmesh.PNG" alt="Prathmesh Kamble">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/prathamesh-kamble19/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/vaibhavghale07/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Prathmesh Kamble</h3>
-                <p>Technical Head</p>
-
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/prathamesh-kamble19/" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
+        </div>
+      </div>
 
-          
+      <div id="reduntSneha" class="member-card">
+        <div class="core-member">
+          <img src="./images/team-members/Sneha.PNG" alt="Sneha Deshmukh">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Sneha Deshmukh</h3>
+          <p>General Secretary</p>
+
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/snehaadeshmukh/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="core-member" style="margin-top: 3rem;">
+          <img src="./images/team-members/Rutuja.png" alt="Rutuja Dighe">
+          <div class="core-member-content">
+            <a href=" https://www.linkedin.com/in/rutuja-dighe-14ap03/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Rutuja Dighe</h3>
+          <p>Convenor</p>
+
+          <div class="mob-member-content">
+            <a href=" https://www.linkedin.com/in/rutuja-dighe-14ap03/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="core-member" style="margin-top: 6rem;">
+          <img src="./images/team-members/Prathmesh.PNG" alt="Prathmesh Kamble">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/prathamesh-kamble19/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Prathmesh Kamble</h3>
+          <p>Technical Head</p>
+
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/prathamesh-kamble19/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
 
     <div class="row-2">
 
-          <div class="member-card">
-            <div class="core-member h-12" style="margin-top: 7rem;">
-              <img src="./images/team-members/Mirlekar.PNG" alt="Chinmay Mirlekar">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/chinmay-Mirlekar-203210266" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+      <div class="member-card">
+        <div class="core-member h-12" style="margin-top: 7rem;">
+          <img src="./images/team-members/Saniya.PNG" alt="Saniya Chopade">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/saniyachopade" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Chinmay Mirlekar</h3>
-                <p>Publicity Head</p>
-
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/chinmay-Mirlekar-203210266" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
-          </div>
-
-          
-
-          <div class="member-card">
-            <div class="core-member h-12" style="margin-top: 4rem;">
-              <img src="./images/team-members/Jivhesh.PNG" alt="Jivhesh Chaudhari">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/jivhesh-choudhari-339588216" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
-
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Jivhesh Chaudhari</h3>
-              <p>Planning Head</p>
-
-              <div class="mob-member-content">
-                <a href="https://www.linkedin.com/in/jivhesh-choudhari-339588216" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
-
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
         </div>
-          
+        <div class="core-team-content">
+          <h3>Saniya Chopade</h3>
+          <p>Planning Head</p>
 
-          <div class="member-card">
-            <div class="core-member h-12" style="margin-top: 0rem;">
-              <img src="./images/team-members/Aditya.PNG" alt="Aditya Dinde">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/aditya-dinde-3b894629b" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/saniyachopade" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Aditya Dinde</h3>
-                <p>Graphics Head</p>
-
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/aditya-dinde-3b894629b" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
-          
+        </div>
+      </div>
 
-          <div class="member-card">
-            <div class="core-member h-12" style="margin-top: 0rem;">
-              <img src="./images/team-members/Sammit.PNG" alt="Sammit Deshmukh">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/sammit-dashpute-a7264820b" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Sammit Dashpute</h3>
-                <p>Media & Creative Head</p>
+      <div class="member-card">
+        <div class="core-member h-12" style="margin-top: 4rem;">
+          <img src="./images/team-members/Jivhesh.PNG" alt="Jivhesh Chaudhari">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/jivhesh-choudhari-339588216" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/sammit-dashpute-a7264820b" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
-          
+        </div>
+        <div class="core-team-content">
+          <h3>Jivhesh Chaudhari</h3>
+          <p>Planning Head</p>
 
-          <div class="member-card">
-            <div class="core-member h-12" style="margin-top: 4rem;">
-              <img src="./images/team-members/Saniya.PNG" alt="Saniya Chopade">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/saniyachopade" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/jivhesh-choudhari-339588216" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Saniya Chopade</h3>
-                <p>Planning Head</p>
-
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/saniyachopade" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
-          
+        </div>
+      </div>
 
-          <div class="member-card">
-            <div class="core-member h-12" style="margin-top: 7rem;">
-              <img src="./images/team-members/Isha.PNG" alt="Isha Gaikwad">
-              <div class="core-member-content">
-                <a href="https://www.linkedin.com/in/isha-gaikwad-a37040285/" class="fa-icon">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your-username" class="fa-icon">
-                  <i class="fa fa-github"></i>
-                </a>
 
-                <a href="https://twitter.com/your-username" class="fa-icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-            <div class="core-team-content">
-              <h3>Isha Gaikwad</h3>
-                <p>Publicity Head</p>
+      <div class="member-card">
+        <div class="core-member h-12" style="margin-top: 0rem;">
+          <img src="./images/team-members/Aditya.PNG" alt="Aditya Dinde">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/aditya-dinde-3b894629b" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
 
-                <div class="mob-member-content">
-                  <a href="https://www.linkedin.com/in/isha-gaikwad-a37040285/" class="fa-icon">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                  <a href="https://github.com/your-username" class="fa-icon">
-                    <i class="fa fa-github"></i>
-                  </a>
-  
-                  <a href="https://twitter.com/your-username" class="fa-icon">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-            </div>
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
           </div>
-          
+        </div>
+        <div class="core-team-content">
+          <h3>Aditya Dinde</h3>
+          <p>Graphics Head</p>
 
-          
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/aditya-dinde-3b894629b" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="member-card">
+        <div class="core-member h-12" style="margin-top: 0rem;">
+          <img src="./images/team-members/Sammit.PNG" alt="Sammit Deshmukh">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/sammit-dashpute-a7264820b" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Sammit Dashpute</h3>
+          <p>Media & Creative Head</p>
+
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/sammit-dashpute-a7264820b" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div class="member-card">
+        <div class="core-member h-12" style="margin-top: 4rem;">
+          <img src="./images/team-members/Mirlekar.PNG" alt="Chinmay Mirlekar">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/chinmay-Mirlekar-203210266" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Chinmay Mirlekar</h3>
+          <p>Publicity Head</p>
+
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/chinmay-Mirlekar-203210266" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="core-member h-12" style="margin-top: 7rem;">
+          <img src="./images/team-members/Isha.PNG" alt="Isha Gaikwad">
+          <div class="core-member-content">
+            <a href="https://www.linkedin.com/in/isha-gaikwad-a37040285/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="core-team-content">
+          <h3>Isha Gaikwad</h3>
+          <p>Publicity Head</p>
+
+          <div class="mob-member-content">
+            <a href="https://www.linkedin.com/in/isha-gaikwad-a37040285/" class="fa-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your-username" class="fa-icon">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a href="https://twitter.com/your-username" class="fa-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
 
     </div>
   </section>
@@ -715,30 +758,40 @@
   <!--- our moments --->
   <section id="gallery">
     <h1 class="about-head">OUR <span class="span-blue">MOMENTS</span></h1>
+    <div class="underline-gallery"></div>
     <div class="gallery">
       <!-- Initial 5 Images -->
       <div class="gallery-item">
         <div class="card">
           <img src="./Eventsimg/IMG1.jpeg" alt="Image 1" />
-          <div class="overlay">This is Image 1</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=2" alt="Image 2" />
-          <div class="overlay">This is Image 2</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2>
+          </div>
         </div>
       </div>
       <div class="gallery-item">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=3" alt="Image 3" />
-          <div class="overlay">This is Image 3</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=4" alt="Image 4" />
-          <div class="overlay">This is Image 4</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
 
@@ -747,124 +800,104 @@
       <div class="gallery-item hidden">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=6" alt="Image 6" />
-          <div class="overlay">This is Image 6</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item hidden">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=6" alt="Image 6" />
-          <div class="overlay">This is Image 6</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item hidden">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=6" alt="Image 6" />
-          <div class="overlay">This is Image 6</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item hidden">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=6" alt="Image 6" />
-          <div class="overlay">This is Image 6</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item hidden">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=6" alt="Image 6" />
-          <div class="overlay">This is Image 6</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item hidden">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=7" alt="Image 7" />
-          <div class="overlay">This is Image 7</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <div class="gallery-item hidden">
         <div class="card">
           <img src="https://picsum.photos/300/200?random=8" alt="Image 8" />
-          <div class="overlay">This is Image 8</div>
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
     </div>
     <button class="toggle-gallery ">See More</button>
   </section>
 
-  <!-- EVENTYS PAGE CARDS -->
-  <!-- <section id="events">
-    <h1 class="about-head">OUR EVENTS</h1>
-    <div class="carousel">
-      <div class="carousel-wrapper">
-        <div class="carousel-item">
-          <div class="event-card">
-            <img src="./Eventsimg/IMG1.jpeg" alt="Poster 1">
-            <div class="event-details">
-              <h3>Event Title 1</h3>
-              <p>Venue: Location 1</p>
-              <p>Date: 2024-01-01</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="event-card">
-            <img src="./Eventsimg/img2.jpeg" alt="Poster 2">
-            <div class="event-details">
-              <h3>Event Title 2</h3>
-              <p>Venue: Location 2</p>
-              <p>Date: 2024-02-01</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="event-card">
-            <img src="./Eventsimg/img3.jpeg" alt="Poster 3">
-            <div class="event-details">
-              <h3>Event Title 3</h3>
-              <p>Venue: Location 3</p>
-              <p>Date: 2024-03-01</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="event-card">
-            <img src="./Eventsimg/WhatsApp Image 2024-10-27 at 10.57.21 (2).jpeg" alt="Poster 4">
-            <div class="event-details">
-              <h3>Event Title 4</h3>
-              <p>Venue: Location 4</p>
-              <p>Date: 2024-04-01</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="btns">
-        <button class="btn left" onclick="prevSlide()">&#10094;</button>
-        <button class="btn right" onclick="nextSlide()">&#10095;</button>
-      </div>
-    </div>
-  </section> -->
-
   <!-- Carousel Section -->
   <section id="swiper-section">
     <h1 class="about-head">OUR <span class="span-blue">EVENTS</span></h1>
+    <div class="underline-events"></div>
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">]
+      <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./Eventsimg/IMG1.jpeg" alt="Event Image 2">
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
         <div class="swiper-slide">
           <img src="./Eventsimg/img2.jpeg" alt="Event Image 3">
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
         <div class="swiper-slide">
           <img src="./Eventsimg/img3.jpeg" alt="Event Image 4">
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
         <div class="swiper-slide">
           <img src="./Eventsimg/IMG1.jpeg" alt="Event Image 5">
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
         <div class="swiper-slide">
           <img src="./Eventsimg/img2.jpeg" alt="Event Image 6">
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
         <div class="swiper-slide">
           <img src="./Eventsimg/img3.jpeg" alt="Event Image 7">
+          <div class="overlay">
+            <h1>CSI</h1>
+            <h2>Event name</h2></div>
         </div>
       </div>
       <!-- Removed the pagination div to disable pagination bullets -->
@@ -877,8 +910,8 @@
 
   <!--Contact us --->
   <div class="contact" id="reachus">
-    <h1>CONTACT <span class="span-blue">US</span></h1>
-
+    <h1 class="about-head">CONTACT <span class="span-blue">US</span></h1>
+    <div class="underline-contact"></div>
     <div class="contact-section">
       <!-- Contact Information Section -->
       <div class="contact-info">
@@ -900,8 +933,8 @@
             <span class="info-title">Phone Number</span>
           </div>
           <div class="info-text">
-            <p>Aditya Parab - <a href="tel:+919372348202">+91 93723 48202</a></p>
-            <p>Viraj Sawant - <a href="tel:+919136835165">+91 91368 35165</a></p>
+            <p>Vaibhav Ghale - <a href="tel:+9196372 80086">+91 9637280086 </a></p>
+            <p>Chinmay Mirlekar- <a href="tel:+917558337744">+91 7558337744 </a></p>
           </div>
 
           <div class="contact-item">
@@ -909,8 +942,8 @@
             <span class="info-title">Email Address</span>
           </div>
           <div class="info-text">
-            <p>Aditya Parab - <a href="mailto:adityaparab212@gmail.com">adityaparab212@gmail.com</a></p>
-            <p>Viraj Sawant - <a href="mailto:virajsawant3107@gmail.com">virajsawant3107@gmail.com</a></p>
+            <p>Vaibhav Ghale - <a href="mailto:vaibhavghale27@gmail.com">vaibhavghale27@gmail.com</a></p>
+            <p>Chinamy Mirlekar - <a href="mailto:cmirlekar2@gmail.com com">cmirlekar2@gmail.com </a></p>
           </div>
         </div>
       </div>
@@ -934,24 +967,61 @@
 
   <footer class="footer">
     <div class="footer-content">
-      <h2 class="footer-title"><span class=" highlight span-blue">connect with us</span></h2>
-      <ul class="social-links">
-        <li><a href="https://www.instagram.com/csidmce/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li><a href="https://github.com/CSI-DMCE-2024" class="social-icon"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/csicattdmce/" class="social-icon"><i
-              class="fa-brands fa-linkedin"></i></a></li>
-      </ul>
-      <p class="footer-text">&copy; 2024 Your Company. All rights reserved.</p>
+        <h2 class="footer-title">CONNECT<span class="highlight span-blue"> WITH US</span></h2>
+        <div class="underline-footer"></div>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.instagram.com/csidmce/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/CSI-DMCE-2024" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/csicattdmce/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-pages">
+            <ul class="footer-links">
+              <li><a href="#" class="underline-nav">Home</a></li>
+              <li><a href="#about" class="underline-nav active">About</a></li>
+              <li><a href="#pillars" class="underline-nav active">Faculties</a></li>
+              <li><a href="#foundation" class="underline-nav active">Team</a></li>
+              <li><a href="#gallery" class="underline-nav active">Moments</a></li>
+              <li><a href="#swiper-section" class="underline-nav active">Events</a></li>
+              <li><a href="#reachus" class="underline-nav active">Contact us</a></li>
+            </ul>
+        </div>
+        <p class="footer-text">&copy; <span id="currentYear"></span> CSI-CATT DMCE. Made with &hearts; by Tech-Team</p>
     </div>
-  </footer>
+</footer>
+
+<script>
+    // Dynamically set the current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+ <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+
+
+
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+
   <!-- <script src="./js/car.js"></script> -->
+   <script src="./js/scroll.js"></script>
   <script src="./js/galleryPage.js"></script>
   <script src="./js/aboutPage.js"></script>
   <script src="./js/script.js"></script>
@@ -988,7 +1058,7 @@
       });
     });
   </script>
-</script>
+  </script>
 
 </body>
 
