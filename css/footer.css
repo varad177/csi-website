@@ -80,6 +80,14 @@
   color: #fff;
 }
 
+.footer-text i {
+  color: red;
+}
+.social-links li a i {
+  font-size: 0.014em !important;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .footer-title {
