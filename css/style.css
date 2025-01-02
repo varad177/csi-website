@@ -154,7 +154,7 @@ nav {
   color: rgb(215, 218, 213);
   font-weight: bold;
   font-size: 20px;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container nav .menu ul li a:hover {
@@ -220,7 +220,7 @@ nav {
   display: inline-block;
   width: 55%;
   font-style: normal;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Roboto', sans-serif;
   height: 165px;
   font-size: 80px;
   font-weight: 700;
@@ -265,7 +265,7 @@ nav {
 }
 
 .container .wrapper .content p {
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   text-align: left !important;
   line-height: 1.2;
