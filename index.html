@@ -91,6 +91,7 @@ future together." />
 </head>
 
 <body>
+
   <div class="container" id="#">
     <!-- LOADER -->
     <div class="loader">
@@ -1033,7 +1034,7 @@ future together." />
 </script>
 
  <!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+<button id="scrollToTopBtn" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
 
 
@@ -1057,6 +1058,33 @@ future together." />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+
+    
+let isAnimationInProgress = false;
+
+function moveCar() {
+  if (isAnimationInProgress) return;  // Prevent multiple clicks while animation is running
+  isAnimationInProgress = true;
+
+  // Show the road background
+  document.querySelector('.road').style.opacity = '1';
+
+  // Move car to center of the page
+  const carBtn = document.querySelector('.car-btn');
+  carBtn.style.transform = 'translateX(-50%) translateY(-50%)';
+
+  // After a short delay, simulate the car driving up
+  setTimeout(() => {
+    carBtn.style.transform = 'translateX(-50%) translateY(-100%)';
+  }, 2000);
+
+  // Reset everything back after animation
+  setTimeout(() => {
+    document.querySelector('.road').style.opacity = '0';
+    carBtn.style.transform = 'translateX(-50%) translateY(0)';
+    isAnimationInProgress = false;
+  }, 4000);
+}
 
 const mainNavbar = document.querySelector('.main-navbar');
 const secondaryNavbar = document.querySelector('.secondary-navbar');

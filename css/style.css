@@ -11,12 +11,6 @@ body {
   min-width: 100vw;
   overflow-x: hidden;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgb(5 39 38) 100%,
-    rgba(53, 92, 74, 1) 100%
-  );
 }
 
 /* Styling the scrollbar */
@@ -765,3 +759,8 @@ border-radius: 10px;
     display: none !important;
   } 
 }
+
+
+
+
+

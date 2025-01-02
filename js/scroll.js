@@ -13,6 +13,6 @@ window.addEventListener('scroll', () => {
 
 // Smooth scroll to top using GSAP
 scrollToTopBtn.addEventListener('click', () => {
-    gsap.to(window, { duration: 1, scrollTo: { y: 0 }, ease: 'power2.inOut' });
+    gsap.to(window, { duration: 0.5, scrollTo: { y: 0 }, ease: 'power2.inOut' });
 });
 
