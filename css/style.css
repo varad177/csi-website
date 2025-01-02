@@ -219,11 +219,11 @@ nav {
 }
 .typing-container {
   display: inline-block;
-  width: 55%;
+
   font-style: normal;
   font-family: 'Roboto', sans-serif;
-  height: 165px;
-  font-size: 80px;
+height: max-content;
+  font-size: 6em;
   font-weight: 700;
   margin-top: 50px;
   line-height: 1;
@@ -615,7 +615,18 @@ nav {
   .content {
     width: 100%;
     padding: 0 12px;
-    margin-top: 65px;
+
+  }
+  #page2 {
+
+    margin-bottom: 2rem;
+
+  }
+  .about-head{
+    font-size: 2.2rem;
+  }
+  .description{
+    margin-top: 10px;
   }
 
   .typing-container {

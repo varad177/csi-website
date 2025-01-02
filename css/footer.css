@@ -1,6 +1,5 @@
 .footer {
-  backdrop-filter: blur(5px);
-  /* Apply background blur */
+ 
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -93,7 +92,9 @@
   .footer-title {
       font-size: 1.5em;
   }
-
+  .social-links li a i {
+    font-size: 1.014em !important;
+}
   .social-links {
       gap: 20px;
   }
@@ -127,8 +128,8 @@
   }
 
   .footer-text {
-      font-size: 0.75em;
-  }
+    font-size: 0.8em;
+}
 }
 
 .fa-instagram {
