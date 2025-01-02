@@ -13,7 +13,7 @@ content=" CSI,CSI-CATT DMCE, CSI-CATT Computer, computer , Computer engineering 
 
 <meta name="description" 
 content="Inspiring Innovation, Connecting Minds. CSI-CATT DMCE empowers tech enthusiasts to learn, grow, and shape the
-future together. />
+future together." />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#0D6EFD" />
 
@@ -99,7 +99,7 @@ future together. />
     </div>
 
     <!-- navbar -->
-    <nav>
+    <nav class="main-navbar">
       <div class="logo">
         <span><img id="logo" src="./images/HomepageImages/147408577.png" alt="logo" /></span>
       </div>
@@ -118,6 +118,18 @@ future together. />
         <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
+    <div class="secondary-navbar">
+      <ul>
+        <li><a href="#" class="underline-nav"> <abbr class="custom-tooltip" data-tooltip='Home'><i class="fa-solid fa-house"></i></abbr></a></li>
+        <li><a href="#about" class="underline-nav active"><abbr class="custom-tooltip" data-tooltip='About'><i class="fa-regular fa-address-card"></i></abbr></a></li>
+        <li><a href="#pillars" class="underline-nav active"><abbr class="custom-tooltip" data-tooltip='Faculties'><i class="fa-solid fa-chalkboard-user"></i></abbr></a></li>
+        <li><a href="#foundation" class="underline-nav active"><abbr class="custom-tooltip" data-tooltip='Team'><i class="fa-solid fa-people-group"></i></abbr></a></li>
+        <li><a href="#gallery" class="underline-nav active"><abbr class="custom-tooltip" data-tooltip='Moments'><i class="fa-solid fa-photo-film"></i></abbr></a></li>
+        <li><a href="#swiper-section" class="underline-nav active"><abbr class="custom-tooltip" data-tooltip='Events'><i class="fa-solid fa-calendar-days"></i></abbr></a></li>
+        <li><a href="#reachus" class="underline-nav active"><abbr class="custom-tooltip" data-tooltip='Contact Us'><i class="fa-solid fa-address-book"></i></abbr></a></li>
+      </ul>
+    </div>
+  
     <div id="overlay" class="overlay"></div>
     <div id="sidebar" class="sidebar">
       <button id="closeBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
@@ -1029,6 +1041,18 @@ future together. />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+
+const mainNavbar = document.querySelector('.main-navbar');
+const secondaryNavbar = document.querySelector('.secondary-navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > mainNavbar.offsetHeight) {
+    secondaryNavbar.style.display = 'block';
+  } else {
+    secondaryNavbar.style.display = 'none';
+  }
+});
+    
     document.addEventListener("DOMContentLoaded", function () {
       var swiper = new Swiper(".mySwiper", {
         loop: true, // Enable loop for seamless transition
@@ -1055,6 +1079,10 @@ future together. />
         }
       });
     });
+ 
+
+
+
   </script>
   </script>
 
