@@ -22,6 +22,11 @@ gsap.from('.h1 h1', 1.4, {
   skewY: 20,
   stagger: .8
 })
+gsap.from('.content .typing-container', 1, {
+  delay: 2.5,
+  opacity: 0,
+
+})
 gsap.from('.content p', 1, {
   delay: 2.5,
   y: -30,
@@ -87,7 +92,7 @@ gsap.to("#name-div h1", {
   scrollTrigger: {
     trigger: "#name-div h1",
     scroller: "body",
-  //   markers:true,
+    //   markers:true,
     scrub: 0.7
   }
 })
@@ -96,25 +101,44 @@ gsap.to("#name-div h1", {
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
+
+const sectionIds = ["about", "pillars", "foundation", "gallery", "swiper-section", "reachus"];
+
+// Loop through each section and apply the animation
+sectionIds.forEach((id) => {
+  gsap.from(`#${id}`, {
+    opacity: 0, // Start with opacity 0
+    y: 50, // Start slightly below
+    duration: 2, // Animation duration
+    ease: "power2.out", // Smooth easing
+    scrollTrigger: {
+      trigger: `#${id}`, // Element that triggers the animation
+      start: "top 80%", // Start animation when the top of the section is 80% down the viewport
+      toggleActions: "play none none none", // Play animation once
+    },
+  });
+});
+
+
 // Animation for each heading
 gsap.utils.toArray('#aboutheading').forEach((heading) => {
-    // Create a timeline for each heading
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: heading, // Element that triggers the animation
-            start: 'top 80%', // When the top of the heading hits 80% of the viewport height
-            end: 'bottom 20%', // When the bottom of the heading hits 20% of the viewport height
-            scrub: true, 
-            scroller: "body",
-        }
-    });
+  // Create a timeline for each heading
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: heading, // Element that triggers the animation
+      start: 'top 80%', // When the top of the heading hits 80% of the viewport height
+      end: 'bottom 20%', // When the bottom of the heading hits 20% of the viewport height
+      scrub: true,
+      scroller: "body",
+    }
+  });
 
-    // Add animation to the timeline
-    tl.to(heading, {
-        opacity: 1, // Fade in
-        y: 0, // Move to original position
-        duration: 1 // Animation duration
-    });
+  // Add animation to the timeline
+  tl.to(heading, {
+    opacity: 1, // Fade in
+    y: 0, // Move to original position
+    duration: 1 // Animation duration
+  });
 });
 
 
@@ -123,6 +147,7 @@ const sidebar = document.getElementById("sidebar");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
 const overlay = document.getElementById("overlay");
+const navLinks = document.querySelectorAll(".nav-link"); // Select all nav links
 
 // GSAP timeline for sidebar animation
 const tl = gsap.timeline({ paused: true, reversed: true });
@@ -133,18 +158,21 @@ tl.to(overlay, {
   pointerEvents: "auto",
   ease: "power2.out",
 })
-.to(sidebar, {
-  duration: 0.2,
-  x: "100vw", // Slide sidebar to cover the full width
-  ease: "power2.out",
-}, "<") // Start at the same time as overlay
-
-.from(".nav-link", {
-  duration: 0.1,
-  opacity: 0,
-  x: -50,
-  stagger: 0.1,
-});
+  .to(
+    sidebar,
+    {
+      duration: 0.2,
+      x: "100vw", // Slide sidebar to cover the full width
+      ease: "power2.out",
+    },
+    "<" // Start at the same time as overlay
+  )
+  .from(".nav-link", {
+    duration: 0.1,
+    opacity: 0,
+    x: -50,
+    stagger: 0.1,
+  });
 
 // Open and close functions
 openBtn.addEventListener("click", () => {
@@ -159,6 +187,14 @@ closeBtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   if (!tl.reversed()) tl.reverse();
 });
+
+// Close sidebar when any nav link is clicked
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    if (!tl.reversed()) tl.reverse();
+  });
+});
+
 
 
 // Initialize GSAP
@@ -185,4 +221,46 @@ faceElements.forEach((element) => {
   });
 });
 
+const texts = ["CSI-CATT DMCE"];
+const typingSpeed = 100; // Milliseconds per character
+const delayBetweenTexts = 1000; // Milliseconds between each text
+
+let textIndex = 0;
+let charIndex = 0;
+const textElement = document.getElementById('text');
+
+function typeText() {
+  if (charIndex < texts[textIndex].length) {
+    textElement.textContent += texts[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeText, typingSpeed);
+  } else {
+    setTimeout(deleteText, delayBetweenTexts);
+  }
+}
+
+function deleteText() {
+  if (charIndex > 0) {
+    textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(deleteText, typingSpeed);
+  } else {
+    textIndex = (textIndex + 1) % texts.length; // Loop back to first text
+    setTimeout(typeText, delayBetweenTexts);
+  }
+}
+
+typeText(); // Start the typing effect
+// Add event listener to manage the active class
+const homelinks = document.querySelectorAll('.underline-nav');
+
+homelinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove 'active' class from all links
+    homelinks.forEach(link => link.classList.remove('active'));
+    
+    // Add 'active' class to the clicked link
+    this.classList.add('active');
+  });
+});
 

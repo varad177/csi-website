@@ -1,90 +1,136 @@
+.footer {
+  backdrop-filter: blur(5px);
+  /* Apply background blur */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-color: #fff;
+  border-radius: 1rem;
 
-  
-  .footer {
-   
-    backdrop-filter: blur(px); /* Apply background blur */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: auto;
-  }
-  
+
+   /* Add a dark semi-transparent background */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+.underline-footer{
+  width: 200px;
+  height: 2px;
+  background-color: white;
+  color: whitesmoke;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.footer-title {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: #fff;
+  opacity: 1;
+}
+
+.social-links {
+  list-style-type: none;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icon {
+  font-size: 100em; /* Increased icon size */
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-pages {
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff; /* Set the default text color to white */
+  transition: background 0.3s, -webkit-text-fill-color 0.3s;
+}
+
+.footer-links a:hover {
+  background: linear-gradient(#0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-text {
+  font-size: 0.9em;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .footer-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    opacity: 0; /* Hidden initially for animation */
-  }
-  
-  .social-links {
-    list-style-type: none;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    opacity: 0; /* Hidden initially for animation */
-  }
-  
-  .social-icon {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-  }
- 
-  .footer-text {
-    font-size: 0.9em;
-    opacity: 0; /* Hidden initially for animation */
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .footer-title {
       font-size: 1.5em;
-    }
-  
-    .social-links {
+  }
+
+  .social-links {
       gap: 20px;
-      /* flex-direction: column; */
-      align-items: center;
-    }
-  
-    .footer-text {
+  }
+
+  .social-icon {
+      font-size: 1.5em; /* Slightly smaller for smaller screens */
+  }
+
+  .footer-text {
       font-size: 0.8em;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .footer {
+}
+
+@media (max-width: 480px) {
+  .footer {
       padding: 15px 10px;
-    }
-  
-    .footer-title {
+  }
+
+  .footer-title {
       font-size: 1.3em;
-    }
-  
-    .social-icon {
-      font-size: 1em;
-    }
-  
-    .footer-text {
+  }
+
+  .footer-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .social-icon {
+      font-size: 1.3em;
+  }
+
+  .footer-text {
       font-size: 0.75em;
-    }
   }
-  
-  .fa-instagram{
-    color: #e4405f !important;
-  }
+}
 
-  .fa-github{
-    color: #FFFFFF !important;
-  }
+.fa-instagram {
+  color: #e4405f !important;
+}
 
-  .fa-linkedin{
-    color: #007bb5 !important;
-  }
+.fa-github {
+  color: #ffffff !important;
+}
 
-  
+.fa-linkedin {
+  color: #007bb5 !important;
+}

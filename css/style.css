@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +8,39 @@
 }
 
 body {
-  font-family: Aquire;
   transition: all 0.5s ease-in-out;
-  background-color: black;
   min-width: 100vw;
   overflow-x: hidden;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(5 39 38) 100%, rgba(53, 92, 74, 1) 100%)
+}
+
+
+
+/* Styling the scrollbar */
+body::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 5px; /* Height of the horizontal scrollbar */
+}
+
+/* Styling the scrollbar track */
+body::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+  border-radius: 10px; /* Round corners */
+  background-color: #041515;
+  
+}
+
+/* Styling the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background: #f1f1f1; /* Color of the thumb (scroll part) */
+  border-radius: 10px; /* Round corners */
+
+}
+
+/* Styling the thumb when hovered */
+body::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Darker thumb color on hover */
 }
 
 body ul li {
@@ -24,8 +52,8 @@ body a {
 }
 
 #logo {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin-right: 20px;
   border-radius: 100%;
   display: flex;
@@ -46,8 +74,15 @@ body a {
   max-width: 100vw;
   height: 100vh;
   z-index: -1;
-  color: #272626;
+  color: #fafef6;
+  opacity: 0.2;
+  text-shadow:
+    2px 2px 0 rgb(228, 216, 216),
+    -2px 2px 0 rgb(233, 228, 228),
+    2px -2px 0 rgb(244, 244, 244),
+    -2px -2px 0 rgb(234, 228, 228);
 }
+
 .loader {
 
   width: 100vw !important;
@@ -74,11 +109,13 @@ body a {
 .container img {
   width: 200px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 1rem;
+  padding: 10px 0px;
 }
 
 .container nav {
@@ -88,16 +125,18 @@ nav {
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
   padding: 10px 0px;
+  position:relative;
 }
 
 .container nav .logo {
   padding: 0px 25px;
+  margin-left: 30px;
+
 }
 
 .container nav .logo span {
   display: inline-block;
   font-size: 45px;
-  font-family: Infected;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
     2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
     2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -107,73 +146,137 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: absolute;
+  margin-left: 780px;
 }
+
 .container nav .menu ul li {
   display: inline-block;
 }
 
 .container nav .menu ul li a {
-  padding: 10px 20px;
-  color: white;
+  padding: 10px 10px;
+  color: rgb(215, 218, 213);
+  font-weight: bold;
   font-size: 20px;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
-    2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-    2px 2px 5px rgba(0, 0, 0, 0.6);
+font-family: 'Press Start 2P', cursive;
+}
+
+.container nav .menu ul li a:hover {
+  background: linear-gradient( #0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Basic NavLink styling */
+
+/* Basic NavLink styling */
+.underline-nav {
+  position: relative;
+  text-decoration: none; /* Remove the default underline */
+  font-weight: 500; /* Optional: Adjust to match your design */
+  color: black; /* Optional: Adjust the text color */
+  padding-bottom: 5px; /* Optional: Add padding to make space for the underline */
+}
+
+/* Underline effect on hover */
+.underline-nav::after {
+  content: ''; /* Create an empty pseudo-element */
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the text */
+  left: 0;
+  width: 0; /* Start with no width */
+  height: 2px; /* Set the height of the underline */
+  background-color: rgb(222, 215, 215); /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth transition for the underline effect */
+}
+
+/* On hover, extend the underline */
+.underline-nav:hover::after {
+  width: 100%; /* On hover, make the width equal to the full width of the text */
 }
 
 .container .wrapper {
   width: 100vw;
   min-height: 90vh;
-
   overflow: hidden !important;
-
   display: flex;
-
   padding-top: 30px;
 }
 
-.content {
-  /* width: 50%; */
-}
 .img {
-  width: 50%;
+  width: 90%;
 }
+
 .container .wrapper .content .h1 {
   width: 100%;
   overflow: hidden;
 }
 
 .content {
-  padding: 0 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding: 0px 50px;
+  
+  color: rgb(240, 247, 253) !important;
+}
+.typing-container .text{
+  font-style: italic;
+} 
+.typing-container {
+  display: inline-block;
+  width: 55%;
+  font-style: normal;
+  font-family: 'Press Start 2P', cursive;
+  height: 165px;
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 50px;
+  line-height: 1;
+}
+.caret {
+  width: 2px;
+  height: 100rem;
+  
+  margin-left: 5px;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+.para{
+  width: 110%;
 }
 .content p {
-  color: white;
+  color: rgb(224, 228, 224);
   font-size: 30px !important;
+  margin-top: 40px;
 }
+
+.content p:hover {
+  background: linear-gradient(to right, #0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
 .container .wrapper .content .h1 h1 {
   text-align: left !important;
   font-size: 110px;
   line-height: 90%;
   color: white;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.4),
-  2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-  2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
-  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-  2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
-  2px 2px 3px rgba(0, 0, 0, 0.6);
+    2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
+    2px 2px 5px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4),
+    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+    2px 2px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.6),
+    2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .container .wrapper .content p {
-  font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
   text-align: left !important;
-  line-height: 109%;
-  width: 70%;
+  line-height: 1.2;
+  width: 65%;
+  word-spacing: 7px;
 }
 
 .container .wrapper .content a {
@@ -213,6 +316,7 @@ nav {
   width: 100%;
   position: relative;
   margin-left: 35px;
+
 }
 
 .container .wrapper .img .subimg {
@@ -275,21 +379,24 @@ nav {
   z-index: 9;
   top: 0;
 }
+
 /*# sourceMappingURL=style.css.map */
 
 .heading {
   font-size: 3rem;
   font-weight: bold;
-  opacity: 0; /* Start hidden for animation */
-  transform: translateY(50px); /* Initial position for animation */
-  color: white;
+  opacity: 0;
+  /* Start hidden for animation */
+  transform: translateY(50px);
+  /* Initial position for animation */
+  color: rgb(33, 119, 189);
 }
 
 @media (max-width: 600px) {
   #page2 {
     height: auto;
     width: 100%;
-    padding-top: 2vh;
+    padding-top: 1vh;
     position: relative;
   }
 
@@ -298,8 +405,7 @@ nav {
     white-space: nowrap;
     position: relative;
     overflow-x: auto;
-    margin-bottom: 1vh;
-    /* background-color: red; */
+    
     overflow-y: hidden;
   }
 
@@ -308,7 +414,7 @@ nav {
   }
 
   #name-div h1 {
-    font-size: 14.6vw;
+    font-size: 5vw;
     /* background-color:yellow; */
     margin-right: 2vw;
     display: inline-block;
@@ -320,7 +426,6 @@ nav {
   white-space: nowrap;
   position: relative;
   overflow-x: auto;
-  margin-bottom: 13vh;
   overflow-y: hidden;
 }
 
@@ -329,27 +434,24 @@ nav {
 }
 
 #name-div h1 {
-  font-size: 8vw;
-  /* background-color:yellow; */
+  font-size: 7vw;
   margin-right: 2vw;
   display: inline-block;
-  /* animation-name: namemoving; */
-  /* animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite; */
 }
 
-
-
 #page2 {
-  height: auto;
+  height: 5vh;
+  margin-bottom: 10rem;
   width: 100%;
   position: relative;
   color: white;
 }
 
 .h-text:hover {
-  color: rgb(0, 132, 255);
+  background: linear-gradient(to right, #0891b2, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-outer {
@@ -358,9 +460,12 @@ nav {
 }
 
 .heading {
-  opacity: 0; /* Start hidden */
-  transform: translateY(50px); /* Start moved down */
-  transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
+  opacity: 0;
+  /* Start hidden */
+  transform: translateY(50px);
+  /* Start moved down */
+  transition: opacity 0.5s, transform 0.5s;
+  /* Smooth transition */
   font-size: 80px;
 }
 
@@ -374,9 +479,11 @@ nav {
 /* Sidebar styling */
 .sidebar {
   position: fixed;
-  left: -100%; /* Hidden off-screen */
+  left: -100%;
+  /* Hidden off-screen */
   top: 0;
-  width: 100%; /* Full width */
+  width: 100%;
+  /* Full width */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -385,6 +492,7 @@ nav {
   z-index: 2;
   transition: transform 0.5s ease;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -405,6 +513,7 @@ nav {
   gap: 15px;
   padding: 0 20px;
 }
+
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -436,15 +545,19 @@ nav {
   right: 30px;
   top: 23px;
 }
+
 .open-btn i {
   font-size: 30px;
 }
+
 .close-btn {
   color: white;
 }
+
 .close-btn i {
   font-size: 30px;
 }
+
 /* Main content styling */
 
 /* // Home page and nav bar source code  */
@@ -461,9 +574,13 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .para{
+    width: 100%;
+  }
   .heading {
     font-size: 40px;
   }
+
   .menu {
     display: none;
   }
@@ -471,8 +588,9 @@ nav {
   .open-btn {
     display: block;
   }
-  nav{
-    margin-top:3px !important;
+
+  nav {
+    margin-top: 3px !important;
   }
 
   .container .loader h1 {
@@ -499,10 +617,19 @@ nav {
     flex-direction: column;
     height: auto !important;
   }
+
   .content {
     width: 100%;
     padding: 0 12px;
     margin-top: 65px;
+
+  }
+
+  .typing-container {
+    height: 150px;
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 60px;
   }
 
   .container .wrapper .content .h1 h1 {
@@ -519,10 +646,13 @@ nav {
   .img {
     display: none !important;
   }
+
   #logo {
     width: 60px;
     height: 60px;
+    margin-left: 0px;
   }
+
   .container nav {
     padding: 8px 0px;
   }
@@ -532,6 +662,7 @@ nav {
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    margin-left: 0px;
   }
 }
 
@@ -540,10 +671,11 @@ nav {
   display: inline-block;
   padding: 20px;
   font-size: 24px;
-  background-color: #00BB00; /* Your preferred color */
+  background-color: #00BB00;
+  /* Your preferred color */
   color: white;
   border-radius: 10px;
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
   cursor: pointer;
 }
-
