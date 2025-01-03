@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
 }
@@ -21,6 +21,7 @@ h1 {
 .contact-info {
     flex: 1;
     padding: 20px;
+    margin-left: 70px;
     max-width: 50%;
     margin-bottom: 30px;
 }
@@ -73,7 +74,6 @@ a:hover {
 .map-container {
     flex: 1;
     max-width: 50%;
- 
 }
 
 iframe {
@@ -84,41 +84,59 @@ iframe {
 }
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 1024px) {
     .contact-section {
         flex-direction: column;
+        align-items: center;
     }
 
     .contact-info {
         max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .map-container {
-        width: 50%;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .map-container iframe {
-        height: 400px;
+        width: 100%;
+        max-width: 500px;
+        height: 350px;
+        margin: 0 auto;
+        display: block;
     }
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-        
-    }
-    .underline-contact{
-        margin-bottom: 2rem;
-    }
     .contact-box h2 {
-        font-size: 1.8rem;
+        font-size: 1.8em;
+    }
+
+    .underline-contact {
+        margin-bottom: 2rem;
     }
 
     .info-text {
-        margin-left: 50px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .map-container iframe {
+        width: 100%;
+        max-width: 400px;
         height: 350px;
     }
 }
@@ -126,20 +144,20 @@ iframe {
 @media (max-width: 480px) {
     .contact-section {
         flex-direction: column-reverse;
-    }
-    .underline-contact{
-        margin-bottom: 1rem;
-    }
-    h1 {
-        font-size: 2rem;
+        align-items: center;
     }
 
     .contact-box h2 {
         font-size: 1.5rem;
     }
 
+    .underline-contact {
+        margin-bottom: 1rem;
+    }
+
     .info-text {
-        margin-left: 15px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .contact-item img {
@@ -148,13 +166,21 @@ iframe {
     }
 
     .map-container {
-        width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .map-container iframe {
-        height: 300px;
-        width: 350px;
-        align-items: center;
-        margin: 0 auto;
+        width: 205%; /* Set the desired width */
+        max-width: 450px; /* Restrict the maximum width */
+        height: 350px; /* Set the height */
+        margin: 0 auto; /* Center horizontally */
+        display: block; /* Ensure it aligns properly */
+        border-radius: 12px; /* Add rounded corners */
+        position: relative; /* Set position to use transform */
+        left: 50%; /* Move it to the center horizontally */
+        transform: translateX(-50%); /* Shift it back by 50% of its width to truly center */
     }
 }
+

@@ -216,7 +216,7 @@ nav {
 
   font-style: normal;
   font-family: 'Roboto', sans-serif;
-height: max-content;
+  height: max-content;
   font-size: 6em;
   font-weight: 700;
   margin-top: 50px;
@@ -225,7 +225,6 @@ height: max-content;
 .caret {
   width: 2px;
   height: 100rem;
-
   margin-left: 5px;
   animation: blink 0.7s steps(2, start) infinite;
 }
