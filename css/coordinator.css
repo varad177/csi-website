@@ -97,6 +97,7 @@
 
 /* Responsive Styles */
 @media (max-width: 480px) {
+ 
   .coordinator_main {
     flex-direction: column-reverse;
      /* Stack elements vertically on small screens */
