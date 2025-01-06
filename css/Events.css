@@ -50,9 +50,8 @@
 .swiper-slide img {
     display: block;
     width: 25rem;
-    height: 35rem;
+    height: auto;
     object-fit: contain;
-    overflow: hidden;
 }
 
 .swiper-wrapper {
