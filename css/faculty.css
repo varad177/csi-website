@@ -66,7 +66,7 @@
 .faculty_content_child {
   font-size: 2rem;
   color: rgb(255, 255, 255);
-  font-weight: 600;
+  font-weight: 200;
   font-family: "Dancing Script", cursive;
   border-radius: 1rem;
   display: flex;
@@ -81,10 +81,9 @@
   font-size: 1.5rem;
   padding: 2rem;
   text-align: justify;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   line-height: 1.8em;
   display: flex;
-
   justify-content: center;
   align-items: center;
   color: rgb(240, 248, 255);

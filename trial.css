@@ -1,0 +1,9 @@
+@keyframes slide-left {
+    from {
+      transform: translateX(0); /* Start position */
+    }
+    to {
+      transform: translateX(-100%); /* Slides one full gallery width */
+    }
+  }
+  
