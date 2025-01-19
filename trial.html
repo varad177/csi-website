@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Effect on Scroll</title>
+    <link rel="stylesheet" href="./trial.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+    <div class="fade-effect">Content 1</div>
+    <div class="fade-effect">Content 2</div>
+    <div class="fade-effect">Content 3</div>
+    <div class="fade-effect">Content 4</div>
+    <div class="fade-effect">Content 5</div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const fadeElements = document.querySelectorAll('.fade-effect');
+
+        fadeElements.forEach((element) => {
+          gsap.fromTo(
+            element,
+            { opacity: 0, y: 30 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              scrollTrigger: {
+                trigger: element,
+                start: 'top 80%',
+                toggleActions: 'play none none reverse',
+                markers: false // Set to true for debugging
+              }
+            }
+          );
+        });
+    </script>
+</body>
+</html>
