@@ -3,10 +3,12 @@
   font-weight: 700;
   line-height: 1;
   height: 10px;
+  font-size: 1em !important;
 }
 
+
 #pande-sir-box {
-  margin-top: 10vw;
+  margin-top: 4vw;
 }
 
 .faculty_main {

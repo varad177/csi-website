@@ -70,26 +70,26 @@ gsap.to("#name-div h1", {
 })
 
 
-// Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+// // Register ScrollTrigger plugin
+// gsap.registerPlugin(ScrollTrigger);
 
 
-const sectionIds = ["about", "pillars", "foundation", "gallery", "swiper-section", "reachus"];
+// const sectionIds = ["about", "pillars", "foundation", "gallery", "swiper-section", "reachus"];
 
-// Loop through each section and apply the animation
-sectionIds.forEach((id) => {
-  gsap.from(`#${id}`, {
-    opacity: 0, // Start with opacity 0
-    y: 50, // Start slightly below
-    duration: 2, // Animation duration
-    ease: "power2.out", // Smooth easing
-    scrollTrigger: {
-      trigger: `#${id}`, // Element that triggers the animation
-      start: "top 80%", // Start animation when the top of the section is 80% down the viewport
-      toggleActions: "play none none none", // Play animation once
-    },
-  });
-});
+// // Loop through each section and apply the animation
+// sectionIds.forEach((id) => {
+//   gsap.from(`#${id}`, {
+//     opacity: 0, // Start with opacity 0
+//     y: 50, // Start slightly below
+//     duration: 2, // Animation duration
+//     ease: "power2.out", // Smooth easing
+//     scrollTrigger: {
+//       trigger: `#${id}`, // Element that triggers the animation
+//       start: "top 80%", // Start animation when the top of the section is 80% down the viewport
+//       toggleActions: "play none none none", // Play animation once
+//     },
+//   });
+// });
 
 
 // Animation for each heading
@@ -236,3 +236,61 @@ homelinks.forEach(link => {
   });
 });
 
+
+
+
+// Function to open the modal and set the content dynamically
+function openModal(title, imgSrc) {
+  var modal = document.getElementById('modal');
+  var modalTitle = document.getElementById('modal-title');
+  var modalImage = document.getElementById('momentImg');
+
+  // Set the title and image source for the modal
+  modalTitle.textContent = title;
+  modalImage.src = imgSrc;
+
+  // Display the modal
+  modal.style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal() {
+  var modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+
+// Close the modal if the user clicks anywhere outside of the modal
+window.onclick = function(event) {
+  var modal = document.getElementById('modal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+
+document.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.secondary-navbar a');
+  
+  let currentSection = null;
+
+  // Check which section is near the top of the viewport
+  sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      // If the top of the section is within the top 10% of the viewport height, mark it as current
+      if (rect.top <= window.innerHeight * 0.1 && rect.bottom >= 0) {
+          currentSection = section.getAttribute('id');
+      }
+  });
+
+  // Update active link based on the current section
+  navLinks.forEach((link) => {
+      const linkTarget = link.getAttribute('href').substring(1); // Remove '#' from href
+      console.log(currentSection, linkTarget);
+      
+      if (currentSection === linkTarget) {
+          link.classList.add('active');
+      } else {
+          link.classList.remove('active');
+      }
+  });
+});
