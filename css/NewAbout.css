@@ -23,7 +23,7 @@ body {
   background-color:white;
   color: whitesmoke;
   margin: 0 auto;
-  margin-bottom: 14px;
+  margin-bottom: 18px !important;
 }
 
 .description {
@@ -157,7 +157,7 @@ blockquote.marathi {
   .stats{
     display: flex;
     flex-direction: row;
-    gap: 4.2rem;
+    gap: 3.2rem;
     margin-top: 20px;
     margin-bottom: 10px;
   }

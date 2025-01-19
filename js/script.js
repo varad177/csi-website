@@ -49,40 +49,12 @@ gsap.from('.one', 1, {
   delay: 5,
   x: innerWidth * 1,
 })
-gsap.from('.two', 1, {
-  delay: 5.5,
-  y: -100,
-  opacity: 0
-})
-gsap.from('.three', 1, {
-  delay: 5.9,
-  y: 100,
-  opacity: 0
-})
 gsap.to('.one .bg', 1, {
   ease: Expo.easeOut,
   delay: 6,
   height: '0%'
 })
 gsap.from('.one img', 1, {
-  delay: 6.2,
-  scale: 1.5
-})
-gsap.to('.two .bg2', 1, {
-  ease: Expo.easeOut,
-  delay: 6,
-  height: '0%'
-})
-gsap.from('.two img', 1, {
-  delay: 6.2,
-  scale: 1.5
-})
-gsap.to('.three .bg3', 1, {
-  ease: Expo.easeOut,
-  delay: 6,
-  height: '0%'
-})
-gsap.from('.three img', 1, {
   delay: 6.2,
   scale: 1.5
 })
