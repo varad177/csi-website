@@ -1,23 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown</title>
-    <link rel="stylesheet" href="css/countdown.css">
+    <title>Celebration Confetti</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #040404;
+            /* White background */
+            font-family: Arial, sans-serif;
+        }
+
+        #countdown {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+            color: #0f0;
+            /* Darker text for visibility */
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #quote-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            font-family: 'Fira Code', monospace;
+            font-size: 2rem;
+            background: #1e1e1e; 
+            color: #0f0;
+            /* Green text */
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+    </style>
 </head>
+
 <body>
-    <main class="container">
-        <!-- Progress bar -->
-        <div class="progress"></div>
-        <!-- Countdown counter -->
-        <div class="counter">1</div>
-        <!-- Button to toggle countdown -->
-        <button class="button">Toggle</button>
-    </main>
+    <div id="countdown">15</div>
+    <div id="quote-container">
+        <span id="quote">Tech Team of CSI DMCE - Innovate, Create, Excel!</span>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/momentum-slider@0.0.8/dist/momentum-slider.min.js"></script>
-    <script src="js/countdown.js"></script>
+    <script>
+        // Confetti animation parameters
+        const duration = 15000; // Animation duration in milliseconds (15 seconds)
+        const animationEnd = Date.now() + duration;
+        const defaults = {
+            startVelocity: 20,
+            spread: 180,
+            ticks: 50,
+            zIndex: 0,
+            colors: ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#8b00ff']
+            // Dark colors
+        };
 
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Confetti animation logic
+        const interval = setInterval(function () {
+            const timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                clearInterval(interval);
+                return;
+            }
+
+            const particleCount = 500 * (timeLeft / duration); // Adjust particle count dynamically
+
+            // Fire confetti from random positions
+            confetti(
+                Object.assign({}, defaults, {
+                    particleCount,
+                    origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+                })
+            );
+            confetti(
+                Object.assign({}, defaults, {
+                    particleCount,
+                    origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+                })
+            );
+        }, 250);
+
+        // Quotes to display
+        const quotes = [
+            "Tech Team of CSI DMCE - Innovate, Create, Excel!",
+            "Collaborating to solve complex challenges.",
+            "Where technology meets creativity.",
+            "Passionate about building the future.",
+            "Together, we achieve more!"
+        ];
+        const quoteContainer = document.getElementById("quote");
+        let quoteIndex = 0;
+
+        // Update quotes every 3 seconds
+        const quoteInterval = setInterval(() => {
+            quoteIndex = (quoteIndex + 1) % quotes.length;
+            quoteContainer.textContent = quotes[quoteIndex];
+        }, 3000);
+
+        // Countdown logic
+        const countdownElement = document.getElementById("countdown");
+        let countdown = 15;
+
+        const countdownInterval = setInterval(() => {
+            countdown -= 1;
+            countdownElement.textContent = countdown;
+
+            if (countdown === 0) {
+                clearInterval(countdownInterval);
+            }
+        }, 1000);
+
+        // Redirect after 15 seconds
+        setTimeout(() => {
+            clearInterval(quoteInterval); // Stop updating quotes
+            window.open("index.html", "_blank"); // Open index.html in a new tab
+        }, duration);
+    </script>
 </body>
+
 </html>
