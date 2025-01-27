@@ -44,10 +44,6 @@ body ul li {
 body a {
   text-decoration: none;
 }
-
-
-
-
 /* Style for the active icon */
 .secondary-navbar a.active {
   color: #1fb5f6;  /* Set color to blue for active icon */
@@ -59,9 +55,6 @@ body a {
   transition: transform 0.5s, color 0.2s; /* Smooth transition for scaling and color */
   transform: scale(2);
 }
-
-
-
 
 
 #logo {
