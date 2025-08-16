@@ -3,7 +3,7 @@
   font-weight: 700;
   line-height: 1;
   height: 10px;
-  font-size: 1em !important;
+  font-size: 1em;
 }
 
 
@@ -31,7 +31,6 @@
 
 .faculty_second_box {
   width: fit-content;
-
   display: flex;
   flex-direction: column; /* Align image and text side by side */
   justify-content: center;
@@ -107,7 +106,7 @@
 /* Responsive Styles */
 @media (max-width: 480px) {
   .head {
-    font-size: 2em;
+    font-size: 2rem;
     padding: 20px;
   }
 
@@ -128,7 +127,7 @@
     margin-top: 18px;
   }
   .faculty-head {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 
 }
