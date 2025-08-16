@@ -333,8 +333,8 @@ nav {
 .container .wrapper .img .subimg img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: cover; */
+  object-fit: contain;
 }
 
 .container .wrapper .img .subimg.one .bg {
@@ -634,7 +634,7 @@ nav {
 
   @media (max-width: 769px) {
     .about-head {
-      font-size: 2.3rem !important;
+      font-size: 2rem !important;
       margin-bottom: 5px !important;
     }
   }
@@ -820,3 +820,49 @@ nav {
   border-radius: 100px !important;
   margin-bottom: 10px !important;
 }
+
+
+
+
+/* From Uiverse.io by alexroumi */ 
+#event-app-btn {
+  padding: 15px 25px;
+  margin: 2rem auto;
+  width: 100%;
+cursor: pointer;
+  border: unset;
+  border-radius: 15px;
+  color: #1fb5f6;
+  z-index: 1;
+  background: #252424;
+  position: relative;
+  font-weight: 1000;
+  font-size: 15px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ #event-app-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+
+  background-color: #1fb5f6;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ #event-app-btn:hover {
+  color: #000;
+ }
+ 
+ #event-app-btn:hover::before {
+  width: 100%;
+ }

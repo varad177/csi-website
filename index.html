@@ -27,12 +27,13 @@ future together." />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSI-CATT DMCE</title>
+  <link rel="preload" href="your-image-url.jpg" as="image">
   <link rel="stylesheet" href="./css/scrolltotop.css">
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/aboutPage.css" />
+  <!-- <link rel="stylesheet" href="./css/aboutPage.css" /> -->
   <link rel="stylesheet" href="./css/teamPage.css" />
   <link rel="stylesheet" href="./css/galleryPage.css" />
-  <link rel="stylesheet" href="./css/Eventpage.css" />
+  <!-- <link rel="stylesheet" href="./css/Eventpage.css" /> -->
   <link rel="stylesheet" href="./css/NewAbout.css" />
   <link rel="stylesheet" href="./css/contactus.css">
   <link rel="stylesheet" href="./css/footer.css" />
@@ -55,7 +56,7 @@ future together." />
 
     .about-head {
       font-family: 'Roboto Mono', monospace;
-      font-size: 3em !important;
+      font-size: 3em;
     }
 
     .bg-gradient-to-r {
@@ -183,7 +184,7 @@ future together." />
       <!-- img section -->
       <div class="img">
         <div class="subimg one">
-          <img src="./images/HomepageImages/Main_image2.png" alt="" />
+          <img loading="lazy" src="./images/HomepageImages/Main_image.png" alt="" />
           <div class="bg"></div>
         
       </div>
@@ -312,7 +313,7 @@ future together." />
 
       <div data-aos="flip-left" data-aos-delay="200"  class="faculty_second_box">
         <div    class="facultyImg">
-          <img loading="lazy" src="./main-images/faculty/coordinator.webp" alt="">
+          <img loading="lazy" src="./main-images/faculty/vkgphoto-removebg-preview.jpg" alt="">
         </div>
         <div     class="faculty_content_child">
           <p>Mrs.Vaishali Gaidhane </p>
@@ -631,7 +632,7 @@ future together." />
 
       <div data-aos="flip-left" data-aos-delay="700" class="member-card">
         <div class="core-member h-12" style="margin-top: 0rem;">
-          <img src="./images/team-members/Aditya_dinde.png" alt="Aditya Dinde">
+          <img src="./main-images/team-members/Aditya_dinde.png" alt="Aditya Dinde">
           <div class="core-member-content">
             <a href="https://www.linkedin.com/in/aditya-dinde-3b894629b" class="fa-icon">
               <i class="fa fa-linkedin"></i>
@@ -1062,6 +1063,9 @@ future together." />
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+
+   <a style="text-decoration: none;" target="_blank" href="https://eventsphere.prathmeshkamble.in"> <button id="event-app-btn">Registered Yourself Through Our App! EventSphere
+  </button></a>
   </section>
 
 
@@ -1163,7 +1167,6 @@ future together." />
   <script src="./js/aboutPage.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/teamPage.js"></script>
-  <script src="./js/Eventpage.js"></script>
   <script src="./js/footerPage.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

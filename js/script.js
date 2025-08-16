@@ -285,7 +285,7 @@ document.addEventListener('scroll', () => {
   // Update active link based on the current section
   navLinks.forEach((link) => {
       const linkTarget = link.getAttribute('href').substring(1); // Remove '#' from href
-      console.log(currentSection, linkTarget);
+    
       
       if (currentSection === linkTarget) {
           link.classList.add('active');
